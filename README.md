@@ -1,4 +1,4 @@
-### Agile-Web-Development-Project
+# Agile-Web-Development-Project
 
 
 Web Project Specification: Online Formative Assessment
@@ -11,7 +11,7 @@ This project is worth 30% of your final grade in the unit must be done in groups
 For this project you are required to build an online formative assessment. That is, you should write a web application that simulates a learning experience like a laboratory, and applies some assessment and feedback at the end. The application should be written using HTML, CSS, Flask, AJAX, JQuery, and Bootstrap. The application should allow uses to register, progress through a series of activities saving their progress, complete an assessment at the end, and receive meaningful feedback on their performance. The context of the questions and the type of assessment mechanism is up to you.
 
 
-# Criteria: Front-end (50%)
+### Criteria: Front-end (50%)
 - The web application must be functional so that the user can access all material and complete the assessment.
 - The webpage must be implemented using HTML5, CSS and Javascript (or a subset thereof).
 - All resources used (inlcuding pictures, javascript libraries, css) must be full referenced.
@@ -26,7 +26,15 @@ For this project you are required to build an online formative assessment. That 
 -- one page showing aggregate results and usage statsitics
 - There must be a consistent style (via css file) for all pages yet each page should be easily identifiable.
 
-# Marking Scheme
+### Criteria: Backend functionality (50%)
+The second part of the project criteria is the back end functionality of web application. The web application should be implmented using Flask (any additional libraries/modules require unit coordinator approval), and provide at least the following functionality:
+
+- A user account and login feature, (as a minimum for administrators)
+- A method to complete tests and store progress.
+- A method to assess submissions.
+- A method to see assessments.
+
+### Marking Scheme
 - HTML5 - style, maintainability, validation 10%
 - CSS -style, maintainability 10%
 - Javascript-code quality, validation of user generated data, execution 15%
