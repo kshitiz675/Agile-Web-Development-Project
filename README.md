@@ -50,3 +50,8 @@ The second part of the project criteria is the back end functionality of web app
 
 
 In week 12 all members of each team must present and demonstrate their project. A schedule will be set up for demonstrations by week 8.
+
+
+
+Bhasura, Will - Backend
+
