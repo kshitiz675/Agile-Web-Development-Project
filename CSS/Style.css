@@ -1,3 +1,8 @@
+@font-face {
+    font-family: madeleina;
+    src: url("MadeleinaSans-2VY3.ttf");
+}
+
 body {
     background-color: yellow;
     margin: auto;
@@ -8,6 +13,7 @@ body {
 
 h1{
     font-size: 45pt;
+    font-family: MadeleinaSans-2VY3;
 }
 
 p1{
