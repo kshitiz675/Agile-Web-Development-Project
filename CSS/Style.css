@@ -1,11 +1,8 @@
 body {
     background-color: yellow;
-    
-}
-
-.center {
     margin: auto;
     width: 50%;
     border: 3px solid darkgoldenrod;
     padding: 10px;
- }
+}
+
