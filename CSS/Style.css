@@ -1,8 +1,17 @@
 body {
     background-color: yellow;
     margin: auto;
-    width: 50%;
-    border: 3px solid darkgoldenrod;
+    width: 70%;
     padding: 10px;
+    text-align: center;
 }
+
+h1{
+    font-size: 45pt;
+}
+
+p1{
+    font-size: 20pt;
+}
+
 
