@@ -3,20 +3,47 @@
     src: url("MadeleinaSans-2VY3.ttf");
 }
 
+#logo {
+    width:60px;
+    height:60px;
+    margin:10px;
+    margin-left:100px;
+}
+
+.dark_header {
+    position:absolute;
+    top: 0;
+    width: 100%;
+    background-color:#363636;
+    height:80px;
+}
+
+.blue-container {
+    background-color:#4995c9;
+    padding:30px;
+    height:500px;
+    width:700px;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:10px;
+}
+
 body {
-    background-color: yellow;
+    background-color:#646464;
     margin: auto;
-    width: 70%;
-    padding: 10px;
+    margin-top:90px;
+}
+
+body h1,p{
     text-align: center;
+    font-family: madeleina;
 }
 
 h1{
     font-size: 45pt;
-    font-family: MadeleinaSans-2VY3;
 }
 
-p1{
+p{
     font-size: 20pt;
 }
 
