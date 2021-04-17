@@ -55,5 +55,28 @@ https://uniwa-my.sharepoint.com/:w:/r/personal/22616672_student_uwa_edu_au/_layo
 
 
 
-Bhasura, Will - Backend
+### Style Guide
+
+## Fonts
+h1: font-size: 52px;
+h2: font-size: 44px;
+h3: font-size: 32px;
+h4: font-size: 26px;
+h5: font-size: 20px;
+h6: font-size: 18px;
+
+General paragraphs: 18px or 16px
+buttons: font-size: 14px, letter-spacing: 0.2px;
+
+## Colours
+
+See https://imgiseverything.co.uk/ 
+Yellow (background) #fd2;
+Text #32373c
+Probably another for buttons
+
+
+
+Menus, navs, etc can be whatever just be consistent.
+
 
