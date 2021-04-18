@@ -10,8 +10,16 @@
     	<link rel="stylesheet" href="{{url_for('static', filename='CSS/Style.css')}}">
 	</head>
 	<body>
-		<div>CryptoQuiz: <a href="{{url_for('index')}}">Home</a>
-		</div><hr>
-		{%block content%}{%endblock%}
+		<div class="container">
+			<div class="menu">
+				<ul>
+					<li class="logo"><img src="{{url_for('static', filename='Pictures/logo cropped.png')}}"></li>
+					<li class="home"><a href="Theme and Purpose.html">Home</a></li>
+					<li><a href="Login.html" class="login-btn">Login</a></li>
+					<li><a href="Registration.html" class="register-btn">Register</a></li>
+				</ul>
+			</div>
+			{%block content%}{%endblock%}
+		</div>
 	</body>
 </html>
