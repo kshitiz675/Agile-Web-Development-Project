@@ -34,8 +34,9 @@ html, body {
     list-style: none;
     margin: 0 20px;
     cursor: pointer;
-    font-size: 20pt;
-    font-family: sans-serif;
+    font-size: 18pt;
+    letter-spacing: 0.2px;
+    font-family: 'Arvo', serif;
     text-decoration: none;
 }
 
@@ -116,18 +117,20 @@ html, body {
     float: left;
 }
 .content h1 {
-    font-size: 40pt;
+    font-size: 52pt;
     border-bottom-style: solid;
     position: relative;
     margin-left: 40px;
     font-family: 'Crimson Text', serif;
+    color: #32373c;
 }
 
 .content p {
-    font-size: 20pt;
+    font-size: 18pt;
     margin: 30px 0 40px 40px; 
     line-height: 25px;
     font-family: 'Work Sans', sans-serif;
+    color: #32373c;
 
 }
 
