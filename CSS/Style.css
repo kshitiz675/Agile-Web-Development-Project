@@ -37,7 +37,6 @@ html, body {
     text-decoration: none;
 }
 
-
 .menu ul li a {
     color: rgba(255, 255, 255, 0.459);
 }
@@ -45,7 +44,8 @@ html, body {
 .menu ul li a:visited {
     color: rgba(255, 255, 255, 0.459);
 }
-.menu ul li a:hover { 
+
+.menu ul li a:hover {
     color: black;
 }
 
@@ -69,7 +69,7 @@ html, body {
     background-clip: content-box, border-box;
 }
 
-.login-btn:hover{
+.login-btn:hover {
     background-image: linear-gradient(#5a52452a, #5a5a4241), radial-gradient(circle at top left, #ff9913, #f7d43c);
 }
 
@@ -80,7 +80,7 @@ html, body {
 
 .register-btn {
     position: absolute;
-    top:  25%;
+    top: 25%;
     right: 2%;
     text-decoration: none;
     border: 2px solid transparent;
@@ -89,15 +89,16 @@ html, body {
     background-origin: border-box;
     background-clip: content-box, border-box;
 }
-.register-btn:hover { 
-    background-image: linear-gradient(#5a52452a, #5a5a4241), radial-gradient(circle at top left, #ff9913, #f7d43c);
 
+.register-btn:hover {
+    background-image: linear-gradient(#5a52452a, #5a5a4241), radial-gradient(circle at top left, #ff9913, #f7d43c);
 }
 
 .register-btn span {
     display: block;
     padding: 8px 22px;
 }
+
 .heading {
     width: 80%;
     height: 70%;
