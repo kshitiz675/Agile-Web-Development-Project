@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{%if title%}
+		<title>{{title}} - Cryptocurrency Quiz</title>
+		{%else%}
+		<title>Welcome to the Cryptocurrency Quiz</title>
+		{%endif%}
+		<meta charset="utf-8">
+    	<link rel="stylesheet" href="CSS/Style.css">
+	</head>
+	<body>
+		<div>CryptoQuiz: <a href="/index">Home</a></div><hr>
+		{%block content%}{%endblock%}
+	</body>
+</html>
