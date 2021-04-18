@@ -14,12 +14,9 @@ html, body {
 }
 
 .menu {
+    width: 100%;
     background-color: rgb(65, 64, 63);
-}
-
-.home {
-    border: 2px solid transparent;
-    border-radius: 20px;
+    position: fixed;
 }
 
 .menu ul {
@@ -28,7 +25,7 @@ html, body {
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 10px;
-    /* position: sticky; */
+    text-decoration: none;
 }
 
 .menu ul li {
@@ -37,31 +34,70 @@ html, body {
     cursor: pointer;
     font-size: 20pt;
     font-family: sans-serif;
-    color: rgba(247, 243, 243, 0.192);
+    text-decoration: none;
 }
 
-.menu ul li :visited {
-    color: rgba(247, 243, 243, 0.123);
+
+.menu ul li a {
+    color: rgba(255, 255, 255, 0.459);
 }
 
-.menu ul li :hover {
-    color: white;
+.menu ul li a:visited {
+    color: rgba(255, 255, 255, 0.459);
+}
+.menu ul li a:hover { 
+    color: black;
+}
+
+.home {
+    text-decoration: none;
 }
 
 .logo img {
     width: 50px;
 }
 
-.register-btn {
-    float: right;
+.login-btn {
+    position: absolute;
+    top: 25%;
+    right: 10%;
     text-decoration: none;
     border: 2px solid transparent;
-    border-radius: 20px;
-    background-image: black;
+    border-radius: 30px;
+    background-image: linear-gradient(#5a5245, #5a5a42), radial-gradient(circle at top left, #fd7200, #f8f419);
     background-origin: border-box;
-    background-clip: content-box;
+    background-clip: content-box, border-box;
 }
 
+.login-btn:hover{
+    background-image: linear-gradient(#5a52452a, #5a5a4241), radial-gradient(circle at top left, #ff9913, #f7d43c);
+}
+
+.login-btn span {
+    display: block;
+    padding: 8px 22px;
+}
+
+.register-btn {
+    position: absolute;
+    top:  25%;
+    right: 2%;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    background-image: linear-gradient(#5a5245, #5a5a42), radial-gradient(circle at top left, #fd7200, #f8f419);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.register-btn:hover { 
+    background-image: linear-gradient(#5a52452a, #5a5a4241), radial-gradient(circle at top left, #ff9913, #f7d43c);
+
+}
+
+.register-btn span {
+    display: block;
+    padding: 8px 22px;
+}
 .heading {
     width: 80%;
     height: 70%;
@@ -75,8 +111,6 @@ html, body {
 .heading h1 {
     font-size: 40pt;
     border-bottom-style: solid;
-    
-    
 }
 
 .heading p {
