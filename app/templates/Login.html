@@ -1,18 +1,28 @@
 {%extends "base.html"%}
     
 {%block content%}
-    <form action="Content.html" method="post">
+    <form action="" method="post" novalidate>
         {{form.hidden_tag()}}
         <h1>Login</h1>
         <p>Enter details to login to account</p><br />
 
-        <label for="username">Username</label><br />
-        <input type="text" placeholder="Enter username" name="username" id="username" required> <br />
+        <p>
+            {{form.username.label}}<br>
+            {{form.username(size=32)}}<br>
+            {%for error in form.username.errors%}
+            <span style="color:red;">{{error}}</span>
+            {%endfor%}
+        </p> <br />
 
-        <label for="pass">Password</label><br />
-        <input type="password" placeholder="Enter password" name="pass" id="pass" required> <br />
-
-        <button type="submit" class="login">Login</button><br />
+        <p>
+            {{form.password.label}}<br>
+            {{form.password(size=32)}}<br>
+            {%for error in form.password.errors%}
+            <span style="color:red;">{{error}}</span>
+            {%endfor%}
+        </p> <br />
+        <p>{{form.remember_me.label}}{{form.remember_me()}}</p>
+        <p>{{form.submit()}}</p>
     </form>
 
 
