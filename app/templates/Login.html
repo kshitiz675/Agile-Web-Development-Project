@@ -1,13 +1,6 @@
-<!DOCTYPE HTML>
-<html lang="en">
-
-<head>
-    <title>Login</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="CSS/Style.css">
-</head>
-
-<body>
+{%extends "base.html"%}
+    
+{%block content%}
     <form action="Content.html" method="post">
         <h1>Login</h1>
         <p>Enter details to login to account</p><br />
@@ -17,11 +10,10 @@
 
         <label for="pass">Password</label><br />
         <input type="password" placeholder="Enter password" name="pass" id="pass" required> <br />
+        <p>{{form.remember_me()}}{{form.remember_me.label}}</p>
 
         <button type="submit" class="login">Login</button><br />
     </form>
 
 
-</body>
-
-</html>
+{%endblock%}
