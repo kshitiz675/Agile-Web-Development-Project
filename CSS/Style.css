@@ -1,5 +1,5 @@
 body {
-    background-color: yellow;
+    background-color:#fd2;
     margin: auto;
     width: 70%;
     padding: 10px;
@@ -7,11 +7,11 @@ body {
 }
 
 h1{
-    font-size: 45pt;
+    font-size: 52px;
 }
 
-p1{
-    font-size: 20pt;
+p{
+    font-size: 16px;
 }
 
 
