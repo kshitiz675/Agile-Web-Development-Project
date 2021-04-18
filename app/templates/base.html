@@ -10,7 +10,9 @@
     	<link rel="stylesheet" href="{{url_for('static', filename='CSS/Style.css')}}">
 	</head>
 	<body>
-		<div>CryptoQuiz: <a href="{{url_for('index')}}">Home</a></div><hr>
+		<div>CryptoQuiz: <a href="{{url_for('index')}}">Home</a>
+		<!--<a href="{{url_for('login')}}">Login</a>-->
+		</div><hr>
 		{%block content%}{%endblock%}
 	</body>
 </html>
