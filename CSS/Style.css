@@ -62,7 +62,7 @@ html, body {
 .login-btn {
     position: absolute;
     top: 25%;
-    right: 10%;
+    right: 200px;
     text-decoration: none;
     border: 2px solid transparent;
     border-radius: 30px;
@@ -83,7 +83,7 @@ html, body {
 .register-btn {
     position: absolute;
     top: 25%;
-    right: 2%;
+    right: 25px;
     text-decoration: none;
     border: 2px solid transparent;
     border-radius: 30px;
@@ -114,27 +114,27 @@ html, body {
 .content {
     width: 50%;
     float: left;
-    font-family: sans-serif;
 }
 .content h1 {
     font-size: 40pt;
     border-bottom-style: solid;
     position: relative;
     margin-left: 40px;
+    font-family: 'Crimson Text', serif;
 }
 
 .content p {
     font-size: 20pt;
     margin: 30px 0 40px 40px; 
     line-height: 25px;
+    font-family: 'Work Sans', sans-serif;
 
 }
 
 .main-picture {
     width: 40%;
     float: right;
-    margin-top: 10%;
-    margin-right: 10%;
+    margin: 200px;
 }
 .main-picture img {
     width: 100%;
