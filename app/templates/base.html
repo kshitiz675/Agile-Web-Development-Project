@@ -8,15 +8,16 @@
 		{%endif%}
 		<meta charset="utf-8">
     	<link rel="stylesheet" href="{{url_for('static', filename='CSS/Style.css')}}">
+		<link rel="shortcut icon" href="{{url_for('static', filename='Pictures/logo cropped.png')}}">
 	</head>
 	<body>
 		<div class="container">
 			<div class="menu">
 				<ul>
 					<li class="logo"><img src="{{url_for('static', filename='Pictures/logo cropped.png')}}"></li>
-					<li class="home"><a href="Theme and Purpose.html">Home</a></li>
-					<li><a href="Login.html" class="login-btn">Login</a></li>
-					<li><a href="Registration.html" class="register-btn">Register</a></li>
+					<li class="home"><a href="{{url_for('index')}}">Home</a></li>
+					<li><a href="{{url_for('login')}}" class="login-btn">Login</a></li>
+					<li><a href="{{url_for('registration')}}" class="register-btn">Register</a></li>
 				</ul>
 			</div>
 			{%block content%}{%endblock%}
