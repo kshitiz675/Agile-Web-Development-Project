@@ -1,17 +1,144 @@
-body {
-    background-color: yellow;
-    margin: auto;
-    width: 70%;
-    padding: 10px;
-    text-align: center;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-h1{
-    font-size: 45pt;
+html, body {
+    height: 100%;
+    background-color: #f7931a;
+    overflow: hidden;
 }
 
-p1{
-    font-size: 20pt;
+.container {
+    width: 100%;
+    height: 100%;
 }
 
+.menu {
+    width: 100%;
+    background-color: #32373c;
+    position: fixed;
+}
 
+.menu ul {
+    display: inline-flex;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.menu ul li {
+    list-style: none;
+    margin: 0 20px;
+    cursor: pointer;
+    font-size: 18pt;
+    letter-spacing: 0.2px;
+    font-family: 'Arvo', serif;
+    text-decoration: none;
+}
+
+.menu ul li a {
+    color: rgba(255, 255, 255, 0.459);
+}
+
+.menu ul li a:visited {
+    color: rgba(255, 255, 255, 0.459);
+}
+
+.menu ul li a:hover {
+    color: black;
+}
+
+.home {
+    text-decoration: none;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.login-btn {
+    position: absolute;
+    top: 25%;
+    right: 200px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    background-image: linear-gradient(#5a5245, #5a5a42), radial-gradient(circle at top left, #fd7200, #f8f419);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.login-btn:hover {
+    background-image: linear-gradient(#5a52452a, #5a5a4241), radial-gradient(circle at top left, #ff9913, #f7d43c);
+}
+
+.login-btn span {
+    display: block;
+    padding: 8px 22px;
+}
+
+.register-btn {
+    position: absolute;
+    top: 25%;
+    right: 25px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    background-image: linear-gradient(#5a5245, #5a5a42), radial-gradient(circle at top left, #fd7200, #f8f419);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.register-btn:hover {
+    background-image: linear-gradient(#5a52452a, #5a5a4241), radial-gradient(circle at top left, #ff9913, #f7d43c);
+}
+
+.register-btn span {
+    display: block;
+    padding: 8px 22px;
+}
+
+.heading {
+    width: 80%;
+    height: 70%;
+    right: 40%;
+    top: 25%;
+    left: 130px;
+    position: absolute;
+}
+
+.content {
+    width: 50%;
+    float: left;
+}
+
+.content h1 {
+    font-size: 52pt;
+    border-bottom-style: solid;
+    position: relative;
+    margin-left: 40px;
+    font-family: 'Crimson Text', serif;
+    color: #32373c;
+}
+
+.content p {
+    font-size: 18pt;
+    margin: 30px 0 40px 40px;
+    line-height: 25px;
+    font-family: 'Work Sans', sans-serif;
+    color: #32373c;
+}
+
+.main-picture {
+    width: 40%;
+    float: right;
+    margin: 200px;
+}
+
+.main-picture img {
+    width: 100%;
+    padding-left: 50px;
+}
