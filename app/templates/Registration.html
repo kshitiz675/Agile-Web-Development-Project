@@ -1,16 +1,9 @@
-<!DOCTYPE HTML>
-<html lang="en">
+{%extends "layout.html"%}
 
-<head>
-    <title>Registration</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="CSS/Style.css">
-</head>
-
-<body>
+{%block content%}
     <form>
         <h1>Register</h1>
-        <p1>Enter details to create an account</p1><br />
+        <p>Enter details to create an account</p><br />
 
         <label for="username">Username</label><br />
         <input type="text" placeholder="Enter username" name="username" id="username" required> <br />
@@ -22,8 +15,4 @@
         <input type="password" placeholder="Repeat password" name="pass_repeat" id="pass_repeat" required> <br />
         <button type="submit" class="reg">Register</button><br />
     </form>
-
-
-</body>
-
-</html>
+{%endblock%}

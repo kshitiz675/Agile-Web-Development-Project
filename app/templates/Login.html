@@ -1,37 +1,29 @@
-<!DOCTYPE HTML>
-<html lang="en">
+{%extends "layout.html"%}
+    
+{%block content%}
+    <form action="" method="post" novalidate>
+        {{form.hidden_tag()}}
+        <h1>Login</h1>
+        <p>Enter details to login to account</p><br />
 
-<head>
-    <title>Login</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="CSS/Style.css">
-</head>
+        <p>
+            {{form.username.label}}<br>
+            {{form.username(size=32)}}<br>
+            {%for error in form.username.errors%}
+            <span style="color:red;">{{error}}</span>
+            {%endfor%}
+        </p> <br />
 
-<body>
-    <div class="container">
-        <div class="menu">
-            <ul>
-                <li class="logo"><img src="Pictures/logo cropped.png"></li>
-                <li><a href="Theme and Purpose.html" class="home">Home</a></li>
-                <li><a href="Registration.html" class="register-btn"><span>Register</span></a></li>
-            </ul>
-        </div>
-        <div class="form">
-            <form action="Content.html" method="post">
-                <h1>Login</h1>
-                <p>Enter details to login to account</p><br />
+        <p>
+            {{form.password.label}}<br>
+            {{form.password(size=32)}}<br>
+            {%for error in form.password.errors%}
+            <span style="color:red;">{{error}}</span>
+            {%endfor%}
+        </p> <br />
+        <p>{{form.remember_me.label}}{{form.remember_me()}}</p>
+        <p>{{form.submit()}}</p>
+    </form>
 
-                <label for="username">Username</label><br />
-                <input type="text" placeholder="Enter username" name="username" id="username" required> <br />
 
-                <label for="pass">Password</label><br />
-                <input type="password" placeholder="Enter password" name="pass" id="pass" required> <br />
-
-                <button type="submit" class="login">Login</button><br />
-            </form>
-        </div>
-    </div>
-
-</body>
-
-</html>
+{%endblock%}
