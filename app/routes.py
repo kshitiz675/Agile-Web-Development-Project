@@ -4,9 +4,11 @@ from app import app
 
 @app.route('/')
 @app.route('/index')
+@app.route('/home')
 def index():
     return render_template('Home.html', title='Home')
 
+@app.route('/content')
 def content():
     return render_template('Content.html', title='Content')
 
