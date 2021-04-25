@@ -1,38 +1,17 @@
-<!DOCTYPE HTML>
-<html lang="en">
 
-<head>
-    <title>Cryptocurrency Quiz</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="../static/CSS/Style.css">
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <div class="container">
-        <div class="menu">
-            <ul>
-                <li class="logo"><img src="../static/Pictures/logo cropped.png"></li>
-                <li><a href="Theme and Purpose.html" class="home">Home</a></li>
-                <li><a href="Login.html" class="login-btn"><span>Login</span></a></li>
-                <li><a href="Registration.html" class="register-btn"><span>Register</span></a></li>
-            </ul>
-        </div>
-        <div class="heading">
-            <div class="content">
-                <h1>Welcome to the Cryptocurrency <br> Crash Course!</h1><br />
-                <p>Register and take this course to learn about Cryptocurrency in under 20 minutes. Test your
-                    knowledge
-                    at the end and see how you compare to others.</p>
-
-            </div>
-        </div>
-        <div class="main-picture">
-            <img src="../static/Pictures/bitcoins.png">
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+    <div class="heading">
+        <div class="content">
+            <h1>Welcome to the Cryptocurrency <br> Crash Course!</h1><br />
+            <p>Register and take this course to learn about Cryptocurrency in under 20 minutes. Test your
+                knowledge
+                at the end and see how you compare to others.</p>
         </div>
     </div>
-</body>
-
-</html>
+    <div class="main-picture">
+        <img src="../static/Pictures/bitcoins.png">
+    </div>
+</div>
+{% endblock %}
