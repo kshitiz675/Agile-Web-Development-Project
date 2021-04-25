@@ -7,6 +7,9 @@ from app import app
 def index():
     return render_template('Home.html', title='Home')
 
+def content():
+    return render_template('Content.html', title='Content')
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
    form = LoginForm()
