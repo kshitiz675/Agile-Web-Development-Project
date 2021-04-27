@@ -1,0 +1,14 @@
+.headingContent { 
+    text-align: center;
+    font-size: 40pt;
+    font-family: 'Crimson Text', serif;
+    color: #32373c;
+
+}
+
+.subHeadingContent { 
+    text-align: center;
+    font-size: 5pt;
+    font-family: 'Work Sans', sans-serif;
+    color: #32373c;
+}
