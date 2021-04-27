@@ -1,14 +1,15 @@
-.headingContent { 
+.ban h1 { 
     text-align: center;
-    font-size: 40pt;
+    font-size: 52pt;
     font-family: 'Crimson Text', serif;
     color: #32373c;
 
 }
 
-.subHeadingContent { 
-    text-align: center;
-    font-size: 5pt;
+.sub2 { 
+    text-align: left;
+    font-size: 30pt;
     font-family: 'Work Sans', sans-serif;
     color: #32373c;
+    margin-top: 40px;
 }
