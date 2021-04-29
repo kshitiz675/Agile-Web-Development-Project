@@ -12,6 +12,10 @@ def index():
 def content():
     return render_template('Content.html', title='Content')
 
+@app.route('/blockchain-test')
+def blockchain():
+    return render_template('Blockchain-test.html', title='Blockchain-test')
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
    form = LoginForm()

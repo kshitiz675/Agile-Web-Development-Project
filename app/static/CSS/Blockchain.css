@@ -1,0 +1,78 @@
+.assesment-container {
+    position: relative;
+    margin-top: 50px;
+    width: 1000px;
+    height: 750px;
+    background-color: #32373c;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+
+.video iframe {
+    display: block;
+    position: absolute;
+    justify-content: center;
+    margin-top: 150px;
+    margin-left: 200px
+}
+
+.video {
+    width: 1000px;
+    text-align: center;
+    position: absolute;
+}
+
+.next-btn button {
+    float: right;
+    margin-top: 650px;
+    margin-right: 75px;
+    margin-left: 750px;
+    cursor: pointer;
+    width: 150px;
+    /* reset */
+    -webkit-appearance: none;
+    border: 0;
+    outline: 0;
+    /* styles */
+    position: fixed;
+    background: linear-gradient(45deg, orange 10%, red 90%);
+    background-size: 200% 100%;
+    padding: 1.5rem 2rem;
+    color: black;
+    border-radius: 100px;
+    font-size: 18pt;
+    font-family: 'Work Sans', sans-serif;
+    transition: .3s;
+}
+
+.next-btn button:hover {
+    animation: anim 3s linear infinite;
+}
+
+@keyframes anim {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.next span {
+    display: block;
+    padding: 8px 22px;
+}
+
+.video-info p {
+    padding: 10px;
+    margin-left: 100px;
+    margin-top: 100px;
+    position: absolute;
+    color: white;
+    font-size: 12pt;
+    font-family: 'Work Sans', sans-serif;
+}

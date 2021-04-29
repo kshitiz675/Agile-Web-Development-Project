@@ -30,6 +30,7 @@
     margin-right: auto;
     border-spacing: 15px 15px;
     width: 2000px;
+    text-decoration: none;
 }
 
 td {
@@ -46,6 +47,13 @@ td {
     font-size: 20pt;
     font-family: 'Work Sans', sans-serif;
     color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+td:visited { 
+    color: white;
+    text-decoration: none;
 }
 
 td:hover {
