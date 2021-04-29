@@ -7,6 +7,7 @@
     padding:10px;
     box-shadow:2px 2px 10px black;
     border-radius:10px;
+    overflow:auto;
 }
 .test_container h1 {
     font-size: 35pt;
