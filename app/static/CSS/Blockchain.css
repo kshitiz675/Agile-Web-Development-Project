@@ -18,7 +18,7 @@
 }
 
 .video {
-    width: 1000px;
+    width: 100%;
     text-align: center;
     position: absolute;
 }
@@ -68,8 +68,9 @@
 }
 
 .video-info p {
+    width: 100%;
     padding: 10px;
-    margin-left: 100px;
+    text-align: center;
     margin-top: 100px;
     position: absolute;
     color: white;
