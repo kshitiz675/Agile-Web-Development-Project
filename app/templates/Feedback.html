@@ -48,10 +48,15 @@
         </header>
     </section>
     <section id="main">
-        {% block content %}
-        <h1>Feedback page</h1>
-        {% endblock %}
-
+        {%block content%}
+            <div class="test_container">
+            <h1>1.	Did you find the content on this website valuable?</h1><br>
+            <div class="choices">
+                <button>1</button><br><button>2</button><br>
+                <button>3</button><br><button>4</button><br>
+            </div>
+        </div>
+        {%endblock%}
     </section>
     <script>
 
