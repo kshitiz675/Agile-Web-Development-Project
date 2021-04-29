@@ -1,70 +1,17 @@
 {%extends "layout.html"%}
 
-<html>
-
-<head>
-    <link rel="stylesheet" href="../static/CSS/Style.css" />
-    <link rel="stylesheet" href="../static/CSS/Layout.css" />
-    <link rel="stylesheet" href="../static/CSS/Assesments.css" />
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <section>
-        <header>
-            <div id="topbar">
-                <div id="brand">
-                    <img src="../static/Pictures/logo.png" alt="logo">
-                </div>
-                <nav id="topbar-nav">
-                    <a href="/" class="navbar-item navbar-active">Home</a>
-                    <div class="flex">
-                        <a href="/content" class="navbar-item">Learn</a>
-                        <svg class="menu-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                            aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </div>
-                    <a href="#" class="navbar-item">Statistics</a>
-                </nav>
-                <div id="login-container">
-                    <div class="flex">
-                        <button class="login-button background-indigo">
-                            Login
-                        </button>
-                        <button class="login-button background-darkgray">
-                            Register
-                        </button>
-                    </div>
-                    <div>
-
-                    </div>
-                </div>
-            </div>
-        </header>
-    </section>
-    <section id="main">
-        {%block content%}
-            <div class="test_container">
-            <h1>1.	Did you find the content on this website valuable?</h1><br>
-            <div class="choices">
-                <button>Excellent</button><br>
-                <button>Good</button><br>
-                <button>Average</button><br>
-                <button>Poor</button><br>
-                <button>Very Poor</button><br>
-            </div>
+    {%block content%}
+        <div class="test_container">
+        <h1>1.	Did you find the content on this website valuable?</h1><br>
+        <div class="choices">
+            <button>Excellent</button><br>
+            <button>Good</button><br>
+            <button>Average</button><br>
+            <button>Poor</button><br>
+            <button>Very Poor</button><br>
         </div>
-        {%endblock%}
-    </section>
-    <script>
-
-    </script>
-
+    </div>
+    {%endblock%}
 
 </body>
 
