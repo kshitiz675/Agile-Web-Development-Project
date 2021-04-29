@@ -2,7 +2,7 @@ from flask import render_template, url_for, redirect, flash
 from app import app, db
 from app.forms import LoginForm, RegistrationForm
 from flask_login import current_user, login_user, logout_user
-from app.models import User
+from app.models import User, Quiz
 #from flask_login import login_required
 #Place @login_required for pages that require users to be signed in
 
@@ -18,6 +18,9 @@ def content():
 
 @app.route('/assessment')
 def assessment():
+    # There must be a variable that defines which topic this quiz will cover
+    quiz = Quiz.query.filter_by(id=1).first()
+    questions_list = quiz.get_questions()
     return render_template('Assesment.html', title='Assessment')
 
 @app.route('/login', methods=['GET', 'POST'])

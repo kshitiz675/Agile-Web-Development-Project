@@ -14,6 +14,10 @@ class User(UserMixin, db.Model):
     
     def check_password(self, password):
         return check_password_hash(self.password_hash, password)
+    
+    "Get all results of the user's quizes"
+    #def get_results(self):
+        #return UserResult.query.filter_by(userid=self.id.all())
 
 
 class Quiz(db.Model):
@@ -21,17 +25,35 @@ class Quiz(db.Model):
     quizname = db.Column(db.String(128))
     questions = db.relationship('Question', backref='quiz', lazy=True)
 
+    'Return all questions that belong to the topic of this quiz'
+    def get_questions(self):
+        return Question.query.filter_by(quizId=self.id).all()
+
+
 class Question(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     questiontext = db.Column(db.String(256))
     quizId = db.Column(db.Integer, db.ForeignKey('quiz.id'), nullable=False)
     answers = db.relationship('Answer', backref='question', lazy=True)
 
+    'Get all options for question'
+    def get_answers(self):
+        return Answer.query.filter_by(questionId=self.id).all()
+    'Get question'
+    def get_question(self):
+        return self.questiontext
+
+
 class Answer(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     answertext = db.Column(db.String(256))
     questionId = db.Column(db.Integer, db.ForeignKey('question.id'), nullable=False)
     correctAnswer = db.Column(db.Boolean)
+
+    def get_text(self):
+        return self.answertext
+    def check_correct(self):
+        return self.correctAnswer
 
 class UserResult(db.Model):
     id = db.Column(db.Integer, primary_key=True)
