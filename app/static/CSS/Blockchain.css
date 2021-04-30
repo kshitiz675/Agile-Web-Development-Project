@@ -9,32 +9,31 @@
     border-radius: 25px;
 }
 
-.video iframe {
+#video iframe {
     display: block;
     position: absolute;
     justify-content: center;
-    margin-top: 150px;
+    /* margin-top: 150px; */
     margin-left: 200px
 }
 
-.video {
+#video {
     width: 100%;
     text-align: center;
     position: absolute;
+    margin-top: 150px;
 }
 
-.next-btn button {
+#next {
     float: right;
     margin-top: 650px;
     margin-right: 75px;
     margin-left: 750px;
     cursor: pointer;
     width: 150px;
-    /* reset */
     -webkit-appearance: none;
     border: 0;
     outline: 0;
-    /* styles */
     position: fixed;
     background: linear-gradient(45deg, orange 10%, red 90%);
     background-size: 200% 100%;
@@ -46,8 +45,10 @@
     transition: .3s;
 }
 
-.next-btn button:hover {
+#next:hover {
     animation: anim 3s linear infinite;
+    transform: scale(1.05);
+    transform: transform 100ms;
 }
 
 @keyframes anim {
@@ -62,11 +63,6 @@
     }
 }
 
-.next span {
-    display: block;
-    padding: 8px 22px;
-}
-
 .video-info p {
     width: 100%;
     padding: 10px;
@@ -76,4 +72,27 @@
     color: white;
     font-size: 12pt;
     font-family: 'Work Sans', sans-serif;
+}
+
+.hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+#progressBar {
+    width: 20rem;
+    height: 3rem;
+    border: 0.2rem solid rgb(82, 255, 47);
+    margin-top: 2rem;
+    margin-right: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progressBarFull {
+    height: 100%;
+    width: 0%;
+    background-color: rgb(82, 255, 47);
+
+
 }

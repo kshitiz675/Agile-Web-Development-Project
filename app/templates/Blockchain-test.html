@@ -1,17 +1,35 @@
 {%extends "layout.html"%}
 {%block content%}
 <div class="assesment-container">
-  <div class="video">
+  <div id="video">
     <iframe width="600" height="400" src="https://www.youtube.com/watch?v=r43LhSUUGTQ"></iframe>
   </div>
   <div class="video-info">
     <p>Watch video below to start learning. Click next when ready to continue.</p>
   </div>
-  <div class="summary"></div>
+  <div id="summary">
+    <div id="block">
 
-  <div class="next-btn">
-    <button class="next">Next</button>
+    </div>
+    <div id="decentralisation">
+
+    </div>
   </div>
+  <div class="hud">
+    <div class="next-btn">
+      <button onclick="progress()" id="next" >Next</button>
+    </div>
+    <div id="progressBar">
+      <div id="progressBarFull">
+
+      </div>
+      <div id="score">
+
+      </div>
+    </div>
+  </div>
+
+
 </div>
 
 {%endblock%}
