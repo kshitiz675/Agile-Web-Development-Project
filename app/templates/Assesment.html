@@ -11,24 +11,29 @@
 </div>
 
 <script>
-    var q_number = 0;
-    var score = 0;
-    var q = question_list[q_number];
-    document.getElementById('Q').innerHTML = q.display_question();
+    var db = openDatabase('cryptoquiz', '1.0', 'Test DB', 2*1024*1024);
+    var index = 1;
 
-    function quiz_time(value) {
-        display_question(value);
-        display_answer(value);
+    function fetch_question(i) {
+        document.getElementById('Q').innerHTML = "question herez";
+        
+        db.transaction(function (tx) {
+            tx.executeSql('SELECT questiontext FROM question where quizid like 1', [], function(tx, results){
+                document.getElementById('Q').innerHTML = results.rows.item(i).questiontext;
+            }, null);
+        }, function error() {alert('error');}, function success() {alert('success');});
+
+        db.transaction(function (tx) {
+            tx.executeSql('SELECT answertext FROM answer WHERE questionId LIKE ${i}', [], function(tx, results){
+                var rows = results.rows.length, m;
+                for (m = 0; m < len; m++) {
+                    var identity = (m + 1).toString();
+                    document.getElementById(identity).innerHTML = results.rows.item(m).answertext;
+                }
+            }, null);
+        });
     }
-    function display_question(q) {
-        document.getElementById('Q').innerHTML = q.display_question();
-    }
-    function display_answer(q) {
-        var a_list = q.get_answers();
-        document.getElementById('0').innerHTML = a_list[0];
-        document.getElementById('1').innerHTML = a_list[1];
-        document.getElementById('2').innerHTML = a_list[2];
-        document.getElementById('3').innerHTML = a_list[3];
-    }
+
+    fetch_question(index);
 </script>
 {%endblock%}
