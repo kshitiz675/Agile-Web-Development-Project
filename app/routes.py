@@ -8,13 +8,13 @@ from app import app, models
 def index():
     return render_template('Home.html', title='Home')
 
-@app.route('/learn/<int:quizId>')
-def learn(quizId):
+@app.route('/assessment/<int:quizId>')
+def assessment(quizId):
     quiz = models.Quiz.query.filter_by(id=quizId).first()
     if quiz == None:
         #TODO not found page
         return "Not Found"
-    return render_template('Content.html', title=quiz.quizname, quiz=quiz)
+    return render_template('Assessment.html', title=quiz.quizname, quiz=quiz)
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
