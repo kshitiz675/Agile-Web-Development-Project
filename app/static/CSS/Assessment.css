@@ -1,0 +1,54 @@
+.test_container {
+    background-color:lightslategray;
+    margin-left:100px;
+    margin-right:100px;
+    margin-top:50px;
+    height:500px;
+    padding:10px;
+    box-shadow:2px 2px 10px black;
+    border-radius:10px;
+    overflow:auto;
+    animation:fadeInAnimation ease 1s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.test_container h1 {
+    font-size: 35pt;
+    border-bottom-style:solid;
+    margin:20px;
+    font-family: 'Crimson Text', serif;
+    color: #32373c;
+}
+.test_container p {
+    font-size: 18pt;
+    margin:20px 30px 30px 30px;
+    text-align: center;
+    line-height: 25px;
+    font-family: 'Work Sans', sans-serif;
+    color: #32373c;
+}
+.choices{
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+.choices button {
+    background-color:#ffb55c;
+    border-radius:5px;
+    margin: 5px;
+    width:80%;
+    height:60px;
+    font-family:'Work Sans', sans-serif;
+    color:#32373c;
+    font-size:18px;
+    text-align: center;
+    padding:10px 30px 10px 30px;
+}

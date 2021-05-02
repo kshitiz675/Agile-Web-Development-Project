@@ -1,5 +1,38 @@
 {%extends "layout.html"%}
 
 {%block content%}
+<<<<<<< HEAD
     <h1>Begin Assesment</h1>
+=======
+<div class="test_container">
+    <h1>{{quiz.quizname}}</h1><br>
+    <p id="Q">(Question from database here)</p><br>
+    <div class="choices">
+        <button id="0">1</button><br><button id="1">2</button><br>
+        <button id="2">3</button><br><button id="3">4</button><br>
+    </div>
+</div>
+
+<script>
+    var q_number = 0;
+    var score = 0;
+    var q = question_list[q_number];
+    document.getElementById('Q').innerHTML = q.display_question();
+
+    function quiz_time(value) {
+        display_question(value);
+        display_answer(value);
+    }
+    function display_question(q) {
+        document.getElementById('Q').innerHTML = q.display_question();
+    }
+    function display_answer(q) {
+        var a_list = q.get_answers();
+        document.getElementById('0').innerHTML = a_list[0];
+        document.getElementById('1').innerHTML = a_list[1];
+        document.getElementById('2').innerHTML = a_list[2];
+        document.getElementById('3').innerHTML = a_list[3];
+    }
+</script>
+>>>>>>> 033bd819416ae28744c3b999765b8fa327fdb51e
 {%endblock%}

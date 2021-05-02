@@ -1,5 +1,6 @@
 # Agile-Web-Development-Project
 
+<<<<<<< HEAD
 
 Web Project Specification: Online Formative Assessment
 Due 6pm, May 17, 2021
@@ -80,3 +81,14 @@ https://uniwa-my.sharepoint.com/:w:/r/personal/22616672_student_uwa_edu_au/_layo
 - Menus, navs, etc can be whatever just be consistent.
 
 
+=======
+### Running the application
+
+* TODO
+
+### Login Packages Used (install within your virtual environment)
+
+* pip install Flask-Login
+* pip install Flask-WTF
+* pip install email_validator
+>>>>>>> 033bd819416ae28744c3b999765b8fa327fdb51e
