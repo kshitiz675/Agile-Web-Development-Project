@@ -1,36 +1,6 @@
 {%extends "layout.html"%}
 
 {%block content%}
-<<<<<<< HEAD
-    <form>
-        <h1>Register</h1>
-        <p>Enter details to create an account</p><br />
-
-        <label for="username">Username</label><br />
-        <input type="text" placeholder="Enter username" name="username" id="username" required> <br />
-
-        <label for="pass">Password</label><br />
-        <input type="password" placeholder="Enter password" name="pass" id="pass" required> <br />
-
-        <label for="pass_repeat">Repeat Password</label><br />
-        <input type="password" placeholder="Repeat password" name="pass_repeat" id="pass_repeat" required> <br />
-        <button type="submit" class="reg">Register</button><br />
-=======
-    <form action="" method="post">
-        <h1>Register</h1>
-        {{form.hidden_tag()}}
-        <p>Enter details to create an account</p><br />
-        <p>
-            {{form.username.label}}<br>
-            {{form.username(size=32)}}
-            {% for error in form.username.errors %}
-            <span style="color:red;">[{{error}}]</span>
-            {% endfor %}
-        </p>
-        <p>
-            {{ form.email.label }}<br>
-            {{ form.email(size=64) }}<br>
-            {% for error in form.email.errors %}
             <span style="color: red;">[{{ error }}]</span>
             {% endfor %}
         </p>
@@ -49,6 +19,5 @@
             {% endfor %}
         </p>
         <p>{{ form.submit() }}</p>
->>>>>>> 033bd819416ae28744c3b999765b8fa327fdb51e
     </form>
 {%endblock%}
