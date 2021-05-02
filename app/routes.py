@@ -16,9 +16,14 @@ def index():
 def content():
     return render_template('Content.html', title='Content')
 
+
 @app.route('/feedback')
 def feedback():
     return render_template('Feedback.html', title='Feedback')
+
+@app.route('/Lesson')
+def lesson():
+    return render_template('Lesson.html', title='Lesson')
 
 @app.route('/assessment')
 def assessmentHome():
