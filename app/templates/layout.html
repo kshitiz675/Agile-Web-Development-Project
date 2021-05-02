@@ -2,15 +2,6 @@
 <html>
 
 <head>
-    {%if title%}
-    <title>{{title}} - Crypto College</title>
-    {%else%}
-    <title>Welcome to Crypto College</title>
-    {%endif%}
-    <link rel="stylesheet" href="../static/CSS/Style.css" />
-    <link rel="stylesheet" href="../static/CSS/Layout.css" />
-    <link rel="stylesheet" href="../static/CSS/Assessment.css">
-    <link rel="stylesheet" href="../static/CSS/Learning.css">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
@@ -39,19 +30,6 @@
                 </nav>
                 <div id="login-container">
                     <div class="flex">
-                        {% if current_user.is_anonymous %}
-                        <button class="login-button background-indigo">
-                            <a href="/login">Login</a>
-                        </button>
-                        {% else %}
-                        <button class="login-button background-indigo">
-                            <a href="{{url_for('logout')}}">Logout</a>
-                        </button>
-                        {% endif %}
-                        </button>
-                        {% if current_user.is_anonymous %}
-                        <button class="login-button background-darkgray">
-                            <a href="{{url_for('registration')}}">Register</a>
                         </button>
                         {% endif %}
                     </div>
@@ -67,6 +45,7 @@
 
     </section>
     <script>
+        
 
     </script>
 </body>
