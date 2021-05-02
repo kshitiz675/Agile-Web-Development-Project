@@ -129,8 +129,6 @@ html, body {
     font-family: 'Work Sans', sans-serif;
     color: #32373c;
 }
-<<<<<<< HEAD
-=======
 form p, label {
     font-size: 15pt;
     margin: 10px 0 10px 20px;
@@ -145,7 +143,6 @@ form h1 {
     font-family: 'Crimson Text', serif;
     color: #32373c;
 }
->>>>>>> 033bd819416ae28744c3b999765b8fa327fdb51e
 
 .main-picture {
     width: 40%;

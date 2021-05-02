@@ -12,6 +12,10 @@ from app.models import User, Quiz
 def index():
     return render_template('Home.html', title='Home')
 
+@app.errorhandler(404)
+def error404(e):
+    return render_template('404.html', title='error 404')
+
 @app.route('/content')
 def content():
     return render_template('Content.html', title='Content')
