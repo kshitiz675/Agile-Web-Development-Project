@@ -171,22 +171,22 @@ def seed(db):
         db.session.add(models.Answer(answertext = 'Bitcoin transactions are verified by government system', questionId=q16, correctAnswer=False))
         db.session.commit()
 
-        # print('#####DEBUG PRINT######')
-        # quizzes = db.session.query(models.Quiz).all()
-        # for quiz in quizzes:
-        #     print('######')
-        #     print(quiz.quizname)
-        #     print('#####')
-        #     questions = quiz.questions
-        #     for question in questions:
-        #         print('##')
-        #         print(question.questiontext)
-        #         print('##')
-        #         answers = question.answers
-        #         for answer in answers:
-        #             if answer.correctAnswer:
-        #                 print(f'#{answer.answertext}#')
-        #             else: print(answer.answertext)
+        print('#####DEBUG PRINT######')
+        quizzes = db.session.query(models.Quiz).all()
+        for quiz in quizzes:
+            print('######')
+            print(quiz.quizname)
+            print('#####')
+            questions = quiz.questions
+            for question in questions:
+                print('##')
+                print(question.questiontext)
+                print('##')
+                answers = question.answers
+                for answer in answers:
+                    if answer.correctAnswer:
+                        print(f'#{answer.answertext}#')
+                    else: print(answer.answertext)
 
 
 
