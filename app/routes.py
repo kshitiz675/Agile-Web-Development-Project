@@ -16,12 +16,16 @@ def index():
 def content():
     return render_template('Content.html', title='Content')
 
+
 @app.route('/assessment')
-def assessment():
+def assessmentHome():
+    return "Assessment Home Page"
+@app.route('/assessment/<int:quizId>')
+def assessment(quizId):
     # There must be a variable that defines which topic this quiz will cover
-    quiz = Quiz.query.filter_by(id=1).first()
-    questions_list = quiz.get_questions()
-    return render_template('Assesment.html', title='Assessment')
+    quiz = Quiz.query.filter_by(id=quizId).first()
+    if quiz == None: return 'Not Found'
+    return render_template('Assesment.html', title='Assessment', quiz=quiz)
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
