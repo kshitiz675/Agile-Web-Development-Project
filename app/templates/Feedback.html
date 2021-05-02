@@ -1,11 +1,30 @@
 {%extends "layout.html"%}
 
 {%block content%}
-<div class="test_container">
-<h1>1.	Did you find the content on this website valuable?</h1><br>
-<div class="choices">
-    <button>1</button><br><button>2</button><br>
-    <button>3</button><br><button>4</button><br>
-</div>
-</div>
+    <div class="test_container">
+        <h1>Congratulation on completing [Module name]</h1><br>
+        
+        <h2>You got 4/5 questions correct</h2>
+        
+        <div class="container">
+            <div class="score">80%</div>
+        </div>
+        
+        <p>Question 1: What is a blockchain? </p>
+        <div class="choices">
+            <button style="background-color: greenyellow; border:20px;">A distributed ledger on a peer-to-peer network</button><br>
+            <button>A brokerage for cryptocurrency</button><br>
+            <button>A form of cryptocurrency  </button><br>
+            <button>A central financial institution for cryptocurrency  </button><br>
+        </div>
+
+        <p>Question 2: What gives miners incentive to validate transactions on the blockchain?  </p>
+        <div class="choices">
+            <button>Recognition and praise from community</button><br>
+            <button style="background-color: red; border:20px; ">Fees from blockchain creators</button><br>
+            <button style="background-color: greenyellow;">A block reward</button><br>
+            <button>Access to the blockchain </button><br>
+        </div>
+
+    </div>
 {%endblock%}
