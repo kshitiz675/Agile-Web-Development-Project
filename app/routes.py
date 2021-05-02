@@ -16,9 +16,9 @@ def index():
 def content():
     return render_template('Content.html', title='Content')
 
-@app.route('/blockchain-test')
+@app.route('/Lesson')
 def blockchain():
-    return render_template('Blockchain-test.html', title='Blockchain-test')
+    return render_template('Lesson.html', title='Lesson')
 
 @app.route('/assessment')
 def assessmentHome():
