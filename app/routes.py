@@ -19,8 +19,6 @@ def content():
 @app.route('/assessment')
 def assessment():
     # There must be a variable that defines which topic this quiz will cover
-    quiz = Quiz.query.filter_by(id=1).first()
-    questions_list = quiz.get_questions()
     return render_template('Assesment.html', title='Assessment')
 
 @app.route('/login', methods=['GET', 'POST'])
