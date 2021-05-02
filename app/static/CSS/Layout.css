@@ -93,6 +93,10 @@ header {
     justify-content: center;
     width: 80px;
 }
+.login-button a{
+    color:white;
+    text-decoration:none;
+}
 
 .login-button:hover {
     cursor: pointer;
