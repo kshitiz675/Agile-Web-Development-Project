@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-from flask import Flask
-=======
 """from flask import Flask
->>>>>>> 033bd819416ae28744c3b999765b8fa327fdb51e
 from config import Config
 
 app = Flask(__name__)
@@ -10,8 +6,6 @@ app.static_folder = 'static'
 app.config.from_object(Config)
 
 from app import routes
-<<<<<<< HEAD
-=======
 """
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, BooleanField, SubmitField
@@ -42,4 +36,3 @@ class RegistrationForm(FlaskForm):
         user = User.query.filter_by(email=email.data).first()
         if email is not None:
             raise ValidationError('Please use a different email address.')
->>>>>>> 033bd819416ae28744c3b999765b8fa327fdb51e
