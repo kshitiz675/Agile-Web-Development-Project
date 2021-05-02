@@ -3,10 +3,37 @@
 {%block content%}
 <div class="test_container">
     <h1>(Topic name from database here)</h1><br>
-    <p>(Question from database here)</p><br>
+    <p id="Q">(Question from database here)</p><br>
     <div class="choices">
-        <button>1</button><br><button>2</button><br>
-        <button>3</button><br><button>4</button><br>
+        <button id="0">1</button><br><button id="1">2</button><br>
+        <button id="2">3</button><br><button id="3">4</button><br>
     </div>
 </div>
+
+<script>
+    var db = openDatabase('cryptoquiz', '1.0', 'Test DB', 2*1024*1024);
+    var index = 1;
+
+    function fetch_question(i) {
+        document.getElementById('Q').innerHTML = "question herez";
+        
+        db.transaction(function (tx) {
+            tx.executeSql('SELECT questiontext FROM question where quizid like 1', [], function(tx, results){
+                document.getElementById('Q').innerHTML = results.rows.item(i).questiontext;
+            }, null);
+        }, function error() {alert('error');}, function success() {alert('success');});
+
+        db.transaction(function (tx) {
+            tx.executeSql('SELECT answertext FROM answer WHERE questionId LIKE ${i}', [], function(tx, results){
+                var rows = results.rows.length, m;
+                for (m = 0; m < len; m++) {
+                    var identity = (m + 1).toString();
+                    document.getElementById(identity).innerHTML = results.rows.item(m).answertext;
+                }
+            }, null);
+        });
+    }
+
+    fetch_question(index);
+</script>
 {%endblock%}
