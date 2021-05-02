@@ -1,19 +1,12 @@
 from flask import Flask
 from config import Config
-<<<<<<< HEAD
-=======
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate, upgrade
 from flask_login import LoginManager
->>>>>>> 033bd819416ae28744c3b999765b8fa327fdb51e
 
 app = Flask(__name__)
 app.static_folder = 'static'
 app.config.from_object(Config)
-<<<<<<< HEAD
-
-from app import routes
-=======
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
@@ -204,4 +197,3 @@ def seed(db):
         #Fetch with quizname just to be safe 
 
 seed(db)
->>>>>>> 033bd819416ae28744c3b999765b8fa327fdb51e
