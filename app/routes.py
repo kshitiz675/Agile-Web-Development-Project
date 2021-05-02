@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-from flask import render_template, url_for, redirect
-from app import app
-#from app.forms import LoginForm
-=======
 from flask import render_template, url_for, redirect, flash
 from app import app, db
 from app.forms import LoginForm, RegistrationForm
@@ -10,7 +5,6 @@ from flask_login import current_user, login_user, logout_user
 from app.models import User, Quiz
 #from flask_login import login_required
 #Place @login_required for pages that require users to be signed in
->>>>>>> 033bd819416ae28744c3b999765b8fa327fdb51e
 
 @app.route('/')
 @app.route('/index')
@@ -24,16 +18,6 @@ def content():
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
-<<<<<<< HEAD
-   form = LoginForm()
-   if form.validate_on_submit():
-       return redirect('/index')
-   return render_template('Login.html', title='Login', form=form)
-
-@app.route('/registration')
-def registration():
-    return render_template('Registration.html', title='Registration')
-=======
     if current_user.is_authenticated:
         return redirect(url_for('index'))
     form = LoginForm()
@@ -63,4 +47,3 @@ def registration():
         db.session.commit()
         return redirect(url_for('login'))
     return render_template('Registration.html', title='Registration', form=form)
->>>>>>> 033bd819416ae28744c3b999765b8fa327fdb51e
