@@ -20,22 +20,25 @@ def error404(e):
 def content():
     return render_template('Content.html', title='Content')
 
+
+@app.route('/feedback')
+def feedback():
+    return render_template('Feedback.html', title='Feedback')
+
 @app.route('/Lesson')
-def blockchain():
+def lesson():
     return render_template('Lesson.html', title='Lesson')
 
 @app.route('/assessment')
 def assessmentHome():
     return "Assessment Home Page"
-   
+    
 @app.route('/assessment/<int:quizId>')
 def assessment(quizId):
     # There must be a variable that defines which topic this quiz will cover
     quiz = Quiz.query.filter_by(id=quizId).first()
     if quiz == None: return 'Not Found'
     return render_template('Assesment.html', title='Assessment', quiz=quiz)
-
-
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -68,3 +71,7 @@ def registration():
         db.session.commit()
         return redirect(url_for('login'))
     return render_template('Registration.html', title='Registration', form=form)
+
+@app.route('/statistics')
+def statistics():
+    return render_template('Statistics.html', title='Statistics')

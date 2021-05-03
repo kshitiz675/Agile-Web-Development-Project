@@ -1,0 +1,89 @@
+{%extends "layout.html"%}
+
+{%block content%}
+
+
+<script> 
+    
+    function addnewrank() {
+        var table = document.getElementById("Scoretable");
+
+        // ADD NEW SCORE RANK 
+        var row = table.insertRow(1);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        var cell3 = row.insertCell(2);
+        cell1.innerHTML = "0"; //THIS IS TEMPORARY, CHANGES WHEN RENUMBERING 
+        cell2.innerHTML = "Current User"; //CHANGE TO [ Users.username ] 
+        cell3.innerHTML = Math.floor((Math.random() * 100)); //CHANGE TO [ Users.id.score ]        
+    }
+    
+    function sortTable() {
+        var table, rows, switching, i, x, y, shouldSwitch;
+        table = document.getElementById("Scoretable");
+        switching = true;
+
+        //WHILE LOOP UNTIL SWITCHING IS DONE
+        while (switching) {
+            switching = false;
+            rows = table.rows;
+            //LOOP THROUGH ALL TABLE ROWS
+            for (i = 1; i < (table.rows.length-1); i++) {
+                //START WITH SWITCHING FALSE (NOT FINAL YET)
+                shouldSwitch = false;
+                //GET TWO ROW ELEMENTS TO COMPARE (COMPARE FOR SCORE)
+                x = rows[i].getElementsByTagName("TD")[2]; 
+                y = rows[i + 1].getElementsByTagName("TD")[2];
+                //ROWS SWITCH DEPENDING ON SCORE
+                if (Number(x.innerHTML) < Number(y.innerHTML)) {
+                    //MARKS AS SWITCHING DONE FOR THAT ROW, WHICH BREAKS AND GOES TO NEXT ROW
+                    shouldSwitch = true;
+                    break;
+                }
+            }
+            if (shouldSwitch) {
+                //IF A SWITCH NEEDS TO BE DONE MAKE THE SWITCH USING DOB
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                switching = true;
+            }
+        }
+    }   
+
+    function renumberTable(){
+        /* RENUMBER RANKS */
+        var table = document.getElementById("Scoretable");
+        for (var i=1; i<table.rows.length; i++){
+            table.rows[i].cells[0].innerHTML = i;
+        }
+    }
+
+
+</script> 
+
+
+
+<h1 style="font-size: 35pt; border-bottom-style:solid; margin:20px; font-family: 'Crimson Text', serif; color: #32373c;">World Leaderboard</h1>
+
+<table id="Scoretable">
+    <tr>
+    <th>Rank</th>
+    <th>Name</th>
+    <th>Score</th>
+    </tr>
+    <tr>
+    <td>1</td>
+    <td>John Doe</td>
+    <td>89</td>
+    </tr>
+    <tr>
+    <td>2</td>
+    <td>James Doe</td>
+    <td>34</td>
+    </tr>
+</table>
+
+<button onclick="addnewrank()">Create row</button>
+<button onclick="sortTable()">Sort</button>
+<button onclick="renumberTable()">Renumber</button>
+
+{%endblock%}

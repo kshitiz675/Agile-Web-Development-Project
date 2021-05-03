@@ -33,11 +33,11 @@
     text-decoration: none;
 }
 
-td {
+.options td {
     display: inline-flex;
     width: 500px;
     height: 300px;
-    float: left;
+    /*float: left; #Dont need this here */ 
     padding: 25px;
     justify-content: center;
     align-items: center;
@@ -51,12 +51,12 @@ td {
     text-decoration: none;
 }
 
-td:visited { 
+.options td:visited { 
     color: white;
     text-decoration: none;
 }
 
-td:hover {
+.options td:hover {
     text-decoration: none;
 
     color: orange;
