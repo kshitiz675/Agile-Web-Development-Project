@@ -44,6 +44,9 @@ function progress() {
         if (window.confirm("Pressing next will take you to the quiz, are you ready?")) {
             document.location.href = "/assessment/1";
         }
+        else {
+            nextClickCount = 1;
+        }
     }
 
 }

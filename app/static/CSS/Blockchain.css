@@ -94,7 +94,7 @@
 #progressBar {
     width: 20rem;
     height: 3rem;
-    border: 0.2rem solid #32373c;
+    border: 0.2rem solid rgb(82, 255, 47);
     margin-top: 2rem;
     margin-right: 2rem;
     border-radius: 50px;
