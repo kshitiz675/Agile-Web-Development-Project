@@ -2,15 +2,29 @@
 
 {%block content%}
 <div class="test_container">
+ <div id="progressBarA">
+      <div id="progressBarFullA"></div>
+    </div>
     <h1>{{quiz.quizname}}</h1><br>
     <p id="Q">(Question from database here)</p><br>
     <div class="choices">
         <button id="0">1</button><br><button id="1">2</button><br>
         <button id="2">3</button><br><button id="3">4</button><br>
     </div>
+    <div class="next-btnA">
+      <button id="nextA">Next</button>
+    </div>
+    <div id="score-display">
+        <h2 id="score-head">Score:</h2>
+        <h2 id="score">0</h2>
+    </div>
 </div>
 
 <script>
+    const progressBarFullA = document.querySelector('#progressBarFullA');
+    const progressBarA = document.querySelector('#progressBarA');
+    const MAX_PAGES = 5
+    var page = 0;
     var q_number = 0;
     var score = 0;
     var q = question_list[q_number];

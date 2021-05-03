@@ -5,7 +5,7 @@
     margin-left: auto;
     margin-right: auto;
     width: max-content;
-    font-size: 40pt;
+    font-size: 38pt;
     font-family: 'Crimson Text', serif;
     color: #32373c;
 }
@@ -22,7 +22,7 @@
 }
 
 .box-table {
-    margin-top: 100px;
+    margin-top: 35px;
 }
 
 .options {
@@ -37,7 +37,6 @@
     display: inline-flex;
     width: 500px;
     height: 300px;
-    /*float: left; #Dont need this here */ 
     padding: 25px;
     justify-content: center;
     align-items: center;
@@ -51,6 +50,10 @@
     text-decoration: none;
 }
 
+.options td a {
+    display: block;
+}
+
 .options td:visited { 
     color: white;
     text-decoration: none;
@@ -60,7 +63,7 @@
     text-decoration: none;
 
     color: orange;
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: all 0.2s ease-in;
     background-color: #474c52;
 }

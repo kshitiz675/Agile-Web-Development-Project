@@ -7,6 +7,9 @@
     margin-left: auto;
     margin-right: auto;
     border-radius: 25px;
+    animation:fadeInAnimation ease 1s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
 }
 
 #video iframe {
@@ -63,6 +66,15 @@
     }
 }
 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .video-info p {
     width: 100%;
     padding: 10px;
@@ -82,7 +94,7 @@
 #progressBar {
     width: 20rem;
     height: 3rem;
-    border: 0.2rem solid rgb(82, 255, 47);
+    border: 0.2rem solid #32373c;
     margin-top: 2rem;
     margin-right: 2rem;
     border-radius: 50px;
@@ -95,10 +107,23 @@
     background-color: rgb(82, 255, 47);
 }
 
-#id {
+
+.summary {
     position: absolute;
+    padding: 10px;
+    width: 75%;
+    margin-left: 75px;
+    margin-top: 100px;
+    color: white;
+    
 }
 
-.blk   {
-    position: absolute;
-} 
+.summary h2 {
+    font-size: 25pt;
+    font-family: 'Crimson Text', serif;
+}
+
+.summary p {
+    font-size: 15pt;
+    font-family: 'Work Sans', sans-serif;
+}
