@@ -67,3 +67,7 @@ def registration():
         db.session.commit()
         return redirect(url_for('login'))
     return render_template('Registration.html', title='Registration', form=form)
+
+@app.route('/statistics')
+def statistics():
+    return render_template('Statistics.html', title='Statistics')
