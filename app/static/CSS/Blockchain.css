@@ -16,8 +16,8 @@
     display: block;
     position: absolute;
     justify-content: center;
-    /* margin-top: 150px; */
-    margin-left: 200px
+    margin-left: 150px;
+    border: solid black;
 }
 
 #video {
@@ -31,7 +31,7 @@
     float: right;
     margin-top: 650px;
     margin-right: 75px;
-    margin-left: 750px;
+    margin-left: 815px;
     cursor: pointer;
     width: 150px;
     -webkit-appearance: none;

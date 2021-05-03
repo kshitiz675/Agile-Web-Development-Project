@@ -46,7 +46,7 @@ function progress() {
         }
         else {
             nextClickCount = 1;
-            page--;
+            page = 1;
         }
     }
 
