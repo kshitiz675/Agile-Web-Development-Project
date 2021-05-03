@@ -54,14 +54,13 @@
     display: block;
 }
 
-.options td:visited { 
+.options td:visited {
     color: white;
     text-decoration: none;
 }
 
 .options td:hover {
     text-decoration: none;
-
     color: orange;
     transform: scale(1.05);
     transition: all 0.2s ease-in;
@@ -91,4 +90,4 @@
 .box5 {
     margin-top: 100px;
     float: right;
-} 
+}
