@@ -58,6 +58,13 @@
     padding: 10px 30px 10px 30px;
 }
 
+.choices button:hover { 
+    cursor: pointer;
+    transform: scale(1.025);
+    transform: transform 100ms;
+
+} 
+
 #progressBarA {
     width: 20rem;
     height: 3rem;
