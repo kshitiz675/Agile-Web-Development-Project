@@ -21,6 +21,11 @@
 <body>
     <section>
         <header>
+            {% if title %}
+            <title>{{title}} - Cryptoquiz</title>
+            {% else %}
+            <title>Welcome to the Cryptoquiz!</title>
+            {% endif %}
             <div id="topbar">
                 <div id="brand">
                     <img src="../static/Pictures/logo.png" alt="logo">
