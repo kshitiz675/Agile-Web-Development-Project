@@ -1,11 +1,16 @@
 {%extends "layout.html"%}
     
 {%block content%}
-    <form action="" method="post" novalidate>
+<div class="login-form">
+    <form class="log" action="" method="post" novalidate>
         {{form.hidden_tag()}}
+        <div class="login-head">
         <h1>Login</h1>
+    </div>
+    <div class="details">
         <p>Enter details to login to account</p><br />
-
+    </div>
+    
         <p>
             {{form.username.label}}<br>
             <span class="text_bar">{{form.username(size=32)}}</span><br>
@@ -13,7 +18,7 @@
             <span style="color:red;">[{{error}}]</span>
             {%endfor%}
         </p> <br />
-
+    
         <p>
             {{form.password.label}}<br>
             <span class="text_bar">{{form.password(size=32)}}</span><br>
@@ -26,6 +31,7 @@
 
         <p>Are you new here? <a href="{{ url_for('register') }}">Click to Register!</a></p>
     </form>
+</div>
 
 
 {%endblock%}

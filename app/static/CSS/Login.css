@@ -1,0 +1,17 @@
+.login-form {
+    position: absolute;
+    margin-left: 42.5%;
+    margin-top: 200px;
+    width: 500px;
+    background-color:  #797b7e;
+    border-radius: 25px;
+}
+
+.login-head {
+    text-align: center;
+}
+
+.details {
+    text-align: center;
+}
+
