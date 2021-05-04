@@ -180,3 +180,7 @@ form h1 {
     --tw-bg-opacity: 1;
     background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
 }
+
+.text_bar {
+    padding-left:20px;
+}
