@@ -1,23 +1,21 @@
-
-{%extends "layout.html"%}
-{%block content%}
+{%extends "layout.html"%} {%block content%}
 <div class="heading-content">
-    <h1>Begin Learning</h1>
+  <h1>Begin Learning</h1>
 </div>
 <div class="subheading-content">
-    <p>Please select a module to begin</p>
+  <p>Please select a module to begin</p>
 </div>
 <div class="box-table">
-    <table class="options">
-        <tr>
-            <td class="box1"><a href="/Lesson">Blockchain</a></td>
-            <td class="box2" colspan="2">NFTs</td>
-        </tr>
-        <tr>
-            <td class="box3">Crypto Mining</td>
-            <td class="box4">Environment Effect</td>
-            <td class="box5">Cryptocurrencies</td>
-        </tr>
-    </table>
+  <table class="options">
+    <tr>
+      <td onclick="document.location.href='/lesson/1';"class="box1">Blockchain</td>
+      <td class="box2" colspan="2">NFTs</td>
+    </tr>
+    <tr>
+      <td class="box3">Crypto Mining</td>
+      <td class="box4">Environment Effect</td>
+      <td class="box5">Cryptocurrencies</td>
+    </tr>
+  </table>
 </div>
 {%endblock%}

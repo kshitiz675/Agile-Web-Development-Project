@@ -28,7 +28,7 @@
                 <nav id="topbar-nav">
                     <a href="/" class="navbar-item navbar-active">Home</a>
                     <div class="flex">
-                        <a href="/content" class="navbar-item">Learn</a>
+                        <a href="/learn" class="navbar-item">Learn</a>
                         <svg class="menu-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                             aria-hidden="true">
                             <path fill-rule="evenodd"
@@ -39,7 +39,20 @@
                     <a href="/statistics" class="navbar-item">Statistics</a>
                 </nav>
                 <div id="login-container">
+                  
                     <div class="flex">
+                        {% if current_user.is_authenticated == False %}
+                        <button class="login-button background-indigo">
+                            <a href="{{ url_for('login') }}">Login</a>
+                        </button>
+                        <button class="login-button background-darkgray">
+                            <a href="{{ url_for('register') }}">Register</a>
+                        </button>
+                        {% else %}
+                        <button class="login-button background-darkgray">
+                            <a href="{{ url_for('logout') }}">Logout {{current_user.username}}</a>
+                        </button>
+                        {% endif %}
                     </div>
                     <div>
 

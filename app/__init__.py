@@ -22,6 +22,8 @@ def seed(db):
     db.session.query(models.Quiz).delete()
     db.session.query(models.Question).delete()
     db.session.query(models.Answer).delete()
+    db.session.query(models.Topic).delete()
+    db.session.query(models.User).delete()
 
     instances = db.session.query(models.Quiz).all()
     
@@ -174,26 +176,17 @@ def seed(db):
         db.session.add(models.Answer(answertext = 'Bitcoin transactions are verified by government system', questionId=q16, correctAnswer=False))
         db.session.commit()
 
+        ### Add Topics
+        db.session.add(models.Topic(quizid=blockchainQuiz, topicname = "The Blockchain", topiccontent = "The blockchain stores information across a network of computers which is decentralized. Information is stored in the form of “blocks” which are unique and cannot be altered due to undergoing cryptography. These blocks can be used for recording the transactions made by cryptocurrencies such as Bitcoin. There is no middleman to transactions and operation on the blockchain since the blockchain is a peer-to-peer network of computers that validate each other’s transactions. These validations are done by people known as miners. This is what makes the blockchain decentralized as every block can be accessed from any computer across the network reflecting changes on the go", topicvideolink="https://www.youtube.com/watch?v=r43LhSUUGTQ"))
+        db.session.add(models.Topic(quizid=nftQuiz, topicname = "Non-Fungible Tokens", topiccontent="A unit of data, or a digital token, that’s stored within a blockchain, which provides a certification that it is a digital asset that makes it unique. Unlike bitcoins, it is interchangeable and non-fungible, meaning it can’t easily be changed or replaced", topicvideolink="https://www.youtube.com/watch?v=XAugmQpwho"))
+        db.session.add(models.Topic(quizid=miningQuiz, topicname="Mining", topiccontent="Bitcoin mining is the process by which new bitcoins are entered into circulation, but it is also a critical component of the maintenance and development of the blockchain ledger. It is performed using very sophisticated computers that solve extremely complex computational math problems. Miners are getting paid for their work as auditors this is called ‘Proof of work’. Miners verify the crypto transactions between other miners before adding it to the memory pool which is then blockchain. The more mining power a miner has the higher chance they get to finding the hash and getting rewarded.", topicvideolink="https://www.youtube.com/watch?v=2VtH-XAOjXw"))
+        db.session.add(models.Topic(quizid=cryptocurrenciesQuiz, topicname="Cryptocurrencies", topiccontent="Cryptocurrency is a type of digital currency that is created through code and relies on cryptography to securely and safely handle them through blockchains and transactions. By relying on cryptocurrency, users can transfer their money directly to other users without relying on someone in the middle to direct it to them, which is broadcasted to the entire network. Transactions using this are considered to being faster, more efficient, and cheaper. Even if they appear more efficient and faster, it is not yet widely accepted in society due to the risks it also provides, making it volatile.", topicvideolink="https://www.youtube.com/watch?v=NDetuRLQso8"))
+        db.session.add(models.Topic(quizid=usesQuiz, topicname="Uses of cryptocurrency", topiccontent="You can quickly transfer money internationally without the need to go through a bank. Additionally, some cryptocurrencies can allow for private and untraceable transactions. Transfers can potentially be low cost. Some potential applications include financial services where we have reduced transaction costs and speed, increased transparency and investment. An initial coin offering is a means a project can use to fund-raise over the internment. You can purchase an amount of cryptocurrency for money or through trading another cryptocurrency (such as Bitcoin). The projects behind ICO’s are high-risk investments that hope to take advantage of the blockchain/cryptocurrencies in some capacity", topicvideolink="https://www.youtube.com/watch?v=7rtG5ekt_sY"))
+        db.session.commit()
 
 
 
 
 
-        
-
-
-
-        
-
-
-
-
-
-
-
-
-        
-
-        #Fetch with quizname just to be safe 
 
 seed(db)
