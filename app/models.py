@@ -15,9 +15,6 @@ class User(UserMixin, db.Model):
     def check_password(self, password):
         return check_password_hash(self.password_hash, password)
     
-    "Get all results of the user's quizes"
-    #def get_results(self):
-        #return UserResult.query.filter_by(userid=self.id.all())
 
 
 class Quiz(db.Model):
@@ -73,6 +70,8 @@ class Topic(db.Model):
     topiccontent = db.Column(db.String(1024))
     topicvideolink = db.Column(db.String(256))
 
+
+##Login system
 @login.user_loader
 def load_user(id):
     return User.query.get(int(id))

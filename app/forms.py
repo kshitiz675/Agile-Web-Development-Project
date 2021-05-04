@@ -1,12 +1,3 @@
-"""from flask import Flask
-from config import Config
-
-app = Flask(__name__)
-app.static_folder = 'static'
-app.config.from_object(Config)
-
-from app import routes
-"""
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, BooleanField, SubmitField
 from wtforms.validators import DataRequired, ValidationError, Email, EqualTo
@@ -23,16 +14,16 @@ class RegistrationForm(FlaskForm):
     email = StringField('Email', validators=[DataRequired(), Email()])
     password = PasswordField('Password', validators=[DataRequired()])
     password2 = PasswordField(
-        'Repeat Password', validators=[DataRequired(), EqualTo('password')]
-    )
+        'Repeat Password', validators=[DataRequired(), EqualTo('password')])
     submit = SubmitField('Register')
 
     def validate_username(self, username):
         user = User.query.filter_by(username=username.data).first()
         if user is not None:
-            raise ValidationError('Please use a different username.')
-    
+            raise ValidationError('Username is already taken, please choose another')
+
     def validate_email(self, email):
         user = User.query.filter_by(email=email.data).first()
-        if email is not None:
-            raise ValidationError('Please use a different email address.')
+        if user is not None:
+            raise ValidationError('Email is already used, please use another')
+
