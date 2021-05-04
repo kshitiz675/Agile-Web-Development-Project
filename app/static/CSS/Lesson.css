@@ -1,3 +1,14 @@
+.title h1 { 
+    font-size: 30pt;
+    font-family: 'Crimson Text', serif;
+    color: #32373c;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: solid;
+    border-bottom-style: solid;
+    width: fit-content;
+}
+
 .assesment-container {
     position: relative;
     margin-top: 50px;
