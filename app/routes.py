@@ -2,7 +2,7 @@ from flask import render_template, url_for, redirect, flash
 from app import app, db
 from app.forms import LoginForm, RegistrationForm
 from flask_login import current_user, login_user, logout_user
-from app.models import User, Quiz
+from app.models import User, Quiz, Topic
 #from flask_login import login_required
 #Place @login_required for pages that require users to be signed in
 
@@ -25,9 +25,12 @@ def content():
 def feedback():
     return render_template('Feedback.html', title='Feedback')
 
-@app.route('/Lesson')
-def lesson():
-    return render_template('Lesson.html', title='Lesson')
+
+@app.route('/lesson/<int:id>')
+def lesson(id):
+    lesson = Topic.query.filter_by(id=id).first()
+    if lesson == None: return 'Not Found'
+    return f"TODO + {lesson.topiccontent}"
 
 @app.route('/assessment')
 def assessmentHome():

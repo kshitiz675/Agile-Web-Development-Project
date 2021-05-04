@@ -66,9 +66,23 @@ class QuizResult(db.Model):
     userresultid = db.Column(db.Integer, db.ForeignKey('user_result.id'), nullable=False)
     score = db.Column(db.Integer)
 
+class Topic(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    quizid = db.Column(db.Integer, db.ForeignKey('quiz.id'), nullable=True)
+    topicname = db.Column(db.String(256))
+    topiccontent = db.Column(db.String(1024))
+    topicvideolink = db.Column(db.String(256))
+
 @login.user_loader
 def load_user(id):
     return User.query.get(int(id))
+
+
+
+
+
+
+
 
 
 
