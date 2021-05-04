@@ -9,7 +9,6 @@ const MAX_PAGES = 5
 var page = 0;
 var nextClickCount = 0;
 
-
 function progress() {
     page++;
     nextClickCount++;
