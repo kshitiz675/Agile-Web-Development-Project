@@ -16,9 +16,9 @@ def index():
 def error404(e):
     return render_template('404.html', title='error 404')
 
-@app.route('/content')
+@app.route('/learn')
 def content():
-    return render_template('Content.html', title='Content')
+    return render_template('Content.html', title='Learn')
 
 
 @app.route('/feedback')
@@ -35,7 +35,8 @@ def statistics():
 def lesson(id):
     lesson = Topic.query.filter_by(id=id).first()
     if lesson == None: return 'Not Found'
-    return f"TODO + {lesson.topiccontent}"
+    # return f"TODO + {lesson.topiccontent}"
+    return render_template('Lesson.html', title='Lesson', lesson=lesson)
 
 @app.route('/assessment')
 def assessmentHome():
