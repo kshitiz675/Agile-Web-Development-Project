@@ -16,7 +16,7 @@ def index():
 def error404(e):
     return render_template('404.html', title='error 404')
 
-@app.route('/learn')
+@app.route('/lesson')
 def content():
     return render_template('Content.html', title='Learn')
 
