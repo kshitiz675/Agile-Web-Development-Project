@@ -1,15 +1,21 @@
 {%extends "layout.html"%}
 
 {%block content%}
+
+<script>
+    var progress = 0;
+    
+</script>
+
 <div class="test_container">
  <div id="progressBarA">
       <div id="progressBarFullA"></div>
     </div>
     <h1>{{quiz.quizname}}</h1><br>
-    <p id="Q">(Question from database here)</p><br>
+    <p id="Q">{{quiz.get_a_question(num=1).questiontext}}</p><br>
     <div class="choices">
-        <button id="0">1</button><br><button id="1">2</button><br>
-        <button id="2">3</button><br><button id="3">4</button><br>
+        <button id="1">{{quiz.get_a_question(num=1).get_a_answer(num=1).answertext}}</button><br><button id="2">{{quiz.get_a_question(num=1).get_a_answer(num=2).answertext}}</button><br>
+        <button id="3">{{quiz.get_a_question(num=1).get_a_answer(num=3).answertext}}</button><br><button id="4">{{quiz.get_a_question(num=1).get_a_answer(num=4).answertext}}</button><br>
     </div>
     <div class="next-btnA">
       <button id="nextA">Next</button>
@@ -24,25 +30,6 @@
     const progressBarFullA = document.querySelector('#progressBarFullA');
     const progressBarA = document.querySelector('#progressBarA');
     const MAX_PAGES = 5
-    var page = 0;
-    var q_number = 0;
-    var score = 0;
-    var q = question_list[q_number];
-    document.getElementById('Q').innerHTML = q.display_question();
-
-    function quiz_time(value) {
-        display_question(value);
-        display_answer(value);
-    }
-    function display_question(q) {
-        document.getElementById('Q').innerHTML = q.display_question();
-    }
-    function display_answer(q) {
-        var a_list = q.get_answers();
-        document.getElementById('0').innerHTML = a_list[0];
-        document.getElementById('1').innerHTML = a_list[1];
-        document.getElementById('2').innerHTML = a_list[2];
-        document.getElementById('3').innerHTML = a_list[3];
-    }
+    
 </script>
 {%endblock%}

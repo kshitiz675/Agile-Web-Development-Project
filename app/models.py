@@ -25,6 +25,9 @@ class Quiz(db.Model):
     'Return all questions that belong to the topic of this quiz'
     def get_questions(self):
         return Question.query.filter_by(quizId=self.id).all()
+    'Return a specific question from a quiz'
+    def get_a_question(self, num):
+        return Question.query.filter_by(quizId=self.id, id=num).first()
 
 
 class Question(db.Model):
@@ -36,6 +39,9 @@ class Question(db.Model):
     'Get all options for question'
     def get_answers(self):
         return Answer.query.filter_by(questionId=self.id).all()
+    'Get a specific answer for a question'
+    def get_a_answer(self, num):
+        return Answer.query.filter_by(questionId=self.id, id=num).first()
     'Get question'
     def get_question(self):
         return self.questiontext
