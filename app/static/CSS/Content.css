@@ -91,3 +91,9 @@
     margin-top: 100px;
     float: right;
 }
+
+.options_img {
+    width: 10%;
+    height: auto;
+    padding-left:20px;
+}
