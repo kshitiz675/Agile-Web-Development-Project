@@ -3,7 +3,7 @@ from app import app, db
 from app.forms import LoginForm, RegistrationForm
 from flask_login import current_user, login_user, logout_user
 from app.models import User, Quiz, Topic
-#from flask_login import login_required
+from flask_login import login_required
 #Place @login_required for pages that require users to be signed in
 
 @app.route('/')
@@ -17,11 +17,13 @@ def error404(e):
     return render_template('404.html', title='error 404')
 
 @app.route('/learn')
+@login_required
 def content():
     return render_template('Content.html', title='Learn')
 
 
 @app.route('/feedback')
+@login_required
 def feedback():
     return render_template('Feedback.html', title='Feedback')
 
@@ -32,6 +34,7 @@ def statistics():
 
 
 @app.route('/lesson/<int:id>')
+@login_required
 def lesson(id):
     lesson = Topic.query.filter_by(id=id).first()
     if lesson == None: return 'Not Found'
@@ -39,10 +42,12 @@ def lesson(id):
     return render_template('Lesson.html', title='Lesson', lesson=lesson)
 
 @app.route('/assessment')
+@login_required
 def assessmentHome():
     return "Assessment Home Page"
     
 @app.route('/assessment/<int:quizId>')
+@login_required
 def assessment(quizId):
     # There must be a variable that defines which topic this quiz will cover
     quiz = Quiz.query.filter_by(id=quizId).first()

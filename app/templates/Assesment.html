@@ -10,13 +10,11 @@
 </script>
 
 <!--Initialize questions for quiz-->
-<!--{% for q in quiz.get_questions() %}-->
+{% for q in quiz.get_questions() %}
 <script>
-
-    question_list.append(1);
-
+    question_list.append(q.get_question());
 </script>
-<!--{% endfor %}-->
+{% endfor %}
 
 <div class="test_container">
  <div id="progressBarA">

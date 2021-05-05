@@ -11,6 +11,7 @@ db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
 login = LoginManager(app)
+login.login_view = 'login'
 
 with app.app_context():
     upgrade()
