@@ -1,19 +1,25 @@
 .login-form {
-    position: absolute;
-    margin-left: 42.5%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 200px;
     width: 500px;
     background-color:  #32373c;
     border-radius: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .register-form {
-    position: absolute;
-    margin-left: 42.5%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 200px;
     width: 500px;
     background-color:  #32373c;
     border-radius: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .login-head, .details, .user, .pass, .userinput, .passinput, .remember, .submit, .email, .emailinput, .register-head, .reg-details{
