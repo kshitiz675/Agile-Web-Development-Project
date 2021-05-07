@@ -128,7 +128,7 @@ html, body {
     color: #32373c;
 }
 
-form p, label {
+/* form p, label {
     font-size: 15pt;
     margin: 10px 0 10px 20px;
     line-height: 20px;
@@ -142,7 +142,7 @@ form h1 {
     margin-left: 30px;
     font-family: 'Crimson Text', serif;
     color: #32373c;
-}
+} */
 
 .main-picture {
     width: 40%;
