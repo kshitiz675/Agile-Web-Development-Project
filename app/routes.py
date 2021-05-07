@@ -47,14 +47,11 @@ def assessmentHome():
     return "Assessment Home Page"
     
 @app.route('/assessment/<int:quizId>')
-@login_required
 def assessment(quizId):
     # There must be a variable that defines which topic this quiz will cover
     quiz = Quiz.query.filter_by(id=quizId).first()
     if quiz == None: return 'Not Found'
     return render_template('Assesment.html', title='Assessment', quiz=quiz)
-
-#Login Required
 
 
 #Login/Registration

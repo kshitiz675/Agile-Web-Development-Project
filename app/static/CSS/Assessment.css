@@ -137,3 +137,7 @@
     color: #32373c;
     font-size: 35pt;
 }
+
+.question-hidden {
+    display: none;
+}
