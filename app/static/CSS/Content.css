@@ -30,6 +30,7 @@
     margin-right: auto;
     border-spacing: 15px 15px;
     width: 1000px;
+    /*width: 2000px*/
     text-decoration: none;
 }
 
@@ -70,11 +71,13 @@
 .box1 {
     float: left;
     margin-left: 160px;
+    /*margin-left: 300px;*/
 }
 
 .box2 {
     float: right;
     margin-right: 160px;
+    /*margin-right: 300px;*/
 }
 
 .box3 {
@@ -86,6 +89,7 @@
     margin-top: 100px;
     margin-left:35px;
     margin-right:35px;
+    /*margin-left: 160px;*/
 }
 
 .box5 {
