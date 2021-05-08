@@ -2,62 +2,29 @@
 
 {%block content%}
 
-<script>
-    var progress = 0;
-    var question_list = [];
-    var answer_list = [];
-    var text = 0;
-</script>
-
-<!--Initialize questions for quiz-->
-{% for q in quiz.get_questions() %}
-<script>
-    question_list.append(q.get_question());
-</script>
-{% endfor %}
-
 <div class="test_container">
  <div id="progressBarA">
       <div id="progressBarFullA"></div>
     </div>
     <h1>{{quiz.quizname}}</h1><br>
-    <p id="Q"></p><br>
-    <div class="choices">
-        <button id="1"></button><br><button id="2">{{quiz.get_a_question(num=1).get_a_answer(num=2).answertext}}</button><br>
-        <button id="3"></button><br><button id="4">{{quiz.get_a_question(num=1).get_a_answer(num=4).answertext}}</button><br>
+    <div id="quiz-over" class="question-hidden">
+      <h3>Quiz Complete, review answers and submit</h3>
+      <div id="quiz-answer-summary" class="flex flex-row"></div>
     </div>
-    <div class="next-btnA">
-      <button id="nextA">Next</button>
+    {% for question in quiz.questions %}
+      <div id="question-{{question.id}}" class="question question-hidden">
+        <p>{{question.questiontext}}</p><br>
+          <div class="choices">
+          {% for answer in question.get_randomized_answers() %}
+            <button id="answer-{{answer.id}}" onclick="selectAnswer(event)">{{answer.answertext}}</button>
+          {% endfor %}
+        </div>
     </div>
-    <div id="score-display">
-        <h2 id="score-head">Score:</h2>
-        <h2 id="score">0</h2>
+    {% endfor %}
+    <div id="assessment-controls" class="flex justify-around">
+      <button onclick="previousQuestion()" class="assessment-button">Back</button>
+      <button id="submit-button" onclick="previousQuestion()" class="assessment-button question-hidden">Submit</button>
     </div>
 </div>
-
-<script>
-    const progressBarFullA = document.querySelector('#progressBarFullA');
-    const progressBarA = document.querySelector('#progressBarA');
-    const MAX_PAGES = 5
-
-    document.getElementById('Q').innerHTML = question_list[progress];
-    answers();
-    
-    // Get next question
-    function next() {
-        progress += 1;
-        document.getElementById('Q').innerHTML = question_list[progress];
-    }
-    function answers() {
-        answer_list = []
-        let i;
-        for(i = 0; i < question_list[progress].get_answers().length; i++){
-            answer_list.append(question_list[progress].get_answers()[i].answertext);
-        }
-        document.getElementById('1').innerHTML = answer_list[0];
-        document.getElementById('2').innerHTML = answer_list[1];
-        document.getElementById('3').innerHTML = answer_list[2];
-        document.getElementById('4').innerHTML = answer_list[3];
-    }
-</script>
+<script src="../static/Javascript/Assessment.js"></script>
 {%endblock%}

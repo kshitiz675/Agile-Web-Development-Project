@@ -1,6 +1,7 @@
 from app import db, login
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import UserMixin
+import random
 
 class User(UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -45,6 +46,11 @@ class Question(db.Model):
     'Get question'
     def get_question(self):
         return self.questiontext
+    def get_randomized_answers(self):
+        answers = Answer.query.filter_by(questionId = self.id).all()
+        random.shuffle(answers)
+        return answers
+
 
 
 class Answer(db.Model):

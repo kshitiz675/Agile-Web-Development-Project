@@ -1,35 +1,58 @@
+<!DOCTYPE html>
 {%extends "layout.html"%}
-    
+
 {%block content%}
 <div class="login-form">
-    <form class="log" action="" method="post" novalidate>
+    <form class="log" action="" method="post" novalidate autocomplete="off">
         {{form.hidden_tag()}}
         <div class="login-head">
-        <h1>Login</h1>
-    </div>
-    <div class="details">
-        <p>Enter details to login to account</p><br />
-    </div>
-    
-        <p>
-            {{form.username.label}}<br>
-            <span class="text_bar">{{form.username(size=32)}}</span><br>
-            {%for error in form.username.errors%}
-            <span class="text_bar" style="color:red;">[{{error}}]</span>
-            {%endfor%}
-        </p> <br />
-    
-        <p>
-            {{form.password.label}}<br>
-            <span class="text_bar">{{form.password(size=32)}}</span><br>
-            {%for error in form.password.errors%}
-            <span class="text_bar" style="color:red;">[{{error}}]</span>
-            {%endfor%}
-        </p> <br />
-        <p>{{form.remember_me.label}}{{form.remember_me()}}</p><br>
-        <p>{{form.submit()}}</p><br><br>
+            <h1>Login</h1>
+        </div>
+        <div class="details">
+            <p>Enter details to login to account</p><br />
+        </div>
 
+        <p>
+        <div class="user">
+            {{form.username.label}}
+        </div>
+        <br>
+        <div class="userinput">
+            <span class="text_bar">{{form.username(size=32)}}</span>
+        </div>
+        <br>
+        {%for error in form.username.errors%}
+        <span style="color:red;">[{{error}}]</span>
+        {%endfor%}
+        </p> <br />
+
+        <p>
+        <div class="pass">
+            {{form.password.label}}
+        </div>
+        <br>
+        <div class="passinput">
+            <span class="text_bar">{{form.password(size=32)}}</span>
+        </div>
+        <br>
+        {%for error in form.password.errors%}
+        <span style="color:red;">[{{error}}]</span>
+        {%endfor%}
+        </p> <br />
+        <p>
+        <div class="remember">
+            {{form.remember_me.label}}{{form.remember_me()}}
+        </div>
+        </p>
+        <p>
+        <div class="submit">
+            {{form.submit()}}
+        </div>
+        </p><br><br>
+
+        <div class="new">
         <p>Are you new here? <a href="{{ url_for('register') }}">Click to Register!</a></p>
+    </div>
     </form>
 </div>
 
