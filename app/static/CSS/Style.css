@@ -184,3 +184,11 @@ form h1 {
 .text_bar {
     padding-left:20px;
 }
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
