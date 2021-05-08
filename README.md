@@ -20,7 +20,7 @@ To stop the app:
 To exit the environment:
 `$deactivate`
 
-### Prequisites
+## Prequisites
 
 Requires:
 
@@ -31,7 +31,7 @@ Requires:
 - flask-wtf
 - email_validator
 
-### Installing
+## Installing
 
 Install [python3](https://www.python.org/downloads/)
 
