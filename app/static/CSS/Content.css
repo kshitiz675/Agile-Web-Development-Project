@@ -29,14 +29,14 @@
     margin-left: auto;
     margin-right: auto;
     border-spacing: 15px 15px;
-    width: 2000px;
+    width: 1000px;
     text-decoration: none;
 }
 
 .options td {
     display: inline-flex;
-    width: 500px;
-    height: 300px;
+    width: 250px;
+    height: 150px;
     padding: 25px;
     justify-content: center;
     align-items: center;
@@ -69,12 +69,12 @@
 
 .box1 {
     float: left;
-    margin-left: 300px;
+    margin-left: 160px;
 }
 
 .box2 {
     float: right;
-    margin-right: 300px;
+    margin-right: 160px;
 }
 
 .box3 {
@@ -84,7 +84,8 @@
 
 .box4 {
     margin-top: 100px;
-    margin-left: 160px;
+    margin-left:35px;
+    margin-right:35px;
 }
 
 .box5 {
