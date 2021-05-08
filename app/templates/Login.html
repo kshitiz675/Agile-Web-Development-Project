@@ -15,7 +15,7 @@
             {{form.username.label}}<br>
             <span class="text_bar">{{form.username(size=32)}}</span><br>
             {%for error in form.username.errors%}
-            <span style="color:red;">[{{error}}]</span>
+            <span class="text_bar" style="color:red;">[{{error}}]</span>
             {%endfor%}
         </p> <br />
     
@@ -23,10 +23,10 @@
             {{form.password.label}}<br>
             <span class="text_bar">{{form.password(size=32)}}</span><br>
             {%for error in form.password.errors%}
-            <span style="color:red;">[{{error}}]</span>
+            <span class="text_bar" style="color:red;">[{{error}}]</span>
             {%endfor%}
         </p> <br />
-        <p>{{form.remember_me.label}}{{form.remember_me()}}</p>
+        <p>{{form.remember_me.label}}{{form.remember_me()}}</p><br>
         <p>{{form.submit()}}</p><br><br>
 
         <p>Are you new here? <a href="{{ url_for('register') }}">Click to Register!</a></p>
