@@ -37,16 +37,16 @@ Install [python3](https://www.python.org/downloads/)
 
 1. Set up environment
 
- - use pip or another package manager to install virtualenv package `$ pip install virtualenv`
- - create the environment `$ python3 -m venv venv`
- - activate the environment `$ . venv/bin/activate`
+- use pip or another package manager to install virtualenv package `$ pip install virtualenv`
+- create the environment `$ python3 -m venv venv`
+- activate the environment `$ . venv/bin/activate`
 
 2. Install prequisetes
 
- - use pip to install flask package `$ pip install flask`
- - use pip to install flask-login package `$ pip install flask-login`
- - use pip to install flask-wtf package `$ pip install flask-wtf`
- - use pip to install email_validator package `$ pip install email_validator`
+- use pip to install flask package `$ pip install flask`
+- use pip to install flask-login package `$ pip install flask-login`
+- use pip to install flask-wtf package `$ pip install flask-wtf`
+- use pip to install email_validator package `$ pip install email_validator`
 
 3. `flask run`
 
@@ -62,7 +62,7 @@ Vscode and git
 
 ## Authors
 
--Bhasura Samarasekara Vitharana Gamage (22616672)
--Brandon Ke (22731448)
--Kshitiz Singh (22627009)
--William Knight (21722128)
+- Bhasura Samarasekara Vitharana Gamage (22616672)
+- Brandon Ke (22731448)
+- Kshitiz Singh (22627009)
+- William Knight (21722128)
