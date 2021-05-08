@@ -22,7 +22,7 @@
         </div>
         <br>
         {%for error in form.username.errors%}
-        <span style="color:red;">[{{error}}]</span>
+        <span class="error" style="color:red;">[{{error}}]</span>
         {%endfor%}
         </p> <br />
 
@@ -36,7 +36,7 @@
         </div>
         <br>
         {%for error in form.password.errors%}
-        <span style="color:red;">[{{error}}]</span>
+        <span class="error" style="color:red;">[{{error}}]</span>
         {%endfor%}
         </p> <br />
         <p>
