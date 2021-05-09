@@ -25,6 +25,8 @@ def seed(db):
     db.session.query(models.Answer).delete()
     db.session.query(models.Topic).delete()
     db.session.query(models.User).delete()
+    db.session.query(models.QuizResult).delete()
+    db.session.query(models.UserResult).delete()
 
     instances = db.session.query(models.Quiz).all()
     
