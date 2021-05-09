@@ -18,7 +18,7 @@ def error404(e):
 
 @app.errorhandler(500)
 def error500(e):
-    return render_template('500.html', title='error500')
+    return render_template('500.html', title='error 500')
 
 @app.route('/lesson')
 @login_required
