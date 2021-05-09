@@ -15,6 +15,21 @@ class User(UserMixin, db.Model):
     
     def check_password(self, password):
         return check_password_hash(self.password_hash, password)
+    def load_debug_user(self):
+        print("Loading Debug User")
+        userresultid = UserResult.query.filter_by(userid=self.id).first().id
+        db.session.add(QuizResult(quizid=3, userresultid=userresultid, score=2))
+        db.session.add(QuizResult(quizid=2, userresultid=userresultid, score=1))
+        db.session.commit()
+
+        print(self.username + "Results")
+        userResults = UserResult.query.filter_by(userid=self.id).first()
+        for result in userResults.quizresults:
+            quiz = Quiz.query.filter_by(id=result.quizid).first()
+            print(quiz.quizname)
+            print(f'{result.score} / {len(quiz.questions)}')
+            print()
+
     
 
 

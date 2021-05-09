@@ -83,12 +83,6 @@ def assessment(quizId):
         print("Success")
         return "Success"
 
-        
-        
-
-
-
-
 
 #Login/Registration
 @app.route('/login', methods=['GET', 'POST'])
@@ -121,9 +115,11 @@ def register():
         db.session.add(user)
         db.session.commit()
         #Todo check if refreshing works
+        #Create results record for user
         userResults = UserResult(userid = User.query.filter_by(username=form.username.data).first().id)
         db.session.add(userResults)
         db.session.commit()
+        user.load_debug_user()
         return redirect(url_for('login'))
     return render_template('Registration.html', title='Registration', form=form)
 
