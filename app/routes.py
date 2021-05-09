@@ -16,6 +16,10 @@ def index():
 def error404(e):
     return render_template('404.html', title='error 404')
 
+@app.errorhandler(500)
+def error500(e):
+    return render_template('500.html', title='error500')
+
 @app.route('/lesson')
 @login_required
 def content():
