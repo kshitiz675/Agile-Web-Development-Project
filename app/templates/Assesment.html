@@ -147,7 +147,7 @@
         xhr.open("POST", `/assessment/${quizId}`, true);
         xhr.setRequestHeader('Content-Type', 'application/json');
         xhr.send(answerText)
-        
+        document.location.href = `/feedback/${quizId}`;
     }
 
     function getAnswersText() {
