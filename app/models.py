@@ -93,12 +93,21 @@ class QuizResult(db.Model):
     userresultid = db.Column(db.Integer, db.ForeignKey('user_result.id'), nullable=False)
     score = db.Column(db.Integer)
 
+    def getBestResults(quizId, numResults):
+        return QuizResult.query.filter_by(quizid = quizId).order_by(QuizResult.score).limit(numResults).all()
+
 class Topic(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     quizid = db.Column(db.Integer, db.ForeignKey('quiz.id'), nullable=True)
     topicname = db.Column(db.String(256))
-    topiccontent = db.Column(db.String(1024))
     topicvideolink = db.Column(db.String(256))
+    topicsections = db.relationship('TopicSection', backref='topic', lazy=True)
+
+class TopicSection(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    topicid = db.Column(db.Integer, db.ForeignKey('topic.id'), nullable=False)
+    topicheading = db.Column(db.String(256))
+    topiccontent = db.Column(db.String(1024))
 
 
 ##Login system

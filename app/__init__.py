@@ -25,6 +25,7 @@ def seed(db):
     db.session.query(models.Answer).delete()
     db.session.query(models.Topic).delete()
     db.session.query(models.User).delete()
+    db.session.query(models.TopicSection).delete()
     db.session.query(models.QuizResult).delete()
     db.session.query(models.UserResult).delete()
 
@@ -180,14 +181,33 @@ def seed(db):
         db.session.commit()
 
         ### Add Topics
-        db.session.add(models.Topic(quizid=blockchainQuiz, topicname = "The Blockchain", topiccontent = "The blockchain stores information across a network of computers which is decentralized. Information is stored in the form of “blocks” which are unique and cannot be altered due to undergoing cryptography. These blocks can be used for recording the transactions made by cryptocurrencies such as Bitcoin. There is no middleman to transactions and operation on the blockchain since the blockchain is a peer-to-peer network of computers that validate each other’s transactions. These validations are done by people known as miners. This is what makes the blockchain decentralized as every block can be accessed from any computer across the network reflecting changes on the go", topicvideolink="https://www.youtube.com/embed/r43LhSUUGTQ"))
-        db.session.add(models.Topic(quizid=nftQuiz, topicname = "Non-Fungible Tokens", topiccontent="A unit of data, or a digital token, that’s stored within a blockchain, which provides a certification that it is a digital asset that makes it unique. Unlike bitcoins, it is interchangeable and non-fungible, meaning it can’t easily be changed or replaced", topicvideolink="https://www.youtube.com/embed/X_AugmQpwho"))
-        db.session.add(models.Topic(quizid=miningQuiz, topicname="Mining", topiccontent="Bitcoin mining is the process by which new bitcoins are entered into circulation, but it is also a critical component of the maintenance and development of the blockchain ledger. It is performed using very sophisticated computers that solve extremely complex computational math problems. Miners are getting paid for their work as auditors this is called ‘Proof of work’. Miners verify the crypto transactions between other miners before adding it to the memory pool which is then blockchain. The more mining power a miner has the higher chance they get to finding the hash and getting rewarded.", topicvideolink="https://www.youtube.com/embed/2VtH-XAOjXw"))
-        db.session.add(models.Topic(quizid=cryptocurrenciesQuiz, topicname="Cryptocurrencies", topiccontent="Cryptocurrency is a type of digital currency that is created through code and relies on cryptography to securely and safely handle them through blockchains and transactions. By relying on cryptocurrency, users can transfer their money directly to other users without relying on someone in the middle to direct it to them, which is broadcasted to the entire network. Transactions using this are considered to being faster, more efficient, and cheaper. Even if they appear more efficient and faster, it is not yet widely accepted in society due to the risks it also provides, making it volatile.", topicvideolink="https://www.youtube.com/embed/NDetuRLQso8"))
-        db.session.add(models.Topic(quizid=usesQuiz, topicname="Uses of cryptocurrency", topiccontent="You can quickly transfer money internationally without the need to go through a bank. Additionally, some cryptocurrencies can allow for private and untraceable transactions. Transfers can potentially be low cost. Some potential applications include financial services where we have reduced transaction costs and speed, increased transparency and investment. An initial coin offering is a means a project can use to fund-raise over the internment. You can purchase an amount of cryptocurrency for money or through trading another cryptocurrency (such as Bitcoin). The projects behind ICO’s are high-risk investments that hope to take advantage of the blockchain/cryptocurrencies in some capacity", topicvideolink="https://www.youtube.com/embed/7rtG5ekt_sY"))
+        db.session.add(models.Topic(quizid=blockchainQuiz, topicname='The Blockchain', topicvideolink="https://www.youtube.com/embed/r43LhSUUGTQ"))
+        db.session.add(models.Topic(quizid=nftQuiz, topicname='Non-Fungible Tokens', topicvideolink="https://www.youtube.com/embed/X_AugmQpwho"))
+        db.session.add(models.Topic(quizid=miningQuiz, topicname='Mining', topicvideolink="https://www.youtube.com/embed/2VtH-XAOjXw"))
+        db.session.add(models.Topic(quizid=cryptocurrenciesQuiz, topicname='Cryptocurrencies', topicvideolink="https://www.youtube.com/embed/NDetuRLQso8"))
+        db.session.add(models.Topic(quizid=usesQuiz, topicname='Uses of cryptocurrency', topicvideolink="https://www.youtube.com/embed/7rtG5ekt_sY"))
         db.session.commit()
 
+        blockchainTopic = models.Topic.query.filter_by(topicname='The Blockchain').first().id
+        db.session.add(models.TopicSection(topicid=blockchainTopic, topicheading='Blockchain', topiccontent='The blockchain stores information across a network of computers which is decentralized. Information is stored in the form of “blocks” which are unique and cannot be altered due to undergoing cryptography. These blocks can be used for recording the transactions made by cryptocurrencies such as Bitcoin.'))
+        db.session.add(models.TopicSection(topicid=blockchainTopic, topicheading='Decentralization', topiccontent='There is no middleman to transactions and operation on the blockchain since the blockchain is a peer-to-peer network of computers that validate each other’s transactions. These validations are done by people known as miners. This is what makes the blockchain decentralized as every block can be accessed from any computer across the network reflecting changes on the go.'))
+       
+        nftTopic = models.Topic.query.filter_by(topicname='Non-Fungible Tokens').first().id
+        db.session.add(models.TopicSection(topicid=nftTopic, topicheading='Non-Fungible Tokens', topiccontent='A unit of data, or a digital token, that’s stored within a blockchain, which provides a certification that it is a digital asset that makes it unique. Unlike bitcoins, it is interchangeable and non-fungible, meaning it can’t easily be changed or replaced.'))
 
+        miningTopic = models.Topic.query.filter_by(topicname='Mining').first().id
+        db.session.add(models.TopicSection(topicid=miningTopic, topicheading='Mining', topiccontent='Bitcoin mining is the process by which new bitcoins are entered into circulation, but it is also a critical component of the maintenance and development of the blockchain ledger. It is performed using very sophisticated computers that solve extremely complex computational math problems.'))
+        db.session.add(models.TopicSection(topicid=miningTopic, topicheading='Proof-of-Work', topiccontent='Miners are getting paid for their work as auditors this is called ‘Proof of work’. Miners verify the crypto transactions between other miners before adding it to the memory pool which is then blockchain. The more mining power a miner has the higher chance they get to finding the hash and getting rewarded.'))
+
+        cryptoTopic = models.Topic.query.filter_by(topicname='Cryptocurrencies').first().id
+        db.session.add(models.TopicSection(topicid=cryptoTopic, topicheading='Cryptocurrencies', topiccontent='A cryptocurrency is a type of digital currency that is created through code and relies on cryptography to securely and safely handle them through blockchains and transactions. By relying on cryptocurrency, users can transfer their money directly to other users without relying on someone in the middle to direct it to them, which is broadcasted to the entire network. Transactions using this are considered to being faster, more efficient, and cheaper.'))
+        db.session.add(models.TopicSection(topicid=cryptoTopic, topicheading='Volatility', topiccontent='Even if they appear more efficient and faster, it is not yet widely accepted in society due to the risks it also provides, making it volatile.'))
+
+        usesTopic = models.Topic.query.filter_by(topicname='Uses of cryptocurrency').first().id
+        db.session.add(models.TopicSection(topicid=usesTopic, topicheading='Uses', topiccontent='Cryptocurrencies allow you to quickly transfer money internationally without the need to go through a bank. Additionally, some cryptocurrencies can allow for private and untraceable transactions. Transfers can potentially be low cost. Some potential applications include financial services where we have reduced transaction costs and speed, increased transparency and investment.'))
+        db.session.add(models.TopicSection(topicid=usesTopic, topicheading='ICOs', topiccontent='An initial coin offering is a means a project can use to fund-raise over the internment. You can purchase an amount of cryptocurrency for money or through trading another cryptocurrency (such as Bitcoin). The projects behind ICO’s are high-risk investments that hope to take advantage of the blockchain/cryptocurrencies in some capacity.'))
+
+        db.session.commit()
 
 
 
