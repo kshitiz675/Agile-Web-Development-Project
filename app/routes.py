@@ -30,8 +30,8 @@ def content():
 # @login_required
 def feedback(id):
     feedback = Quiz.query.filter_by(id=id).first()
-    question = Question.query.filter_by(id=id).first()
-    if question == None: return 'Invalid'
+    questions = Question.query.filter_by(id=id).first()
+    if questions == None: return 'Invalid'
     if feedback == None: return 'Not Found'
     return render_template('Feedback.html', title='Feedback', feedback=feedback)
 
@@ -55,7 +55,7 @@ def assessmentHome():
     return "Assessment Home Page"
     
 @app.route('/assessment/<int:quizId>', methods=['GET', 'POST'])
-# @login_required
+@login_required
 def assessment(quizId):
     # There must be a variable that defines which topic this quiz will cover
     if request.method == 'GET':
