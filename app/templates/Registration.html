@@ -15,7 +15,7 @@
             {{form.username.label}}
         </div>
         <br>
-        <div class="userinput">
+        <div class="userinput" id="userinput-area">
             <span class="text_bar">{{form.username(size=32)}}</span>
         </div>
         {% for error in form.username.errors %}
@@ -27,7 +27,7 @@
             {{ form.email.label }}
         </div>
         <br>
-        <div class="emailinput">
+        <div class="emailinput" id="emailinput-area">
             <span class="text_bar">{{ form.email(size=64) }}</span>
         </div>
         <br>

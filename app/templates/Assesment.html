@@ -3,30 +3,30 @@
 {%block content%}
 
 <div class="test_container">
- <div id="progressBarA">
+  <div id="progressBarA">
       <div id="progressBarFullA"></div>
+  </div>
+  <div id="quiz-{{quiz.id}}" class="quiz">
+    <h1>{{quiz.quizname}}</h1><br>
+    <div id="quiz-over" class="question-hidden">
+      <h3>Quiz Complete, review answers and submit</h3>
+      <div id="quiz-answer-summary" class="flex flex-row"></div>
     </div>
-    <div id="quiz-{{quiz.id}}" class="quiz">
-      <h1>{{quiz.quizname}}</h1><br>
-      <div id="quiz-over" class="question-hidden">
-        <h3>Quiz Complete, review answers and submit</h3>
-        <div id="quiz-answer-summary" class="flex flex-row"></div>
-      </div>
-      {% for question in quiz.questions %}
-        <div id="question-{{question.id}}" class="question question-hidden">
-          <p>{{question.questiontext}}</p><br>
-            <div class="choices">
-            {% for answer in question.get_randomized_answers() %}
-              <button id="answer-{{answer.id}}" onclick="selectAnswer(event)">{{answer.answertext}}</button>
-            {% endfor %}
-          </div>
-      </div>
-      {% endfor %}
-      <div id="assessment-controls" class="flex justify-around">
-        <button onclick="previousQuestion()" class="assessment-button">Back</button>
-        <button id="submit-button" onclick="submit()" class="assessment-button question-hidden">Submit</button>
-      </div>
+    {% for question in quiz.questions %}
+      <div id="question-{{question.id}}" class="question question-hidden">
+        <p>{{question.questiontext}}</p><br>
+          <div class="choices">
+          {% for answer in question.get_randomized_answers() %}
+            <button id="answer-{{answer.id}}" onclick="selectAnswer(event)">{{answer.answertext}}</button>
+          {% endfor %}
+        </div>
     </div>
+    {% endfor %}
+    <div id="assessment-controls" class="flex justify-around">
+      <button id="back-button" onclick="previousQuestion()" class="assessment-button">Back</button>
+      <button id="submit-button" onclick="submit()" class="assessment-button question-hidden">Submit</button>
+    </div>
+  </div>
 </div>
 
   {%block scripts%}

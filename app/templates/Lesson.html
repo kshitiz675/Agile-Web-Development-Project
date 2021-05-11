@@ -1,32 +1,34 @@
-{%extends "layout.html"%} {%block content%}
-<div class="title">
-  <h1>{{lesson.topicname}}</h1>
-</div>
-<div class="assesment-container">
-  <div id="video">
-    <iframe width="700" height="450" src="{{lesson.topicvideolink}}"></iframe>
-  </div>
-  <div class="video-info">
-    <p>
-      Watch the video below to start learning. Click next when ready to continue.
-    </p>
-  </div>
-  <div class="summary">
-    <div class="first"></div>
-    <div class="second"></div>
-    <div class="third"></div>
-  </div>
-  <div class="hud">
-    <div class="next-btn">
-      <button onclick="progress()" id="next">Next</button>
-    </div>
-    <div id="progressBar">
-      <div id="progressBarFull"></div>
-    </div>
-  </div>
-</div>
-<script src="../static/Javascript/Lesson.js"></script>
+{%extends "layout.html"%}
+{%block content%}
 
+<div class="test_container">
+  <div id="progressBar">
+    <div id="progressBarFull"></div>
+  </div>
+  <div class="title">
+    <h1>{{lesson.topicname}}</h1>
+  </div>
+  <div class="assesment-container">
+    <div id="video">
+      <iframe width="700" height="450" src="{{lesson.topicvideolink}}"></iframe>
+    </div>
+    <div class="video-info">
+      <p>
+        Watch the video above to start learning. Click next when ready to continue.
+      </p>
+    </div>
+    <div class="summary">
+      <div class="first"></div>
+      <div class="second"></div>
+      <div class="third"></div>
+    </div>
+  </div>
+  <div id="lesson-controls" class="flex justify-around">
+      <button onclick="progress()" id="next-button">Next</button>
+  </div>
+  
+  <script src="../static/Javascript/Lesson.js"></script>
+</div>
 
 
 {%endblock%}
