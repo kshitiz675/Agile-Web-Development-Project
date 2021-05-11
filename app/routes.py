@@ -30,8 +30,6 @@ def content():
 # @login_required
 def feedback(id):
     feedback = Quiz.query.filter_by(id=id).first()
-    questions = Question.query.filter_by(id=id).first()
-    if questions == None: return 'Invalid'
     if feedback == None: return 'Not Found'
     return render_template('Feedback.html', title='Feedback', feedback=feedback)
 

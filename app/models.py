@@ -58,6 +58,9 @@ class Question(db.Model):
     'Get a specific answer for a question'
     def get_a_answer(self, num):
         return Answer.query.filter_by(questionId=self.id, id=num).first()
+    'Get correct answer'
+    def get_correct_answer(self):
+        return Answer.query.filter_by(questionId=self.id, correctAnswer=1).first()
     'Get question'
     def get_question(self):
         return self.questiontext
