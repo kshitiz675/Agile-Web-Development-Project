@@ -26,14 +26,18 @@ def content():
     return render_template('Content.html', title='Learn')
 
 
-@app.route('/feedback')
-@login_required
-def feedback():
-    return render_template('Feedback.html', title='Feedback')
+@app.route('/feedback/<int:id>')
+# @login_required
+def feedback(id):
+    feedback = Quiz.query.filter_by(id=id).first()
+    if feedback == None: return 'Not Found'
+    return render_template('Feedback.html', title='Feedback', feedback=feedback)
 
 
 @app.route('/statistics')
 def statistics():
+    quizResults = QuizResult.getBestResults(2, 5)
+    print(quizResults)
     return render_template('Statistics.html', title='Statistics')
 
 
@@ -42,7 +46,6 @@ def statistics():
 def lesson(id):
     lesson = Topic.query.filter_by(id=id).first()
     if lesson == None: return 'Not Found'
-    # return f"TODO + {lesson.topiccontent}"
     return render_template('Lesson.html', title='Lesson', lesson=lesson)
 
 @app.route('/assessment')

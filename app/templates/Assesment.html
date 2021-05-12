@@ -32,6 +32,12 @@
   {%block scripts%}
     <script>
 
+    const progressBarFullA = document.querySelector('#progressBarFullA');
+    const progressBarA = document.querySelector('#progressBarA');
+
+    const MAX_PAGES = 5
+    var page = 2;
+
     const questionBlocks = document.getElementsByClassName('question');
     const initialQuestionId = getInitialQuestionId(questionBlocks[0].id);
     const lastQuestionId = initialQuestionId + questionBlocks.length -1;
@@ -54,13 +60,17 @@
 
     function selectAnswer(event) {
 
+        page++;
+        progressBarFullA.style.width = `${(page / MAX_PAGES) * 100}%`;
         //Get answer and store in results obj
         const target = event.target;
         answerId = parseInt(target.id.split('-')[1]);
         resultsObj[currentQuestionId][0] = answerId;
         resultsObj[currentQuestionId][1] = target.textContent;
 
+
         nextQuestion();
+        
     }
 
     function nextQuestion() {
@@ -72,7 +82,8 @@
             quizOver = document.getElementById('quiz-over').classList.remove('question-hidden');
             document.getElementById('submit-button').classList.remove('question-hidden');
             currentQuestionId++;
-
+            
+           
             //Display answers
             const answers = document.getElementById('quiz-answer-summary');
             for(let answerIndex in resultsObj) {
@@ -102,6 +113,10 @@
         
         //TO DO Grey out back button
         if(initialQuestionId == currentQuestionId) return;
+        
+        page--;
+        progressBarFullA.style.width = `${(page / MAX_PAGES) * 100}%`;
+
         if(currentQuestionId > lastQuestionId) {
             document.getElementById('quiz-answer-summary').innerHTML=" ";
             currentQuestionId--;
@@ -132,7 +147,7 @@
         xhr.open("POST", `/assessment/${quizId}`, true);
         xhr.setRequestHeader('Content-Type', 'application/json');
         xhr.send(answerText)
-        
+        document.location.href = `/feedback/${quizId}`;
     }
 
     function getAnswersText() {
