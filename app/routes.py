@@ -25,14 +25,12 @@ def error500(e):
 def content():
     return render_template('Content.html', title='Learn')
 
-
 @app.route('/feedback/<int:id>')
-# @login_required
+@login_required
 def feedback(id):
     feedback = Quiz.query.filter_by(id=id).first()
     if feedback == None: return 'Not Found'
     return render_template('Feedback.html', title='Feedback', feedback=feedback)
-
 
 @app.route('/statistics')
 def statistics():
@@ -40,21 +38,13 @@ def statistics():
     print(quizResults)
     return render_template('Statistics.html', title='Statistics')
 
-
 @app.route('/lesson/<int:id>')
 @login_required
 def lesson(id):
     lesson = Topic.query.filter_by(id=id).first()
-    # topic = TopicSection.query.filter_by(id=id).first()
     if lesson == None: return 'Not Found'
-    # if topic == None: return 'Not Found'
     return render_template('Lesson.html', title='Lesson', lesson=lesson)
 
-@app.route('/assessment')
-@login_required
-def assessmentHome():
-    return "Assessment Home Page"
-    
 @app.route('/assessment/<int:quizId>', methods=['GET', 'POST'])
 @login_required
 def assessment(quizId):
@@ -91,7 +81,6 @@ def assessment(quizId):
         userResults = UserResult.query.filter_by(userid=session['user_id']).first()
         print("Success")
         return "Success"
-
 
 #Login/Registration
 @app.route('/login', methods=['GET', 'POST'])
