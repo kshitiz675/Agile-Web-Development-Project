@@ -58,12 +58,11 @@
     padding: 10px 30px 10px 30px;
 }
 
-.choices button:hover { 
+.choices button:hover {
     cursor: pointer;
     transform: scale(1.025);
     transform: transform 100ms;
-
-} 
+}
 
 #progressBarA {
     width: 20rem;
@@ -82,7 +81,7 @@
     background-color: rgb(82, 255, 47);
 }
 
-.assessment-button{
+.assessment-button {
     float: right;
     margin-right: 25px;
     margin-top: 100px;
@@ -107,7 +106,6 @@
     color: #32373c;
     font-size: 35pt;
 }
-
 
 #back-button:hover, #submit-button:hover {
     animation: anim 3s linear infinite;
@@ -149,5 +147,3 @@
 .question-hidden {
     display: none;
 }
-
-

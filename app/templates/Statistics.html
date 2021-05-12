@@ -3,8 +3,8 @@
 {%block content%}
 
 
-<script> 
-    
+<script>
+
     function addnewrank() {
         var table = document.getElementById("Scoretable");
 
@@ -17,7 +17,7 @@
         cell2.innerHTML = "Current User"; //CHANGE TO [ Users.username ] 
         cell3.innerHTML = Math.floor((Math.random() * 100)); //CHANGE TO [ Users.id.score ]        
     }
-    
+
     function sortTable() {
         var table, rows, switching, i, x, y, shouldSwitch;
         table = document.getElementById("Scoretable");
@@ -28,11 +28,11 @@
             switching = false;
             rows = table.rows;
             //LOOP THROUGH ALL TABLE ROWS
-            for (i = 1; i < (table.rows.length-1); i++) {
+            for (i = 1; i < (table.rows.length - 1); i++) {
                 //START WITH SWITCHING FALSE (NOT FINAL YET)
                 shouldSwitch = false;
                 //GET TWO ROW ELEMENTS TO COMPARE (COMPARE FOR SCORE)
-                x = rows[i].getElementsByTagName("TD")[2]; 
+                x = rows[i].getElementsByTagName("TD")[2];
                 y = rows[i + 1].getElementsByTagName("TD")[2];
                 //ROWS SWITCH DEPENDING ON SCORE
                 if (Number(x.innerHTML) < Number(y.innerHTML)) {
@@ -47,38 +47,38 @@
                 switching = true;
             }
         }
-    }   
+    }
 
-    function renumberTable(){
+    function renumberTable() {
         /* RENUMBER RANKS */
         var table = document.getElementById("Scoretable");
-        for (var i=1; i<table.rows.length; i++){
+        for (var i = 1; i < table.rows.length; i++) {
             table.rows[i].cells[0].innerHTML = i;
         }
     }
 
 
-</script> 
+</script>
 
-
-
-<h1 style="font-size: 35pt; border-bottom-style:solid; margin:20px; font-family: 'Crimson Text', serif; color: #32373c;">World Leaderboard</h1>
+<h1
+    style="font-size: 35pt; border-bottom-style:solid; margin:20px; font-family: 'Crimson Text', serif; color: #32373c;">
+    World Leaderboard</h1>
 
 <table id="Scoretable">
     <tr>
-    <th>Rank</th>
-    <th>Name</th>
-    <th>Score</th>
+        <th>Rank</th>
+        <th>Name</th>
+        <th>Score</th>
     </tr>
     <tr>
-    <td>1</td>
-    <td>John Doe</td>
-    <td>89</td>
+        <td>1</td>
+        <td>John Doe</td>
+        <td>89</td>
     </tr>
     <tr>
-    <td>2</td>
-    <td>James Doe</td>
-    <td>34</td>
+        <td>2</td>
+        <td>James Doe</td>
+        <td>34</td>
     </tr>
 </table>
 

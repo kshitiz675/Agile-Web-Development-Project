@@ -20,9 +20,9 @@
     </div>
     <div class="summary">
       {% for section in lesson.topicsections %}
-        <div class="head"> 
-          <h2 class="head-h2">{{section.topicheading}}<h2>
-        </div>
+      <div class="head">
+        <h2 class="head-h2">{{section.topicheading}}</h2>
+      </div>
       <div class="sub">
         <p class="sub-p">{{section.topiccontent}}</p>
       </div>
@@ -30,9 +30,9 @@
     </div>
     <div id="lesson-controls" class="flex justify-around">
       <button onclick="progress()" id="next-button">Next</button>
+    </div>
+
+    <script src="../static/Javascript/Lesson.js"></script>
   </div>
 
-  <script src="../static/Javascript/Lesson.js"></script>
-</div>
-
-{%endblock%}
+  {%endblock%}

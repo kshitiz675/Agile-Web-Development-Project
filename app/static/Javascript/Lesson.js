@@ -12,7 +12,7 @@ var page = 0;
 var nextClickCount = 0;
 
 function progress() {
-    
+
     page++;
     nextClickCount++;
     progressBarFull.style.width = `${(page / MAX_PAGES) * 100}%`;

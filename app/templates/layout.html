@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../static/CSS/Layout.css" />
     <link rel="stylesheet" href="../static/CSS/Statistics.css" />
     <link rel="stylesheet" href="../static/CSS/Login+Registration.css" />
- 
+
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
@@ -48,13 +48,13 @@
                     <a href="/statistics" class="navbar-item">Statistics</a>
                 </nav>
                 <div id="login-container">
-                  
+
                     <div class="flex">
                         {% if current_user.is_authenticated == False %}
-                        <button class="login-button background-indigo" >
+                        <button class="login-button background-indigo">
                             <a id="login-button" href="{{ url_for('login') }}">Login</a>
                         </button>
-                        <button class="login-button background-darkgray" id="register-button-area" >
+                        <button class="login-button background-darkgray" id="register-button-area">
                             <a id="register-button" href="{{ url_for('register') }}">Register</a>
                         </button>
                         {% else %}
@@ -76,8 +76,9 @@
 
     </section>
     <script>
-        
+
 
     </script>
 </body>
 
+</html>
