@@ -2,8 +2,6 @@
 
 {%block content%}
 
-
-
 <div>
     <h1 style="font-size: 35pt; border-bottom-style:solid; margin:20px; font-family: 'Crimson Text', serif; color: #32373c;">
         World Leaderboard</h1>
@@ -15,26 +13,34 @@
             {% endfor %}
         </select>
     </div>
-    
-    <table id="Scoretable" style="margin-top: 5px;">
-        <tr>
-            <th>Rank</th>
-            <th>Name</th>
-            <th>Score</th>
-        </tr>
 
-        {% for result in results %}
-            {% for quizresult in result.quizresults %}
-                {% if quizresult.quizid == 1 %}
+    {% for quiz in results %} 
+    <div id="quiz-result-{{quiz.id}}" class="quiz-results-container">
+        <h2>{{quiz[0]}}</h2>
+        <table id="Scoretable" style="margin-top: 5px;">
             <tr>
-                <td>Placeholder</td>
-                <td>Placeholder</td>
-                <td>{{quizresult.score}}</td>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Score</th>
             </tr>
-                {% endif %}
+            {% for result in quiz[1] %}
+            <tr>
+                <td</td>
+                <td>{{result[2]}}</td>
+                <td>{{result[0]}}</td>
+                <td>{{result[1]}}</td>
+
+            </tr>
             {% endfor %}
-        {% endfor %}
-    </table>
+            <tr>
+
+            </tr>
+        </table>
+    </div>
+      
+    {% endfor %}
+    
+
 </div>
   {%block scripts%}
   {%endblock%}

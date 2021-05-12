@@ -92,6 +92,7 @@ class UserResult(db.Model):
     userid = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
     quizresults = db.relationship('QuizResult', backref='user_result', lazy=True)
 
+
 class QuizResult(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     quizid = db.Column(db.Integer, db.ForeignKey('quiz.id'), nullable=False)
@@ -101,6 +102,22 @@ class QuizResult(db.Model):
     def getBestResults(quizId, numResults):
         return QuizResult.query.filter_by(quizid = quizId).order_by(QuizResult.score).limit(numResults).all()
 
+    def getResultsForAllQuizzes():
+        results = []
+        for quiz in Quiz.query.all():
+            quizResults = QuizResult.getResultsForQuiz(quiz.id)
+            results.append((quiz.quizname, quizResults))
+        return results
+    def getResultsForQuiz(quizId):
+        results = []
+        rank = 1
+        for quizResult in QuizResult.query.filter_by(quizid=quizId).order_by(QuizResult.score.desc()).limit(10):
+            userId = UserResult.query.filter_by(userid=quizResult.userresultid).first().userid
+            username = User.query.filter_by(id=userId).first().username
+            results.append((username, quizResult.score, rank))
+            rank += 1
+        return results
+            
 class Topic(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     quizid = db.Column(db.Integer, db.ForeignKey('quiz.id'), nullable=True)

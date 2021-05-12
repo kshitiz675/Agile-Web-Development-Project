@@ -49,3 +49,6 @@
     color: white;
     text-decoration: none;
 }
+.quiz-results-container {
+    padding: 5px;
+}
