@@ -1,6 +1,6 @@
-{%extends "layout.html"%} {%block content%}
+{%extends "layout.html"%}
+{%block content%}
 
-<div id="quiz-{{lesson.id}}" class="quiz"></div>
 <div class="test_container">
   <div id="progressBar">
     <div id="progressBarFull"></div>
@@ -14,8 +14,7 @@
     </div>
     <div class="video-info">
       <p>
-        Watch the video above to start learning. Click next when ready to
-        continue.
+        Watch the video above to start learning. Click next when ready to continue.
       </p>
     </div>
     <div class="summary">
@@ -25,10 +24,11 @@
     </div>
   </div>
   <div id="lesson-controls" class="flex justify-around">
-    <button onclick="progress()" id="next-button">Next</button>
+      <button onclick="progress()" id="next-button">Next</button>
   </div>
-
+  
   <script src="../static/Javascript/Lesson.js"></script>
 </div>
+
 
 {%endblock%}
