@@ -108,7 +108,8 @@
     font-size: 35pt;
 }
 
-#nextA:hover {
+
+#back-button:hover, #submit-button:hover {
     animation: anim 3s linear infinite;
     transform: scale(1.05);
     transform: transform 100ms;

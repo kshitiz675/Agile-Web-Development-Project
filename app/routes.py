@@ -2,7 +2,7 @@ from flask import render_template, url_for, redirect, flash, request, jsonify, s
 from app import app, db
 from app.forms import LoginForm, RegistrationForm
 from flask_login import current_user, login_user, logout_user
-from app.models import User, Quiz, Topic, Question, Answer, UserResult, QuizResult
+from app.models import TopicSection, User, Quiz, Topic, Question, Answer, UserResult, QuizResult
 from flask_login import login_required
 #Place @login_required for pages that require users to be signed in
 
@@ -45,7 +45,9 @@ def statistics():
 @login_required
 def lesson(id):
     lesson = Topic.query.filter_by(id=id).first()
+    # topic = TopicSection.query.filter_by(id=id).first()
     if lesson == None: return 'Not Found'
+    # if topic == None: return 'Not Found'
     return render_template('Lesson.html', title='Lesson', lesson=lesson)
 
 @app.route('/assessment')

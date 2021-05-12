@@ -25,7 +25,8 @@
     /*display: block;
     position: absolute;
     justify-content: center;
-    border: solid black;*/
+    */
+    border: solid black; 
     margin-right: auto;
     margin-left: auto;
 }
@@ -56,8 +57,7 @@
 }
 
 
-
-#next:hover {
+#next-button:hover {
     animation: anim 3s linear infinite;
     transform: scale(1.05);
     transform: transform 100ms;
@@ -87,6 +87,8 @@
 .video-info p {
     width: 100%;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     color: white;
     font-size: 12pt;
     font-family: 'Work Sans', sans-serif;
@@ -121,15 +123,17 @@
     padding: 10px;
     width: 75%;
     margin-left: 75px;
-    color: white;
+    color: #32373c;
+    display: none;
 }
 
-.summary h2 {
+.head h2 {
     font-size: 25pt;
     font-family: 'Crimson Text', serif;
 }
 
-.summary p {
+.sub p {    
+    text-align: start;
     font-size: 15pt;
     font-family: 'Work Sans', sans-serif;
 }
