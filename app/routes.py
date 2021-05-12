@@ -36,7 +36,7 @@ def feedback(id):
 def statistics():
     quizResults = QuizResult.getBestResults(2, 5)
     print(quizResults)
-    return render_template('Statistics.html', title='Statistics')
+    return render_template('Statistics.html', title='Statistics', results=UserResult.query.all(), quizzes=Quiz.query.all())
 
 @app.route('/lesson/<int:id>')
 @login_required
