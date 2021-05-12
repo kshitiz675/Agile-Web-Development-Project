@@ -15,6 +15,7 @@ class User(UserMixin, db.Model):
     
     def check_password(self, password):
         return check_password_hash(self.password_hash, password)
+        
     def load_debug_user(self):
         print("Loading Debug User")
         userresultid = UserResult.query.filter_by(userid=self.id).first().id

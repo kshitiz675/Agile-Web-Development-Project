@@ -66,3 +66,14 @@ Vscode and git
 - Brandon Ke (22731448)
 - Kshitiz Singh (22627009)
 - William Knight (21722128)
+
+## References
+
+- Crypto College Logo (including favicon): 
+- Blockchain png: https://rubygarage.org/blog/how-blockchain-works
+- NFT png: https://en.wikipedia.org/wiki/Non-fungible_token
+- Crypto Mining png: https://www.iconfinder.com/icons/3329018/bitcoin_bitcoin_mining_mine_mining_icon
+- Ethereum png: https://en.wikipedia.org/wiki/Ethereum
+- Bitcoin png (including Broken Bitcoin): http://www.pngall.com/bitcoin-png/download/24844
+- Code Background: https://www.devonblog.com/continuous-delivery/code-analysis-service-sonarcloud/
+- Patrick png: https://www.pinterest.com.au/pin/587227238891101162/?d=t&mt=login
