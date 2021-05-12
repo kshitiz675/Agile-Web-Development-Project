@@ -30,13 +30,20 @@
     color: #32373c;
 }
 
-.test_container p {
+.test_container p, #quiz-over > h3{
     font-size: 18pt;
     margin: 20px 30px 30px 30px;
     text-align: center;
     line-height: 25px;
     font-family: 'Work Sans', sans-serif;
     color: #32373c;
+}
+
+#quiz-answer-summary {
+    font-size: 15pt;
+    font-family: 'Work Sans', sans-serif;
+    color: #32373c;
+    margin-left: 5%;
 }
 
 .choices {

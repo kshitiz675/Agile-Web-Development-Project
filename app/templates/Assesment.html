@@ -10,7 +10,7 @@
     <h1>{{quiz.quizname}}</h1><br>
     <div id="quiz-over" class="question-hidden">
       <h3>Quiz Complete, review answers and submit</h3>
-      <div id="quiz-answer-summary" class="flex flex-row"></div>
+      <div id="quiz-answer-summary" class="flex flex-row sub-p"></div>
     </div>
     {% for question in quiz.questions %}
     <div id="question-{{question.id}}" class="question question-hidden">
@@ -88,10 +88,13 @@
       const answers = document.getElementById('quiz-answer-summary');
       for (let answerIndex in resultsObj) {
 
+        let break_line = document.createElement('br');
+
         let answer = resultsObj[answerIndex];
         const answerText = answer[1];
         let childNode = document.createTextNode(answerText);
         answers.appendChild(childNode);
+        answers.insertBefore(break_line, childNode);
       }
 
       return;
