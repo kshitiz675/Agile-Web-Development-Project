@@ -5,19 +5,20 @@
 <div>
     <h1 style="font-size: 35pt; border-bottom-style:solid; margin:20px; font-family: 'Crimson Text', serif; color: #32373c;">
         World Leaderboard</h1>
-    <div>
-        <label for="quiz">Select a quiz</label>
-        <select id="quiz">
-            {% for quiz in quizzes %}
-              <option>{{quiz.quizname}}</option>
+    <div class="stats-tabs-container">
+        <nav class="stats-tabs flex" aria-label="tabs">
+            {% for quiz in quizzes%}
+              <button id="quiz_select_{{quiz.quizname}}" onclick="selectQuiz(event)" class="quiz-select">{{quiz.quizname}}</button>
             {% endfor %}
-        </select>
+
+        </nav>
+    
+  
     </div>
 
     {% for quiz in results %} 
     <div id="quiz-result-{{quiz.id}}" class="quiz-results-container">
-        <h2>{{quiz[0]}}</h2>
-        <table id="Scoretable" style="margin-top: 5px;">
+        <table id="statistics_table_{{quiz[0]}}" class="statistics-table table-hidden" style="margin-top: 5px;">
             <tr>
                 <th>Rank</th>
                 <th>Name</th>
@@ -43,6 +44,38 @@
 
 </div>
   {%block scripts%}
+  <script>
+    const tables = document.getElementsByClassName('statistics-table');
+    const buttons = document.getElementsByClassName('quiz-select');
+
+
+
+
+    function selectQuiz(event) {
+
+        for(let button of buttons) {
+            if(button.classList.contains('selected')) button.classList.remove('selected');
+        }
+        event.target.classList.add('selected');
+
+        const quizName = event.target.id.split('_')[2];
+        for(let item of tables) {
+            const tableQuizName = item.id.split('_')[2];
+            if(quizName != tableQuizName) {
+                if(!item.classList.contains('table-hidden')){
+                    item.classList.add('table-hidden');
+                    continue;
+                }      
+            }
+            else{
+                if(item.classList.contains('table-hidden')) item.classList.remove('table-hidden');
+            }
+        }
+        
+
+    }
+
+  </script>
   {%endblock%}
 
 {%endblock%}
