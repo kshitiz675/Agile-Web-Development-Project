@@ -68,7 +68,7 @@
 .choices button:hover {
     cursor: pointer;
     transform: scale(1.025);
-    transform: transform 100ms;
+    transform: 100ms;
 }
 
 #progressBarA {
@@ -117,7 +117,7 @@
 #back-button:hover, #submit-button:hover {
     animation: anim 3s linear infinite;
     transform: scale(1.05);
-    transform: transform 100ms;
+    transform: 100ms;
 }
 
 @keyframes anim {
