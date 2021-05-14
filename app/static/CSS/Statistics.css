@@ -15,6 +15,9 @@
 .statistics-table tr:nth-child(even) {
     background-color: #f2f2f2;
 }
+.statistics-table tr:nth-child(odd) {
+    background-color: #ba6f00;
+}
 
 .statistics-table tr:hover {
     background-color: #ddd;

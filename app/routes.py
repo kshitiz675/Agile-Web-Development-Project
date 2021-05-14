@@ -116,7 +116,7 @@ def register():
         userResults = UserResult(userid = User.query.filter_by(username=form.username.data).first().id)
         db.session.add(userResults)
         db.session.commit()
-        user.load_debug_user()
+        #user.load_debug_user()
         return redirect(url_for('login'))
     return render_template('Registration.html', title='Registration', form=form)
 
