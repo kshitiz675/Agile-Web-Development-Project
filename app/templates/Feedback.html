@@ -3,12 +3,6 @@
   <h1>Congratulations on Completing {{feedback.quizname}}</h1>
   <br />
 
-  <h2>You got 4/5 questions correct</h2>
-
-  <div class="container">
-    <div class="score">80%</div>
-  </div>
-
   {% for question in feedback.questions %}
   <div id="question-{{question.id}}">
     <p>{{question.questiontext}}</p>

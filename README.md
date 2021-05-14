@@ -77,3 +77,5 @@ Vscode and git
 - Bitcoin png (including Broken Bitcoin): http://www.pngall.com/bitcoin-png/download/24844
 - Code Background: https://www.devonblog.com/continuous-delivery/code-analysis-service-sonarcloud/
 - Patrick png: https://www.pinterest.com.au/pin/587227238891101162/?d=t&mt=login
+
+- Live Bitcoin Prices: https://coinlib.io/widgets

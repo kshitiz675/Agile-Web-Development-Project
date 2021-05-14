@@ -73,9 +73,10 @@ def assessment(quizId):
         #TODO check if quiz has already been done
         oldQuizResult = QuizResult.query.filter_by(userresultid=userResults.id).first()
         if oldQuizResult != None:
-            return "Quiz already completed"
-        quizResult = QuizResult(quizid=quizId, userresultid=userResults.id, score=numCorrect)
-        db.session.add(quizResult)
+            oldQuizResult.score = numCorrect
+        else:
+            quizResult = QuizResult(quizid=quizId, userresultid=userResults.id, score=numCorrect)
+            db.session.add(quizResult)
         db.session.commit()
         userResults = UserResult.query.filter_by(userid=session['user_id']).first()
         print("Success")
