@@ -8,7 +8,7 @@
     <div class="stats-tabs-container">
         <nav class="stats-tabs flex" aria-label="tabs">
             {% for quiz in quizzes%}
-              <button id="quiz_select_{{quiz.quizname}}" onclick="selectQuiz(event)" class="quiz-select">{{quiz.quizname}}</button>
+              <button id="quiz_select_{{quiz.id}}" onclick="selectQuiz(event)" class="quiz-select">{{quiz.quizname}}</button>
             {% endfor %}
 
         </nav>

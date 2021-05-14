@@ -106,7 +106,7 @@ class QuizResult(db.Model):
         results = []
         for quiz in Quiz.query.all():
             quizResults = QuizResult.getResultsForQuiz(quiz.id)
-            results.append((quiz.quizname, quizResults))
+            results.append((quiz.id, quizResults))
         return results
     def getResultsForQuiz(quizId):
         results = []
