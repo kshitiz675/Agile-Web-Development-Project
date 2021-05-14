@@ -1,23 +1,29 @@
-
-#Scoretable {
+.statistics-table {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
-  }
-  
-#Scoretable td, #Scoretable th {
+}
+
+.statistics-table td, .statistics-table th {
     border: 1px solid #ddd;
     padding: 8px;
     font-family: 'Georgia, "Times New Roman"';
 }
 
-#Scoretable tr:nth-child(even){background-color: #f2f2f2;}
+.statistics-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.statistics-table tr:nth-child(odd) {
+    background-color: #ba6f00;
+}
 
-#Scoretable tr:hover {background-color: #ddd;}
+.statistics-table tr:hover {
+    background-color: #ddd;
+}
 
-#Scoretable th {
+.statistics-table th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
@@ -28,22 +34,64 @@
 .statistics_button {
     display: inline-flex;
     padding: 6px 6px;
-    margin-left:15px;
-    margin-top:30px;
+    margin-left: 15px;
+    margin-top: 30px;
     font-size: 10px;
     color: white;
     font-weight: 400;
     border-width: 1px;
     border-color: transparent;
     cursor: pointer;
-    
-    
     line-height: 1rem;
     border-radius: 0.375rem;
     justify-content: center;
     width: 80px;
 }
-.statistics_button:active{
-    color:white;
-    text-decoration:none;
+
+.statistics_button:active {
+    color: white;
+    text-decoration: none;
+}
+.quiz-results-container {
+}
+
+.stats-tabs-container {
+    border-bottom-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: rgba(229, 231, 235, var(--tw-border-opacity));
+    padding: 5px;
+
+}
+
+.stats-tabs {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2rem * var(--tw-space-x-reverse));
+    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+    justify-content: center;
+}
+
+.stats-tabs > button{
+
+    margin-left: 5px;
+    margin-right: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    white-space: nowrap;
+    background-color: #e7900e;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: black !important;
+}
+
+.table-hidden {
+    display: none;
 }

@@ -10,12 +10,16 @@ class User(UserMixin, db.Model):
     password_hash = db.Column(db.String(128))
     userresults = db.relationship('UserResult', backref='user', lazy=True)
 
+
     def set_password(self, password):
         self.password_hash = generate_password_hash(password)
     
     def check_password(self, password):
         return check_password_hash(self.password_hash, password)
-        
+    
+    def debug_hashpassword(self, password):
+        return generate_password_hash(password)
+
     def load_debug_user(self):
         print("Loading Debug User")
         userresultid = UserResult.query.filter_by(userid=self.id).first().id
@@ -85,12 +89,32 @@ class UserResult(db.Model):
     userid = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
     quizresults = db.relationship('QuizResult', backref='user_result', lazy=True)
 
+
 class QuizResult(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     quizid = db.Column(db.Integer, db.ForeignKey('quiz.id'), nullable=False)
     userresultid = db.Column(db.Integer, db.ForeignKey('user_result.id'), nullable=False)
     score = db.Column(db.Integer)
 
+    def getBestResults(quizId, numResults):
+        return QuizResult.query.filter_by(quizid = quizId).order_by(QuizResult.score).limit(numResults).all()
+
+    def getResultsForAllQuizzes():
+        results = []
+        for quiz in Quiz.query.all():
+            quizResults = QuizResult.getResultsForQuiz(quiz.id)
+            results.append((quiz.id, quizResults))
+        return results
+    def getResultsForQuiz(quizId):
+        results = []
+        rank = 1
+        for quizResult in QuizResult.query.filter_by(quizid=quizId).order_by(QuizResult.score.desc()).limit(10):
+            userId = UserResult.query.filter_by(userid=quizResult.userresultid).first().userid
+            username = User.query.filter_by(id=userId).first().username
+            results.append((username, quizResult.score, rank))
+            rank += 1
+        return results
+            
 class Topic(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     quizid = db.Column(db.Integer, db.ForeignKey('quiz.id'), nullable=True)

@@ -2,7 +2,7 @@ from flask import render_template, url_for, redirect, flash, request, jsonify, s
 from app import app, db
 from app.forms import LoginForm, RegistrationForm
 from flask_login import current_user, login_user, logout_user
-from app.models import User, Quiz, Topic, Question, Answer, UserResult, QuizResult
+from app.models import TopicSection, User, Quiz, Topic, Question, Answer, UserResult, QuizResult
 from flask_login import login_required
 #Place @login_required for pages that require users to be signed in
 
@@ -25,17 +25,17 @@ def error500(e):
 def content():
     return render_template('Content.html', title='Learn')
 
-
-@app.route('/feedback')
+@app.route('/feedback/<int:id>')
 @login_required
-def feedback():
-    return render_template('Feedback.html', title='Feedback')
-
+def feedback(id):
+    feedback = Quiz.query.filter_by(id=id).first()
+    if feedback == None: return 'Not Found'
+    return render_template('Feedback.html', title='Feedback', feedback=feedback)
 
 @app.route('/statistics')
 def statistics():
-    return render_template('Statistics.html', title='Statistics')
-
+    quizResults = QuizResult.getResultsForAllQuizzes()
+    return render_template('Statistics.html', title='Statistics', results=quizResults, quizzes=Quiz.query.all())
 
 @app.route('/lesson/<int:id>')
 @login_required
@@ -45,11 +45,6 @@ def lesson(id):
     # return f"TODO + {lesson.topiccontent}"
     return render_template('Lesson.html', title='Lesson', lesson=lesson)
 
-@app.route('/assessment')
-@login_required
-def assessmentHome():
-    return "Assessment Home Page"
-    
 @app.route('/assessment/<int:quizId>', methods=['GET', 'POST'])
 @login_required
 def assessment(quizId):
@@ -79,14 +74,14 @@ def assessment(quizId):
         #TODO check if quiz has already been done
         oldQuizResult = QuizResult.query.filter_by(userresultid=userResults.id).first()
         if oldQuizResult != None:
-            return "Quiz already completed"
-        quizResult = QuizResult(quizid=quizId, userresultid=userResults.id, score=numCorrect)
-        db.session.add(quizResult)
+            oldQuizResult.score = numCorrect
+        else:
+            quizResult = QuizResult(quizid=quizId, userresultid=userResults.id, score=numCorrect)
+            db.session.add(quizResult)
         db.session.commit()
         userResults = UserResult.query.filter_by(userid=session['user_id']).first()
         print("Success")
         return "Success"
-
 
 #Login/Registration
 @app.route('/login', methods=['GET', 'POST'])
@@ -123,7 +118,7 @@ def register():
         userResults = UserResult(userid = User.query.filter_by(username=form.username.data).first().id)
         db.session.add(userResults)
         db.session.commit()
-        user.load_debug_user()
+        #user.load_debug_user()
         return redirect(url_for('login'))
     return render_template('Registration.html', title='Registration', form=form)
 

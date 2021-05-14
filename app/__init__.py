@@ -189,6 +189,57 @@ def seed(db):
 
 
 
+        ##Add Admin Users
+        adminUser = models.User(username='admin', email='admin@mail.com')
+        adminUser.set_password('admin123')
+        db.session.add(adminUser)
+
+        #Add fake users
+        johnny = models.User(username='Johnny', email='Johnny@mail.com')
+        johnny.set_password('johnny123')
+        db.session.add(johnny)
+
+        jerry = models.User(username='Jerry', email='Jerry@mail.com')
+        jerry.set_password('jerry123')
+        db.session.add(jerry)
+
+        db.session.commit()
+
+        adminId = models.User.query.filter_by(username='admin').first().id
+        johnnyId = models.User.query.filter_by(username='Johnny').first().id
+        jerryId = models.User.query.filter_by(username='Jerry').first().id
+
+        #Add fake user results
+        db.session.add(models.UserResult(userid=adminUser.id))
+        db.session.add(models.UserResult(userid=johnnyId))
+        db.session.add(models.UserResult(userid=jerryId))
+
+        db.session.commit()
+
+        adminResults = models.UserResult.query.filter_by(userid=adminUser.id).first()
+        db.session.add(models.QuizResult(quizid=blockchainQuiz, userresultid=adminResults.id, score=2))
+        db.session.add(models.QuizResult(quizid=nftQuiz, userresultid=adminResults.id, score=2))
+        db.session.add(models.QuizResult(quizid=miningQuiz, userresultid=adminResults.id, score=2))
+        db.session.add(models.QuizResult(quizid=cryptocurrenciesQuiz, userresultid=adminResults.id, score=2))
+        db.session.add(models.QuizResult(quizid=usesQuiz, userresultid=adminResults.id, score=2))
+
+        johnnyResults = models.UserResult.query.filter_by(userid=johnny.id).first()
+        db.session.add(models.QuizResult(quizid=blockchainQuiz, userresultid=johnnyResults.id, score=2))
+        db.session.add(models.QuizResult(quizid=nftQuiz, userresultid=johnnyResults.id, score=2))
+        db.session.add(models.QuizResult(quizid=miningQuiz, userresultid=johnnyResults.id, score=2))
+        db.session.add(models.QuizResult(quizid=cryptocurrenciesQuiz, userresultid=johnnyResults.id, score=2))
+        db.session.add(models.QuizResult(quizid=usesQuiz, userresultid=johnnyResults.id, score=2))
+
+    
+        jerryResults = models.UserResult.query.filter_by(userid=jerry.id).first()
+        db.session.add(models.QuizResult(quizid=blockchainQuiz, userresultid=jerryResults.id, score=3))
+        db.session.add(models.QuizResult(quizid=nftQuiz, userresultid=jerryResults.id, score=3))
+        db.session.add(models.QuizResult(quizid=miningQuiz, userresultid=jerryResults.id, score=3))
+        db.session.add(models.QuizResult(quizid=cryptocurrenciesQuiz, userresultid=jerryResults.id, score=3))
+        db.session.add(models.QuizResult(quizid=usesQuiz, userresultid=jerryResults.id, score=3))
+
+        db.session.commit()
+
 
 
 

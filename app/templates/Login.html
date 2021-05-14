@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+
 {%extends "layout.html"%}
 
 {%block content%}
 <div class="login-form">
-    <form class="log" action="" method="post" novalidate autocomplete="off">
+    <form class="log" action="#" method="post" novalidate autocomplete="off">
         {{form.hidden_tag()}}
         <div class="login-head">
             <h1>Login</h1>
@@ -12,7 +12,7 @@
             <p>Enter details to login to account</p><br />
         </div>
 
-        <p>
+
         <div class="user">
             {{form.username.label}}
         </div>
@@ -24,9 +24,9 @@
         {%for error in form.username.errors%}
         <span class="error" style="color:red;">[{{error}}]</span>
         {%endfor%}
-        </p> <br />
+        <br />
 
-        <p>
+
         <div class="pass">
             {{form.password.label}}
         </div>
@@ -38,21 +38,21 @@
         {%for error in form.password.errors%}
         <span class="error" style="color:red;">[{{error}}]</span>
         {%endfor%}
-        </p> <br />
-        <p>
+        <br />
+
         <div class="remember">
             {{form.remember_me.label}}{{form.remember_me()}}
         </div>
-        </p>
-        <p>
+
+
         <div class="submit">
             {{form.submit()}}
         </div>
-        </p><br><br>
+        <br><br>
 
         <div class="new">
-        <p>Are you new here? <a href="{{ url_for('register') }}">Click to Register!</a></p>
-    </div>
+            <p>Are you new here? <a href="{{ url_for('register') }}">Click to Register!</a></p>
+        </div>
     </form>
 </div>
 

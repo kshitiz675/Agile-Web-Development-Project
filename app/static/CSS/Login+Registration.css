@@ -4,7 +4,7 @@
     margin-right: auto;
     margin-top: 200px;
     width: 500px;
-    background-color:  #32373c;
+    background-color: #32373c;
     border-radius: 25px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -16,13 +16,13 @@
     margin-right: auto;
     margin-top: 200px;
     width: 500px;
-    background-color:  #32373c;
+    background-color: #32373c;
     border-radius: 25px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.login-head, .details, .user, .pass, .userinput, .passinput, .remember, .submit, .email, .emailinput, .register-head, .reg-details{
+.login-head, .details, .user, .pass, .userinput, .passinput, .remember, .submit, .email, .emailinput, .register-head, .reg-details {
     text-align: center;
 }
 
@@ -54,7 +54,6 @@
     color: white;
 }
 
-
 .passinput input {
     height: 40px;
     width: 80%;
@@ -70,10 +69,10 @@
 form h1 {
     font-size: 52pt;
     font-family: 'Crimson Text', serif;
-    color:white;
+    color: white;
 }
 
-form p{
+form p {
     font-family: 'Work Sans', sans-serif;
     color: white;
     font-size: 12pt;
@@ -93,7 +92,7 @@ form label {
     color: orange;
 }
 
-input[type="submit"] { 
+input[type="submit"] {
     margin-top: 30px;
     width: 60%;
     height: 50px;
@@ -111,7 +110,7 @@ input[type="submit"] {
 input[type="submit"]:hover {
     animation: anim 3s linear infinite;
     transform: scale(1.05);
-    transform: transform 100ms;
+    transform: 100ms;
 }
 
 @keyframes anim {
@@ -126,7 +125,6 @@ input[type="submit"]:hover {
     }
 }
 
-.remember { 
+.remember {
     margin-top: -25px;
 }
-
