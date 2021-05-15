@@ -59,7 +59,7 @@
     border-bottom-width: 1px;
     --tw-border-opacity: 1;
     border-color: rgba(229, 231, 235, var(--tw-border-opacity));
-    padding: 5px;
+    padding: 10px;
 
 }
 
@@ -94,4 +94,21 @@
 
 .table-hidden {
     display: none;
+}
+
+.num-users-container {
+    margin-top: 10px;
+    width: 200px;
+    padding: 4px 2px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    font-weight: 600;
+    font-size: 16px;    
+    background-color: #e7900e;
+    color: white;
+    
 }

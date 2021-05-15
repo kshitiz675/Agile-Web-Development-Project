@@ -8,17 +8,14 @@
     <div class="stats-tabs-container">
         <nav class="stats-tabs flex" aria-label="tabs">
             {% for quiz in quizzes%}
-              <button id="quiz_select_{{quiz.id}}" onclick="selectQuiz(event)" class="quiz-select">{{quiz.quizname}}</button>
+              <button id="quiz-select-{{quiz.id}}" onclick="selectQuiz(event)" class="quiz-select">{{quiz.quizname}}</button>
             {% endfor %}
-
         </nav>
-    
-  
     </div>
 
     {% for quiz in results %} 
-    <div id="quiz-result-{{quiz.id}}" class="quiz-results-container">
-        <table id="statistics_table_{{quiz[0]}}" class="statistics-table table-hidden" style="margin-top: 5px;">
+    <div id="quiz-result-{{quiz[0]}}" class="quiz-results-container table-hidden">
+        <table id="statistics-table-{{quiz[0]}}" class="statistics-table" style="margin-top: 5px;">
             <tr>
                 <th>Rank</th>
                 <th>Name</th>
@@ -36,6 +33,9 @@
 
             </tr>
         </table>
+        <div class="num-users-container">Showing {{quiz[1]|length}} user(s)</div>
+        
+        
     </div>
       
     {% endfor %}
@@ -44,7 +44,7 @@
 </div>
   {%block scripts%}
   <script>
-    const tables = document.getElementsByClassName('statistics-table');
+    const tables = document.getElementsByClassName('quiz-results-container');
     const buttons = document.getElementsByClassName('quiz-select');
 
 
@@ -57,9 +57,9 @@
         }
         event.target.classList.add('selected');
 
-        const quizName = event.target.id.split('_')[2];
+        const quizName = event.target.id.split('-')[2];
         for(let item of tables) {
-            const tableQuizName = item.id.split('_')[2];
+            const tableQuizName = item.id.split('-')[2];
             if(quizName != tableQuizName) {
                 if(!item.classList.contains('table-hidden')){
                     item.classList.add('table-hidden');
