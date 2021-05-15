@@ -69,7 +69,7 @@ Vscode and git
 
 ## References
 
-- Crypto College Logo (including favicon): 
+- Crypto College Logo (including favicon): https://www.flaticon.com/download/icon/landing/70035?format=png&size=512
 - Blockchain png: https://rubygarage.org/blog/how-blockchain-works
 - NFT png: https://en.wikipedia.org/wiki/Non-fungible_token
 - Crypto Mining png: https://www.iconfinder.com/icons/3329018/bitcoin_bitcoin_mining_mine_mining_icon
