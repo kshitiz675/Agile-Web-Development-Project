@@ -12,6 +12,7 @@ var page = 0;
 var nextClickCount = 0;
 
 function progress() {
+    
     page++;
     nextClickCount++;
     progressBarFull.style.width = `${(page / MAX_PAGES) * 100}%`;
@@ -44,7 +45,7 @@ function progress() {
 
     if (nextClickCount > 1) {
         if (window.confirm("Pressing next will take you to the quiz, are you ready?")) {
-            document.location.href = "/assessment/1";
+            document.location.href = `/assessment/${quizId}`;
         }
         else {
             nextClickCount = 1;

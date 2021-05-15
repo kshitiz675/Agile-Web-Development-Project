@@ -1,30 +1,27 @@
-{%extends "layout.html"%}
+{%extends "layout.html"%} {%block content%}
+<div class="test_container">
+  <h1>Congratulations on Completing {{feedback.quizname}}</h1>
+  <br />
 
-{%block content%}
-    <div class="test_container">
-        <h1>Congratulation on completing [Module name]</h1><br>
-        
-        <h2>You got 4/5 questions correct</h2>
-        
-        <div class="container">
-            <div class="score">80%</div>
-        </div>
-        
-        <p>Question 1: What is a blockchain? </p>
-        <div class="choices">
-            <button style="background-color: greenyellow; border:20px;">A distributed ledger on a peer-to-peer network</button><br>
-            <button>A brokerage for cryptocurrency</button><br>
-            <button>A form of cryptocurrency  </button><br>
-            <button>A central financial institution for cryptocurrency  </button><br>
-        </div>
+  <h2>You got 4/5 questions correct</h2>
 
-        <p>Question 2: What gives miners incentive to validate transactions on the blockchain?  </p>
-        <div class="choices">
-            <button>Recognition and praise from community</button><br>
-            <button style="background-color: red; border:20px; ">Fees from blockchain creators</button><br>
-            <button style="background-color: greenyellow;">A block reward</button><br>
-            <button>Access to the blockchain </button><br>
-        </div>
+  <div class="container">
+    <div class="score">80%</div>
+  </div>
 
+  {% for question in feedback.questions %}
+  <div id="question-{{question.id}}">
+    <p>{{question.questiontext}}</p>
+    <br />
+    <div class="choices">
+      {% for answer in question.get_randomized_answers() %}
+      <button id="answer-{{answer.id}}">{{answer.answertext}}</button>
+      {% endfor %}
     </div>
+  </div>
+  <p style="color:rgb(6, 226, 6);">
+    Correct Answer: {{question.get_correct_answer().answertext}}
+  </p>
+  {% endfor %}
+</div>
 {%endblock%}

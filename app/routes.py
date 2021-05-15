@@ -42,7 +42,6 @@ def statistics():
 def lesson(id):
     lesson = Topic.query.filter_by(id=id).first()
     if lesson == None: return 'Not Found'
-    # return f"TODO + {lesson.topiccontent}"
     return render_template('Lesson.html', title='Lesson', lesson=lesson)
 
 @app.route('/assessment/<int:quizId>', methods=['GET', 'POST'])
