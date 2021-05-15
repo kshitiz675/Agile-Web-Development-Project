@@ -16,7 +16,10 @@ login.login_view = 'login'
 with app.app_context():
     upgrade()
 
-from app import routes, models
+from app import routes, models, priceloader
+
+# p = priceloader.PriceLoader()
+# p.getPriceData()
 
 def seed(db):
 
