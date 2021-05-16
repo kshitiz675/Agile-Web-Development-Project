@@ -40,16 +40,16 @@
 
                     <div class="flex">
                         {% if current_user.is_authenticated == False %}
-                        <button class="login-button background-indigo">
-                            <a id="login-button" href="{{ url_for('login') }}">Login</a>
-                        </button>
-                        <button class="login-button background-darkgray" id="register-button-area">
-                            <a id="register-button" href="{{ url_for('register') }}">Register</a>
-                        </button>
+                        <a class="login-button background-indigo" href="{{ url_for('login') }}">
+                            <div id="login-button" >Login</div>
+                        </a>
+                        <a class="login-button background-darkgray" id="register-button-area" href="{{ url_for('register') }}">
+                            <div id="register-button" >Register</div>
+                        </a>
                         {% else %}
-                        <button class="login-button background-darkgray">
-                            <a href="{{ url_for('logout') }}">Logout {{current_user.username}}</a>
-                        </button>
+                        <a class="login-button background-darkgray" href="{{ url_for('logout') }}">
+                            <div >Logout {{current_user.username}}</div>
+                        </a>
                         {% endif %}
                     </div>
                     <div>
