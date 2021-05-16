@@ -1,0 +1,1190 @@
+commit bc933c04d835a0fa572c420d1f12109fe2f80e3e
+Author: Will <will@hatchet.com.au>
+Date:   Sun May 16 14:52:55 2021 +0800
+
+    Quiz submission fix
+
+commit 5a8991eebc771dfdac861e91fede61f4049c27bf
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Sun May 16 14:42:17 2021 +0800
+
+    formatting updates
+
+commit 85cec26880d7ba404c088e7b636c899dedd176ef
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Sun May 16 14:37:06 2021 +0800
+
+    Merge branch 'main' of https://github.com/Cosmo801/Agile-Web-Development-Project
+
+commit dd19587ec66f3a74148c88d7160e110a1da8f7cd
+Author: Will <will@hatchet.com.au>
+Date:   Sun May 16 14:22:57 2021 +0800
+
+    Updated login buttons
+
+commit 6daee1a1ca4e2a88acaac41cc0346a93005896a8
+Author: Will <will@hatchet.com.au>
+Date:   Sun May 16 14:08:59 2021 +0800
+
+    added user persistence
+
+commit 625e89906c4b204405c0df28f6dc5e9de842324d
+Author: Will <wknight801@gmail.com>
+Date:   Sun May 16 13:56:59 2021 +0800
+
+    Update README.md
+
+commit 448a39d7577ad17f15411a6ff357e696aa9dd5d5
+Author: Will <will@hatchet.com.au>
+Date:   Sun May 16 12:21:54 2021 +0800
+
+    homepage change
+
+commit f818ea7803265939b3df1f05d0d37eebf579fe0d
+Author: Will <will@hatchet.com.au>
+Date:   Sun May 16 11:07:58 2021 +0800
+
+    Testing update
+
+commit 048ff734d48403ceac12b8685fe5a121685574cf
+Author: Will <will@hatchet.com.au>
+Date:   Sun May 16 10:46:27 2021 +0800
+
+    Added custom price bar
+
+commit 2f5ba5006ee03160ddb24865c6d858bec9ffb58e
+Merge: 235fa9b f51de84
+Author: Will <will@hatchet.com.au>
+Date:   Sat May 15 18:31:35 2021 +0800
+
+    Merge branch 'main' of https://github.com/Cosmo801/Agile-Web-Development-Project into main
+
+commit 235fa9bd057f40388c79b23899aa8e617aaea10d
+Author: Will <will@hatchet.com.au>
+Date:   Sat May 15 18:31:07 2021 +0800
+
+    Download price data backend
+
+commit f51de84f3459bed2fef6faefeb71d6c9b10d969e
+Author: Will <wknight801@gmail.com>
+Date:   Sat May 15 17:40:19 2021 +0800
+
+    Update README.md
+
+commit e209117f620d9b72782146ee60ecbf559d1bc154
+Author: Will <will@hatchet.com.au>
+Date:   Sat May 15 17:34:04 2021 +0800
+
+    navbar shadow
+
+commit 247ca7f8725bbdd06a81a171c9e4aeb670f96e57
+Author: Will <will@hatchet.com.au>
+Date:   Sat May 15 17:32:19 2021 +0800
+
+    statistics page shows num users
+
+commit f894a37c188c059e13659972f6d2d144ef9611cb
+Author: Will <will@hatchet.com.au>
+Date:   Sat May 15 12:54:41 2021 +0800
+
+    Testing update
+
+commit 15353fd3d042ab7876893f3062c389c5dfcf2d2b
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Sat May 15 11:12:50 2021 +0800
+
+    QuizName to Id for Models
+
+commit 818d96420d3e5515677f003b7cb423edb52cb4b4
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Fri May 14 20:29:53 2021 +0800
+
+    validation updates
+
+commit 872416d52fd3081fde32c92a84876c640cf7ad0a
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Fri May 14 20:24:30 2021 +0800
+
+    validation updates
+
+commit c7160d260c610e915cb9612e2228f5f97c2220ac
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Fri May 14 19:55:41 2021 +0800
+
+    validation updates
+
+commit 211201e7d28b4ebe1a0bc46a513ad4313de81f92
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Fri May 14 17:07:53 2021 +0800
+
+    Update Results Handling
+
+commit c428ef69d38f91483f4d2a339d73193a21115210
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Fri May 14 12:47:25 2021 +0800
+
+    test change
+
+commit ecbd7461360df6163fdc6960a0233f8e3d4d01cc
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Fri May 14 12:40:43 2021 +0800
+
+    Fix Statistics
+
+commit 54d32285b39a935e867403c2be6a1238be10cad4
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Fri May 14 01:14:29 2021 +0800
+
+    validat
+
+commit d214e79683be9b59dff7fc97eba26be6cfcfd8bd
+Author: Will <will@hatchet.com.au>
+Date:   Thu May 13 23:25:46 2021 +0800
+
+    Updated statistics js
+
+commit 864cc86299931e228db39ba657afae9d79650c76
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Wed May 12 20:38:30 2021 +0800
+
+    Update Quiz Summary CSS
+
+commit 7eb49bc20e4013f7ac31908d7d734d2f687b3893
+Author: Will <will@hatchet.com.au>
+Date:   Wed May 12 20:26:42 2021 +0800
+
+    Updated statistics page
+
+commit 8c17fef3e3774f4389582e38d4ca23eec2514523
+Author: Will <will@hatchet.com.au>
+Date:   Wed May 12 19:36:43 2021 +0800
+
+    Statistics backend and some debug data
+
+commit d060b4284f0819214fd99ca1abc06e13bd497e6d
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Wed May 12 15:07:56 2021 +0800
+
+    formatting update
+
+commit 3e3456e2f86dc1bba1e6c154e5970fc29cf7962d
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Wed May 12 14:52:22 2021 +0800
+
+    delete videos
+
+commit 202c78a49fb09f4591dbdc333c332b6d23c8d66c
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Wed May 12 14:50:45 2021 +0800
+
+    requirements.txt
+
+commit 4d70e6dee62aeb23d6f91d1fba14bd7d57e749ff
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Wed May 12 14:48:07 2021 +0800
+
+    formatting update
+
+commit 1f233ba30b2cb7f2da50a305d42a146368396b3a
+Merge: 6047e1d a077bcc
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Wed May 12 11:32:31 2021 +0800
+
+    Merge branch 'main' of https://github.com/Cosmo801/Agile-Web-Development-Project
+
+commit 6047e1d786d646a7c58d4c48d36dffc231029ad5
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Wed May 12 11:32:19 2021 +0800
+
+    lesson summary update
+
+commit a077bcc0f617f9c90d331e435aa9c6bca17792bc
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Wed May 12 10:45:01 2021 +0800
+
+    Update Readme References
+
+commit a8223157708455ba2b4ef2c9db04f38cba591b17
+Merge: 6e8ec08 654fd90
+Author: ThwBigB <bhasurasgamage@gmail.com>
+Date:   Wed May 12 10:11:50 2021 +0800
+
+    Merge branch 'main' of https://github.com/Cosmo801/Agile-Web-Development-Project into main
+
+commit 6e8ec0889de61b4b2b3370daec4f5b50c4e7741b
+Author: ThwBigB <bhasurasgamage@gmail.com>
+Date:   Wed May 12 06:51:59 2021 +0800
+
+    commit -m moved live bitcoin price data from layout to home & added unit testing for password hashing
+
+commit 654fd908b4d6010dc1fc4df191d8e26c0e99f062
+Merge: 43833b3 90d5267
+Author: Will <will@hatchet.com.au>
+Date:   Tue May 11 20:23:17 2021 +0800
+
+    Updated topics in database
+
+commit 43833b3d5d6bede6a1085828274e50cd25bd1d6d
+Author: Will <will@hatchet.com.au>
+Date:   Tue May 11 20:21:25 2021 +0800
+
+    Updated topic database
+
+commit 90d52673e8e04a07c75be7ca75433ad2e5da683b
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Tue May 11 20:20:18 2021 +0800
+
+    feedback update
+
+commit 8b66878d25515d4b140c2ebf759213ebe6b5aa1d
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Tue May 11 19:36:49 2021 +0800
+
+    feedback update
+
+commit 9d3f7a122aa383ffd6db4ec189d3c20594f70852
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Tue May 11 19:36:03 2021 +0800
+
+    Feedback update
+
+commit f4a7017a44d032937f775f9e3ad8615fea643856
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Tue May 11 17:38:48 2021 +0800
+
+    routes update
+
+commit 09a236e0d54454d80d904d2f905669452b673d55
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Tue May 11 17:23:47 2021 +0800
+
+    Progress bar + routes update
+
+commit afd8322391cabc51042536797e4801e1d9919e5d
+Author: ThwBigB <bhasurasgamage@gmail.com>
+Date:   Tue May 11 14:56:59 2021 +0800
+
+    commit
+
+commit c3249bfdf61f13b9a3cd3ef55d77c29603eab898
+Author: ThwBigB <bhasurasgamage@gmail.com>
+Date:   Tue May 11 14:53:06 2021 +0800
+
+    commit -m live stock updates on home page
+
+commit c328a1efa65d34a43c5da8000a19d686f5271b56
+Author: ThwBigB <bhasurasgamage@gmail.com>
+Date:   Tue May 11 13:08:15 2021 +0800
+
+    commit -m testing and assesment style
+
+commit 24dd53a0c742fe05c9778de540f8a33885e38544
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Sun May 9 17:31:02 2021 +0800
+
+    Add background
+
+commit d25dc9dbfe8eeb4a1657a8b8625cf4367ee26236
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Sun May 9 16:03:40 2021 +0800
+
+    Update Errors
+
+commit 649fc07d8f79102b78ab51b70710bdab885ee0e0
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Sun May 9 15:25:19 2021 +0800
+
+    Add Error 500 page
+
+commit 30c03e25fbbba3cedd5dd5019833a5fcfc8df65a
+Author: Will <will@hatchet.com.au>
+Date:   Sun May 9 11:06:30 2021 +0800
+
+    Debug user results
+
+commit 94058ff59da7199083b8a22e689456995a07ca86
+Author: Will <wknight801@gmail.com>
+Date:   Sun May 9 10:28:44 2021 +0800
+
+    Update routes.py
+
+commit 7f5379ec687d320b3e57e5e17845f64de8564aa0
+Author: Will <wknight801@gmail.com>
+Date:   Sun May 9 10:27:58 2021 +0800
+
+    Update Assesment.html
+
+commit 5db1186851453bcd35680e48a609f7143b658041
+Author: Will <wknight801@gmail.com>
+Date:   Sun May 9 10:27:14 2021 +0800
+
+    Delete Assessment.js
+
+commit 7ef36c635ccdc20e8fd6c3acfebd5f10ce1a7ded
+Author: Will <wknight801@gmail.com>
+Date:   Sun May 9 10:26:52 2021 +0800
+
+    Update __init__.py
+
+commit 1cb84d743ef7899d90c01bf3d8336551ee0776b8
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Sat May 8 23:25:46 2021 +0800
+
+    Readme update
+
+commit 10d6ed719465bb7f3dd09ff7ace570649c967b6a
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Sat May 8 23:23:35 2021 +0800
+
+    Statistics css update
+
+commit b8dbe4bf83b49617cdd1856f9a85bc707b0e8a00
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Sat May 8 23:13:35 2021 +0800
+
+    Readme update
+
+commit 7171eb9897b71b4dd8f81b2c87618d1aa379a3e8
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Sat May 8 23:12:37 2021 +0800
+
+    Readme update
+
+commit 9f5e5c8dbb01523270f2f88e6c296d36b6840b6f
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Sat May 8 23:12:03 2021 +0800
+
+    Readme update
+
+commit da3577fd8dba14d165f6e623c0a5adf32797a67d
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Sat May 8 23:11:05 2021 +0800
+
+    Readme update
+
+commit f70cd3876c97ab9b8224b73f056123aef02bcd63
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Sat May 8 23:09:56 2021 +0800
+
+    Readme update
+
+commit 61b2c19f41c3e6b2f2e39908be8bac9f336b5b21
+Merge: 54f21d0 73f976c
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Sat May 8 22:22:28 2021 +0800
+
+    Merge branch 'main' of https://github.com/Cosmo801/Agile-Web-Development-Project
+
+commit 54f21d0f16fa68fed0494f690c88d5a356bbbaa8
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Sat May 8 22:22:20 2021 +0800
+
+    Merge branch 'main' of https://github.com/Cosmo801/Agile-Web-Development-Project
+
+commit 73f976c7c56ae1e41275c9d095fd2dc3f922b123
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Sat May 8 21:31:03 2021 +0800
+
+    Update Password Checking
+
+commit 74f997b84f1a0e1331747dee3ef24850676cea65
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Sat May 8 18:45:16 2021 +0800
+
+    Adjust Content
+
+commit bdcc7296506bb46b321b3910e1e895dba9859f5a
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Sat May 8 17:43:01 2021 +0800
+
+    Update Statistics buttons
+
+commit b711c022f3d1c9a4d890cc3261bb5c13c11a86a8
+Merge: 8e9a729 aa67a49
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Sat May 8 16:53:48 2021 +0800
+
+    Merge update from 6/5/2021
+
+commit 8e9a729aef09298233b362694b748beea630f3d9
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Sat May 8 16:50:21 2021 +0800
+
+    Adjust login and registration
+
+commit aa67a4985da2ecfd827f961daa4227ff0f4e6d2b
+Author: Will <will@hatchet.com.au>
+Date:   Sat May 8 14:25:22 2021 +0800
+
+    setup assessment front end for submission
+
+commit c1baf737a4f4f9fa662b6069474b54955f20b59e
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Fri May 7 19:52:17 2021 +0800
+
+    Login + registration css update
+
+commit a4e97af77896f3438297a6195c4dbd2f191be2d9
+Merge: 4914931 e50d3d1
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Fri May 7 19:39:55 2021 +0800
+
+    Merge branch 'main' of https://github.com/Cosmo801/Agile-Web-Development-Project
+
+commit 4914931462debf15f64477e7d5788d48e3bc109f
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Fri May 7 19:34:37 2021 +0800
+
+    login and registration css
+
+commit e50d3d155bdf27850cf3cab0437279d10c953742
+Author: Will <will@hatchet.com.au>
+Date:   Fri May 7 18:29:51 2021 +0800
+
+    Assessment page fix
+
+commit b717b7d47cc460a8be49cc1b33bb940a528674a0
+Author: Will <will@hatchet.com.au>
+Date:   Fri May 7 18:23:07 2021 +0800
+
+    Assessment page basic question cycling
+
+commit 8f0e83329c6c6995d11adf7eca0d3e81fc4eabb8
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Fri May 7 18:12:09 2021 +0800
+
+    Merge branch 'main' of https://github.com/Cosmo801/Agile-Web-Development-Project
+
+commit da51f05c129ddaffbbafb09074ebf4bcebf1172f
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Wed May 5 13:40:52 2021 +0800
+
+    Update Content Options Button Style + Update Routes for Lesson
+
+commit 8c979864ab779dea88f63c8ca536eeb6848362aa
+Merge: cc7134d 624e85d
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Wed May 5 12:38:22 2021 +0800
+
+    Merge pull
+
+commit cc7134de4e3bcec66cf17d97bdb3bf28b334fe47
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Wed May 5 12:36:38 2021 +0800
+
+    Update Login Required
+
+commit c727d30abe8336a7424a7f5b424caf53279e0055
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Wed May 5 12:09:27 2021 +0800
+
+    Test Connect Questions
+
+commit fd1760484bee95c9d54572697f0f573226688cc7
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Wed May 5 10:58:46 2021 +0800
+
+    Update Models & Assessment Fetch
+
+commit 624e85d415092073b2c3a96a90516566b4793e50
+Author: Will <will@hatchet.com.au>
+Date:   Wed May 5 10:25:00 2021 +0800
+
+    Rename /learn route to /lesson
+
+commit a4f11270826ebdc20695b65fa95642e55f515510
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Wed May 5 00:11:58 2021 +0800
+
+    css update
+
+commit 94c515c3175150c8937986c4238294bb0f95afa3
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Tue May 4 22:52:16 2021 +0800
+
+    css update
+
+commit e93fddd92a1b447d1ced5db829ecefc3f9e79e30
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Tue May 4 19:09:37 2021 +0800
+
+    css update
+
+commit 76b405d1b589cb8e5d0e983fa899764817b47a58
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Tue May 4 19:05:43 2021 +0800
+
+    css updates
+
+commit e2e785272f0c1a4411d25abf5a3cf5ee9661430e
+Merge: 61871dd 215cf03
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Tue May 4 18:55:16 2021 +0800
+
+    Merge branch 'main' of https://github.com/Cosmo801/Agile-Web-Development-Project
+
+commit 61871dd5b191810b0ced3e554e97a714e8a15c68
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Tue May 4 18:54:59 2021 +0800
+
+    name updates
+
+commit 215cf03ddc8dd1c34b50729ca6ea3982c820ca56
+Merge: a086243 45aaeaa
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Tue May 4 18:32:32 2021 +0800
+
+    Merge branch 'main' of https://github.com/Cosmo801/Agile-Web-Development-Project
+
+commit 45aaeaa9b156ed389a15be95b84b835189d9b817
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Tue May 4 18:32:10 2021 +0800
+
+    video links update
+
+commit a08624381b1f8308c266c798abf240650974444b
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Tue May 4 18:31:07 2021 +0800
+
+    Add Title & Update Bars
+
+commit 0e2417db99e665b94613e7829de4f53b310de06a
+Merge: 1316cbd 4452f73
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Tue May 4 17:37:03 2021 +0800
+
+    Pull from Github 5/4/2021
+
+commit 4452f7348ab5527e3a0d5a23d70094a41db22403
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Tue May 4 17:34:24 2021 +0800
+
+    routes update
+
+commit 1316cbd13134e5005da3eea48a3323418fb9eddf
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Tue May 4 17:20:33 2021 +0800
+
+    Update README & routes
+
+commit e10921ce07555ca17c173b3ac5a1fae8597b0d7e
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Tue May 4 16:11:24 2021 +0800
+
+    Merge branch 'main' of https://github.com/Cosmo801/Agile-Web-Development-Project
+
+commit a9bb38e562308860092bd2dfaae2abcb17bc8209
+Author: Will <will@hatchet.com.au>
+Date:   Tue May 4 15:56:06 2021 +0800
+
+    Login system working
+
+commit 688bfab70fdd5120a73cdde00fe7762efaa41233
+Author: Will <will@hatchet.com.au>
+Date:   Tue May 4 13:13:44 2021 +0800
+
+    Updated datababase to include lesson content + updated routes
+
+commit 8674eda2900f595adca40152698547e412dd4b59
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Mon May 3 22:21:13 2021 +0800
+
+    formatting
+
+commit 1c16344b2687c53dfabf7a10b345d4bee1d0ba06
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Mon May 3 22:19:01 2021 +0800
+
+    Homepage details
+
+commit 84a0248341561bf5635220f480b1c4a604429272
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Mon May 3 20:49:26 2021 +0800
+
+    update
+
+commit ca99b5d3773b9d2a54a62abc3b7b7be7561a49cb
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Mon May 3 20:24:08 2021 +0800
+
+    javascript
+
+commit 8601b8164235a1b3c7cab02ff61b3a2997f70a8f
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Mon May 3 20:21:14 2021 +0800
+
+    javascript
+
+commit 2a31967cf8226c744b75afd54cabea5330a77dbb
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Mon May 3 20:18:55 2021 +0800
+
+    javascript
+
+commit 4c3c2823e78893615cea58cea103ab922c0a094b
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Mon May 3 20:09:36 2021 +0800
+
+    Merge branch 'main' of https://github.com/Cosmo801/Agile-Web-Development-Project
+
+commit 3601c3543ca539c07b67306cc36aa40c97da9655
+Merge: 4bba4ef 2e7d0cf
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Mon May 3 12:22:49 2021 +0800
+
+    Merge branch 'main' of https://github.com/Cosmo801/Agile-Web-Development-Project
+
+commit 4bba4ef7278ebca640998c681911cf4e5ad9d182
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Mon May 3 12:22:29 2021 +0800
+
+    Update 404 Page v2
+
+commit 146e79ea375faf346738c3ca050e34a73015f970
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Mon May 3 12:13:58 2021 +0800
+
+    Update 404 Page
+
+commit 2e7d0cf1181e0f82dc36da54539781ee6e17e428
+Author: ThwBigB <bhasurasgamage@gmail.com>
+Date:   Mon May 3 08:37:57 2021 +0800
+
+    commit
+
+commit c40137e234462818d9ea7aa158fc0a31a5f4ba9b
+Author: ThwBigB <48436373+ThwBigB@users.noreply.github.com>
+Date:   Mon May 3 05:43:37 2021 +0800
+
+    Update Feedback.html
+    
+    Correct feedback.html
+
+commit dc28229257ed553e3712d79ef5000e286acfc870
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Sun May 2 17:46:10 2021 +0800
+
+    lesson route
+
+commit 689f6ff4191a7bcee02f438747307348faee69cc
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Sun May 2 16:40:34 2021 +0800
+
+    Add 404
+
+commit dfc220e8a30eade711b08a58b74a0797a4d680f2
+Author: Will <will@hatchet.com.au>
+Date:   Sun May 2 15:36:40 2021 +0800
+
+    Added some of Bhasura's changes
+
+commit 7693158a01f2ce2de008a28a69eb73d8b203203c
+Merge: 48059fa 273f38a
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Sun May 2 15:21:46 2021 +0800
+
+    Merge branch 'main' of https://github.com/Cosmo801/Agile-Web-Development-Project
+
+commit 48059fa315ad54eada465f1c68e8852ae7d54abf
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Sun May 2 15:21:25 2021 +0800
+
+    Update
+
+commit 8e987a124daa3dd8a795aef01cab7757c5e7f07d
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Sun May 2 15:15:34 2021 +0800
+
+    initialize database
+
+commit 273f38a196420e54c1fcb4343f0ddfd8050ddeef
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Sun May 2 15:05:42 2021 +0800
+
+    routes update
+
+commit 7bc1019a1b745b7459e0af3743995f7bf7c8da80
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Sun May 2 15:02:47 2021 +0800
+
+    Complete Merge
+
+commit 85f6a230635d1cb5111c91a5ce7ff4435bd04754
+Author: Will <wknight801@gmail.com>
+Date:   Sun May 2 15:00:56 2021 +0800
+
+    Update layout.html
+
+commit ed3a0b3ffa7d6b1892c41a77a79f1175a4b29cee
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Sun May 2 14:58:33 2021 +0800
+
+    lesson route
+
+commit 25c226ea07c62cf558a1bbc9f5c7a5f82835fd7f
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Sun May 2 14:56:41 2021 +0800
+
+    lesson page
+
+commit 83f48a51ca94202c78885cc5b1b311c4afb77c2d
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Sun May 2 14:55:42 2021 +0800
+
+    merging
+
+commit 41bc08d7e051ef17774a93d7535c28f8f4e17425
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Sun May 2 14:45:49 2021 +0800
+
+    merge v2
+
+commit 75bad89db2915ddb7ee90218903367eb7f9198f0
+Merge: f87132b 033bd81
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Sun May 2 14:44:32 2021 +0800
+
+    Merge
+
+commit f88e10b2be5bed9bfaacaef9ac1c77dfff49945c
+Author: Will <wknight801@gmail.com>
+Date:   Sun May 2 14:44:06 2021 +0800
+
+    Update routes.py
+
+commit 033bd819416ae28744c3b999765b8fa327fdb51e
+Author: Will <wknight801@gmail.com>
+Date:   Sun May 2 14:40:42 2021 +0800
+
+    Update Content.html
+
+commit 197c0ca4268eef27bb538f942ae4b6bc236800e5
+Author: Will <wknight801@gmail.com>
+Date:   Sun May 2 14:39:07 2021 +0800
+
+    Update layout.html
+
+commit 16634138ea52fc9ada9e24a43267ec3749e81b1c
+Author: Will <wknight801@gmail.com>
+Date:   Sun May 2 14:35:08 2021 +0800
+
+    Update layout.html
+
+commit ca3b82e8691f48bd24202530e0d0a4ca2f5379a3
+Author: Will <wknight801@gmail.com>
+Date:   Sun May 2 14:29:15 2021 +0800
+
+    Update Blockchain.css
+
+commit 4143ce2761349374dd5b0ed1e34d20110af98a40
+Author: Will <wknight801@gmail.com>
+Date:   Sun May 2 14:28:44 2021 +0800
+
+    Update Learning.css
+
+commit 7b812ac1ee71635c5d86ab5712d275baf73aba25
+Merge: dca45ef 889f63e
+Author: Will <wknight801@gmail.com>
+Date:   Sun May 2 14:15:19 2021 +0800
+
+    Merge pull request #9 from Cosmo801/kshitiz-beta
+    
+    Kshitiz beta merge
+
+commit 889f63e0a339bdb6721304c124266d72c3560a2d
+Merge: 57e0c1c dca45ef
+Author: Will <wknight801@gmail.com>
+Date:   Sun May 2 14:15:04 2021 +0800
+
+    Merge branch 'main' into kshitiz-beta
+
+commit dca45ef0990320f62992c048f0f8e2a25e4b390d
+Author: Will <wknight801@gmail.com>
+Date:   Sun May 2 12:16:09 2021 +0800
+
+    Create README.md
+
+commit be6e1b98c11c257716f322ce655ff9944ce16bea
+Author: Will <will@hatchet.com.au>
+Date:   Sun May 2 11:51:48 2021 +0800
+
+    Updated routing to access database for quizzes
+
+commit fa8f8c7b73bddde6a1cfd5d5affc4a47af073a2b
+Merge: cb9d9be 9914fb2
+Author: Will <wknight801@gmail.com>
+Date:   Sun May 2 11:38:39 2021 +0800
+
+    Merge pull request #8 from Cosmo801/beta-brandon
+    
+    Beta brandon merge
+
+commit cb9d9be90f0b0abb4072db39265efdb2bba63ea9
+Author: Will <will@hatchet.com.au>
+Date:   Sun May 2 11:37:22 2021 +0800
+
+    Revert "Updated routing for quiz pages"
+    
+    This reverts commit 4faa3b40336288eed8e96b5e14203eb6169e6a4f.
+
+commit f9308531ac3dc5d57f97f8b5a3b22ff27bfe1ba0
+Author: Will <will@hatchet.com.au>
+Date:   Sun May 2 11:36:31 2021 +0800
+
+    Revert "Updated routing again"
+    
+    This reverts commit d40a6d99f5433b7ef6d8a61f514d6e871d0ef12a.
+
+commit d40a6d99f5433b7ef6d8a61f514d6e871d0ef12a
+Author: Will <will@hatchet.com.au>
+Date:   Sun May 2 11:25:09 2021 +0800
+
+    Updated routing again
+
+commit 4faa3b40336288eed8e96b5e14203eb6169e6a4f
+Author: Will <will@hatchet.com.au>
+Date:   Sun May 2 11:21:01 2021 +0800
+
+    Updated routing for quiz pages
+
+commit 57e0c1c1c7e0dd493c8a7976436e637bdd4bf51b
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Fri Apr 30 21:09:17 2021 +0800
+
+    js update
+
+commit 75802057c91486a3c5bffd28ab3cd94733fd8069
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Fri Apr 30 19:31:21 2021 +0800
+
+    javascript
+
+commit 36115a40a485952b8ad0151f3e9f98b3f3640167
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Fri Apr 30 01:01:01 2021 +0800
+
+    blockchain quiz
+
+commit 4b54d911bd28600f9c89db393fb9fbe5b5c04ccf
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Fri Apr 30 00:54:50 2021 +0800
+
+    blockchain quiz
+
+commit 9914fb22704af04d43c2a5efdb7da38a1780ff8a
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Thu Apr 29 21:01:46 2021 +0800
+
+    Update Assessment
+
+commit 685c1e0886113d25d8b47827a36eaab66ea8f9db
+Merge: 41f65a5 2ebcdce
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Thu Apr 29 17:52:46 2021 +0800
+
+    Merge branch 'beta-brandon' of https://github.com/Cosmo801/Agile-Web-Development-Project into beta-brandon
+
+commit 41f65a5c84ab0fd2b7e00b33a2d43f6129dc47b8
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Thu Apr 29 17:51:14 2021 +0800
+
+    Update New Next Button
+
+commit 12ed6b29f5f53de23189280200906ab14d57494f
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Thu Apr 29 13:16:31 2021 +0800
+
+    Update LoginForm & RegistrationForm v3
+
+commit 2ebcdce171798a0dd61e12f507ce8c165f129ed2
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Thu Apr 29 12:56:01 2021 +0800
+
+    Update LoginForm & RegistrationForm v3
+
+commit 770010d3c96d2e3bfe62d34b904a95e33e5d1043
+Merge: b709e9c 55f1003
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Thu Apr 29 09:18:55 2021 +0800
+
+    Update LoginForm & RegistrationForm v2
+
+commit b709e9c788239a45c22e314f2ed3073c76a2f5bb
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Thu Apr 29 09:12:56 2021 +0800
+
+    Update LoginForm & RegistrationForm
+
+commit c55acd0c3e6b14c5df694239fbf325976d2db869
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Wed Apr 28 23:53:59 2021 +0800
+
+    css update
+
+commit bb724f994f8997d219b65a5a6c57035287f6e4d5
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Wed Apr 28 21:59:40 2021 +0800
+
+    css update
+
+commit 01f68d2d0b6dd4a5f215afd8fd2afb861a9a8fe3
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Wed Apr 28 21:50:06 2021 +0800
+
+    css update
+
+commit 11ce8d31d2f18bcabaf7ec423356f9365c9c235e
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Wed Apr 28 17:14:27 2021 +0800
+
+    Update w/ Kshitiz & Brandon v2
+
+commit 741747de7c3af3306604bc59539a668791a61208
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Wed Apr 28 17:13:17 2021 +0800
+
+    Update w/ Kshitiz & Brandon
+
+commit 55f1003ed863b7c7f1935423291ed7ec6dc23298
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Wed Apr 28 16:36:18 2021 +0800
+
+    Update w/ Kshitiz & Brandon
+
+commit 0ee05a39c28d8d84197c6c0b3b9c34790eaf9c9b
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Wed Apr 28 16:16:44 2021 +0800
+
+    Update with Assessment & Content
+
+commit 54d8f660e36813e412b19fd8b67174c96c9a985b
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Wed Apr 28 16:09:30 2021 +0800
+
+    link css take 2
+
+commit 86c048da9033417d2e496bbece48041c8a8722e4
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Wed Apr 28 16:07:53 2021 +0800
+
+    link css
+
+commit 3601e11316e3c1617af59d6c24b3f05bc70eb01d
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Wed Apr 28 16:05:13 2021 +0800
+
+    render assessment
+
+commit d177241652fc816d2a8be120664534e5a6576062
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Wed Apr 28 15:59:23 2021 +0800
+
+    add assess
+
+commit f87132b75d34a10a320341ea39a38be423fe32ef
+Author: TheRyuBlitz <81898441+TheRyuBlitz@users.noreply.github.com>
+Date:   Wed Apr 28 15:40:59 2021 +0800
+
+    main
+
+commit a10b4c79692d0cbda2d4228d6c651bf8ee3d11ab
+Author: Will <will@hatchet.com.au>
+Date:   Wed Apr 28 12:51:36 2021 +0800
+
+    Added database models, database quiz seeding
+
+commit 05e30cc7dcdac35b9f678f74c1cbffae24981b74
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Tue Apr 27 21:56:42 2021 +0800
+
+    css update
+
+commit 6239cb2d84b3885afe3de322574881fc570ccd8b
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Tue Apr 27 20:56:06 2021 +0800
+
+    css update
+
+commit 097623fcb4693702ff13815d5db285537d8509ef
+Author: Will <will@hatchet.com.au>
+Date:   Sun Apr 25 13:29:05 2021 +0800
+
+    Updated routing
+
+commit 25002070fcbf90a0e3e87c91be840bccf6411e7e
+Author: Will <will@hatchet.com.au>
+Date:   Sun Apr 25 13:23:15 2021 +0800
+
+    added rest of Brandon's changes
+
+commit 0310c6b4a3855268fdbd9e46ce90f6ced35ec0a7
+Merge: a674d33 2f407b3
+Author: Will <wknight801@gmail.com>
+Date:   Sun Apr 25 13:11:12 2021 +0800
+
+    Merge pull request #6 from Cosmo801/will-beta
+    
+    Will beta
+
+commit 2f407b3a9e5feea369458207e9dafa1218502908
+Author: Will <will@hatchet.com.au>
+Date:   Sun Apr 25 13:08:49 2021 +0800
+
+    Added stylesheet and updated navbar
+
+commit 03de51d298d2a93c1099e15c919fcdbb5684ffa5
+Author: Will <will@hatchet.com.au>
+Date:   Wed Apr 21 17:08:23 2021 +0800
+
+    Updated structure more + added some of Brandons
+
+commit f8febeb65e59967078bb6b00e1f4bf9448de1ecd
+Author: Will <will@hatchet.com.au>
+Date:   Wed Apr 21 16:37:58 2021 +0800
+
+    Added kshitiz updates
+
+commit 809c9482d806e0ce66c51ae1b92555130aea6419
+Author: Will <will@hatchet.com.au>
+Date:   Mon Apr 19 18:58:59 2021 +0800
+
+    Updated structure more
+
+commit a674d33e3bf4ba37312b01ff78d3ebed66f19d21
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Sun Apr 18 15:01:50 2021 +0800
+
+    logo cropped
+
+commit ef17d4f402dfd830f9d5c9168763e59da3d009df
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Sun Apr 18 14:53:45 2021 +0800
+
+    Logo 2
+
+commit 490b1b8f075305781c780ce61cbbf350f53d8ddb
+Author: Will <wknight801@gmail.com>
+Date:   Sat Apr 17 17:45:17 2021 +0800
+
+    Update README.md
+
+commit b5c4059ef7ed5e4d9797336e5d437580294781cc
+Author: Will <wknight801@gmail.com>
+Date:   Sat Apr 17 17:44:24 2021 +0800
+
+    Update README.md
+
+commit e00f05c14336c07f575be4cb98ab3d28e99cf582
+Author: ThwBigB <bhasurasgamage@gmail.com>
+Date:   Fri Apr 16 11:01:52 2021 +0800
+
+    commit
+
+commit 708050badd4b465812326b91e144f64df32cfbad
+Author: ThwBigB <bhasurasgamage@gmail.com>
+Date:   Fri Apr 16 10:54:12 2021 +0800
+
+    commit
+
+commit 0896c36767356505bab22992b37a67e21b326170
+Author: ThwBigB <bhasurasgamage@gmail.com>
+Date:   Fri Apr 16 10:50:34 2021 +0800
+
+    commit
+
+commit 7f9a807449a72ee935458f721c33f407c1509316
+Author: ThwBigB <bhasurasgamage@gmail.com>
+Date:   Fri Apr 16 10:46:37 2021 +0800
+
+    commit
+
+commit 1691e4f1bc491650c832a90ddbbe993eb35ae164
+Author: ThwBigB <bhasurasgamage@gmail.com>
+Date:   Fri Apr 16 10:44:33 2021 +0800
+
+    git push
+
+commit 5be6ce59445d3508ce413cbf723a5f2a22f64870
+Merge: cf74b74 833908a
+Author: ThwBigB <bhasurasgamage@gmail.com>
+Date:   Fri Apr 16 10:43:54 2021 +0800
+
+    Merge branch 'main' of https://github.com/Cosmo801/Agile-Web-Development-Project
+
+commit cf74b74df87f4b5e6b869f64180f341024e0be59
+Author: ThwBigB <bhasurasgamage@gmail.com>
+Date:   Fri Apr 16 10:41:43 2021 +0800
+
+    commit
+
+commit cdf58fee312b7dee092ab340d5e798dbac798a20
+Author: ThwBigB <bhasurasgamage@gmail.com>
+Date:   Fri Apr 16 10:39:55 2021 +0800
+
+    commit
+
+commit 007de64c8d73980e638f3b240da6a893f732d4e4
+Author: ThwBigB <bhasurasgamage@gmail.com>
+Date:   Fri Apr 16 10:38:14 2021 +0800
+
+    commit
+
+commit 833908a8f7675d3dd6a08056ca204d13f5942744
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Fri Apr 16 10:32:48 2021 +0800
+
+    Pictures Folder
+
+commit 09b83ef2c298b922f56f3cab5b7a5ae52226b190
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Fri Apr 16 10:19:08 2021 +0800
+
+    CSS file
+
+commit 733fb129ff755c1676c01d6a789c71767af88941
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Fri Apr 16 10:15:41 2021 +0800
+
+    template files
+
+commit 2e485de5386af4c09e6529d94c44264bf038290b
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Fri Apr 16 10:12:10 2021 +0800
+
+    initial commit
+
+commit 1e10190d1bb835bec3c59dc1ff629d6df05150ee
+Author: Will <wknight801@gmail.com>
+Date:   Tue Apr 6 10:28:06 2021 +0800
+
+    Update README.md
+
+commit 9dcb94b9ae2fd01b12fdf27662c265f7d106328a
+Author: Will <wknight801@gmail.com>
+Date:   Tue Apr 6 10:10:03 2021 +0800
+
+    Update README.md
+
+commit a70ccb4a8f67eff8d7088585b06512b618d83570
+Author: Will <wknight801@gmail.com>
+Date:   Sun Apr 4 14:53:44 2021 +0800
+
+    Update README.md
+
+commit 6c72037f177f81188ebf3969056722faa233e6b5
+Author: Will <wknight801@gmail.com>
+Date:   Sun Apr 4 14:52:45 2021 +0800
+
+    Update README.md
+
+commit 86ee93bd96e1296a804227f41a7a7d608e5ebda8
+Author: Will <wknight801@gmail.com>
+Date:   Sun Apr 4 14:45:21 2021 +0800
+
+    Update README.md
+
+commit e820d62e2b49bc32187230ec12a0ad0a614be490
+Author: Will <wknight801@gmail.com>
+Date:   Sun Apr 4 14:08:45 2021 +0800
+
+    Initial commit
