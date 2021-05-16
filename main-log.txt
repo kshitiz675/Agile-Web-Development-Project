@@ -1,3 +1,40 @@
+commit 8a6b12808af5eadbc2de874619d490c63b718bf2
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Sun May 16 16:46:32 2021 +0800
+
+    Login+Registration css update
+
+commit f270393f4d74af20960eb4fe2ace29123d043216
+Merge: 5a379f5 1ab2bd4
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Sun May 16 16:42:53 2021 +0800
+
+    Merge branch 'main' of https://github.com/Cosmo801/Agile-Web-Development-Project
+
+commit 5a379f54e9d5609f78eed8a68235239347671180
+Author: kshitiz675 <kshitiz@live.ca>
+Date:   Sun May 16 16:42:42 2021 +0800
+
+    Added git collab log text file
+
+commit 1ab2bd4836e37af5e6cb093e4ac48e79951203c0
+Author: Will <wknight801@gmail.com>
+Date:   Sun May 16 15:04:06 2021 +0800
+
+    Update README.md
+
+commit 0d8444bd9c2b111af24d420c7d5750d487e3d536
+Author: Will <wknight801@gmail.com>
+Date:   Sun May 16 15:03:15 2021 +0800
+
+    Update README.md
+
+commit 92b64c94d40d6d8625ba8c62a8e0abf7c16f2dff
+Author: Will <wknight801@gmail.com>
+Date:   Sun May 16 15:00:17 2021 +0800
+
+    Update README.md
+
 commit bc933c04d835a0fa572c420d1f12109fe2f80e3e
 Author: Will <will@hatchet.com.au>
 Date:   Sun May 16 14:52:55 2021 +0800
