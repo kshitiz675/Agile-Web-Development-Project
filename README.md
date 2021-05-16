@@ -30,6 +30,7 @@ Requires:
 - flask-login
 - flask-wtf
 - email_validator
+- requests
 
 ## Installing
 
@@ -47,6 +48,8 @@ Install [python3](https://www.python.org/downloads/)
 - use pip to install flask-login package `$ pip install flask-login`
 - use pip to install flask-wtf package `$ pip install flask-wtf`
 - use pip to install email_validator package `$ pip install email_validator`
+- use pip to install requests package `$ pip install requests`
+
 
 3. `flask run`
 
@@ -79,3 +82,4 @@ Vscode and git
 - Patrick png: https://www.pinterest.com.au/pin/587227238891101162/?d=t&mt=login
 
 - Live Bitcoin Prices: https://coinlib.io/widgets
+- CoinGecko
