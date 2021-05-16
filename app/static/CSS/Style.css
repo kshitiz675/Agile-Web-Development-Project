@@ -203,3 +203,43 @@ div.small {
     margin-bottom: 10px;
     padding-bottom: 5px;
   }
+
+#price-list {
+    width: 100%;
+    max-width: 100%;
+    --tw-bg-opacity: 1;
+    background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
+    padding: 16px 0px;
+    justify-content: center;
+    overflow-x: auto;
+}
+
+.price-list-inner-lower {
+    font-size: 10px;
+    padding-top: 4px;
+    color: white;
+    font-weight: 500;
+   
+}
+.price-list-heading {
+    padding-right: 6px;
+    margin: auto;
+    font-size: 14px;
+    color:white;
+    font-weight: 600;
+}
+.price-list-image {
+    height: 25px;
+    width: 25px;
+}
+
+.price-list-column {
+    padding: 2px 10px;
+}
+.green-text {
+    color:greenyellow;
+}
+
+.red-text {
+    color:red;
+}

@@ -1,5 +1,5 @@
 from flask import render_template, url_for, redirect, flash, request, jsonify, session
-from app import app, db
+from app import app, db, priceloader
 from app.forms import LoginForm, RegistrationForm
 from flask_login import current_user, login_user, logout_user
 from app.models import TopicSection, User, Quiz, Topic, Question, Answer, UserResult, QuizResult
@@ -10,7 +10,8 @@ from flask_login import login_required
 @app.route('/index')
 @app.route('/home')
 def index():
-    return render_template('Home.html', title='Home')
+    p = priceloader.PriceLoader()
+    return render_template('Home.html', title='Home', priceData=p.getPriceData())
 
 @app.errorhandler(404)
 def error404(e):
@@ -79,7 +80,6 @@ def assessment(quizId):
             db.session.add(quizResult)
         db.session.commit()
         userResults = UserResult.query.filter_by(userid=session['user_id']).first()
-        print("Success")
         return "Success"
 
 #Login/Registration

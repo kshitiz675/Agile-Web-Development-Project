@@ -18,8 +18,6 @@ with app.app_context():
 
 from app import routes, models, priceloader
 
-# p = priceloader.PriceLoader()
-# p.getPriceData()
 
 def seed(db):
 
