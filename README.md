@@ -68,6 +68,8 @@ Vscode and git
 ## Testing
 
 - To run unit tests, within your virtual environment `$ python tests.py`
+- For selenium testing, chrome webdriver must be installed and configured https://sites.google.com/a/chromium.org/chromedriver/home
+- You can then run with `$ python testing-sele.py`
 
 ## Authors
 
