@@ -18,10 +18,12 @@ class PriceLoader():
         session.headers.update(self.headers)
         coinList = []
         try:
-            response = session.get(self.url, params=self.parameters)
-            data = json.loads(response.text)
-            for coin in data:
-                coinList.append((coin['name'], coin['symbol'], coin['image'], coin['current_price'], coin['price_change_percentage_24h']))
+            with session.get(self.url, params=self.parameters) as response:
+                data = json.loads(response.text)
+                for coin in data:
+                    coinList.append((coin['name'], coin['symbol'], coin['image'], coin['current_price'], coin['price_change_percentage_24h']))
+
+            session.close()   
             return coinList
 
         except (ConnectionError, Timeout, TooManyRedirects) as e:

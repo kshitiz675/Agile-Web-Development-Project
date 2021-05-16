@@ -1,7 +1,7 @@
 import unittest
 import os 
 
-from app import app, db
+from app import app, db, priceloader
 from app.models import User, Quiz, Topic, QuizResult, UserResult
 from config import basedir
 
@@ -18,7 +18,6 @@ class UserModelCase(unittest.TestCase):
     def tearDown(self):
         db.session.remove()
         db.drop_all()
-
 
 
     def test_password_hashing(self):
@@ -42,9 +41,13 @@ class UserModelCase(unittest.TestCase):
         lesson = Topic.query.filter_by(topicname='The Blockchain').first()
         self.assertTrue(lesson.topicname == 'The Blockchain')
 
-
+    def test_price_loader(self):
+        loader = priceloader.PriceLoader()
+        data = loader.getPriceData()
+        self.assertTrue(len(data) == 10)
 
     def test_quiz_submission(self):
+        #Create a quiz and make sure user result is updated when quiz is submitted
 
         user = User(username='Test', email='Test')
         user.set_password('Test')
@@ -90,9 +93,5 @@ class UserModelCase(unittest.TestCase):
 
         self.assertTrue(QuizResult.getResultsForQuiz(quiz.id)[0][1] == 4)
     
-
-       
-        
-
 if __name__=='__main__':
     unittest.main(verbosity=2)
