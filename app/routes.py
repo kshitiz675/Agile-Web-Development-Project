@@ -72,7 +72,7 @@ def assessment(quizId):
         if userResults == None: 
             return "Invalid User"
         #Check if quiz is already completed
-        oldQuizResult = QuizResult.query.filter_by(userresultid=userResults.id).first()
+        oldQuizResult = QuizResult.query.filter_by(userresultid=userResults.id).filter_by(quizid = quizId).first()
         if oldQuizResult != None:
             oldQuizResult.score = numCorrect
         else:
