@@ -149,9 +149,10 @@
     const answerText = getAnswersText();
 
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", `/assessment/${quizId}`, true);
+    xhr.open("POST", `/assessment/${quizId}`, false);
     xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.send(answerText)
+    xhr.send(answerText);
+
     document.location.href = `/feedback/${quizId}`;
   }
 

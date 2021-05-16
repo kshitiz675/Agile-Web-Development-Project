@@ -111,6 +111,7 @@ html, body {
 .content {
     width: 50%;
     float: left;
+    margin-bottom: 12px;
 }
 
 .content h1 {

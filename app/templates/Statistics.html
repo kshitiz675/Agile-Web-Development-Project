@@ -57,9 +57,9 @@
         }
         event.target.classList.add('selected');
 
-        const quizName = event.target.id.split('-')[2];
+        let quizName = event.target.id.split('-')[2];
         for(let item of tables) {
-            const tableQuizName = item.id.split('-')[2];
+            let tableQuizName = item.id.split('-')[2];
             if(quizName != tableQuizName) {
                 if(!item.classList.contains('table-hidden')){
                     item.classList.add('table-hidden');

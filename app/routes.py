@@ -71,15 +71,15 @@ def assessment(quizId):
         userResults = UserResult.query.filter_by(userid = session['user_id']).first()
         if userResults == None: 
             return "Invalid User"
-        #TODO check if quiz has already been done
+        #Check if quiz is already completed
         oldQuizResult = QuizResult.query.filter_by(userresultid=userResults.id).first()
         if oldQuizResult != None:
             oldQuizResult.score = numCorrect
         else:
             quizResult = QuizResult(quizid=quizId, userresultid=userResults.id, score=numCorrect)
             db.session.add(quizResult)
+            print(quizResult)
         db.session.commit()
-        userResults = UserResult.query.filter_by(userid=session['user_id']).first()
         return "Success"
 
 #Login/Registration

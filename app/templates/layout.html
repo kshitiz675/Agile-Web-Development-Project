@@ -25,25 +25,15 @@
 </head>
 
 <body>
-
     <section>
         <header>
-         
             <div id="topbar">
                 <div id="brand">
                     <img src="../static/Pictures/logo.png" alt="logo">
                 </div>
                 <nav id="topbar-nav">
-                    <a href="/" class="navbar-item navbar-active">Home</a>
-                    <div class="flex">
-                        <a href="/lesson" class="navbar-item">Learn</a>
-                        <svg class="menu-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                            aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </div>
+                    <a href="/" class="navbar-item">Home</a>
+                    <a href="/lesson" class="navbar-item">Learn</a>
                     <a href="/statistics" class="navbar-item">Statistics</a>
                 </nav>
                 <div id="login-container">
@@ -71,12 +61,13 @@
 
     <section id="main">
         {% block content %}{% endblock %}
-
     </section>
+
+    {% block scripts %}
     <script>
 
-
     </script>
+    {% endblock %}
 </body>
 
 </html>
