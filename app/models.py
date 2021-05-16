@@ -10,7 +10,6 @@ class User(UserMixin, db.Model):
     password_hash = db.Column(db.String(128))
     userresults = db.relationship('UserResult', backref='user', lazy=True)
 
-
     def set_password(self, password):
         self.password_hash = generate_password_hash(password)
     
@@ -34,10 +33,7 @@ class User(UserMixin, db.Model):
             print(quiz.quizname)
             print(f'{result.score} / {len(quiz.questions)}')
             print()
-
-    
-
-
+   
 class Quiz(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     quizname = db.Column(db.String(128))
@@ -49,7 +45,6 @@ class Quiz(db.Model):
     'Return a specific question from a quiz'
     def get_a_question(self, num):
         return Question.query.filter_by(quizId=self.id, id=num).first()
-
 
 class Question(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -74,8 +69,6 @@ class Question(db.Model):
         random.shuffle(answers)
         return answers
 
-
-
 class Answer(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     answertext = db.Column(db.String(256))
@@ -91,7 +84,6 @@ class UserResult(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     userid = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
     quizresults = db.relationship('QuizResult', backref='user_result', lazy=True)
-
 
 class QuizResult(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -130,7 +122,6 @@ class TopicSection(db.Model):
     topicid = db.Column(db.Integer, db.ForeignKey('topic.id'), nullable=False)
     topicheading = db.Column(db.String(256))
     topiccontent = db.Column(db.String(1024))
-
 
 ##Login system
 @login.user_loader

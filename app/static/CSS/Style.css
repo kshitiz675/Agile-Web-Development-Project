@@ -132,22 +132,6 @@ html, body {
     font-weight: 500;
 }
 
-/* form p, label {
-    font-size: 15pt;
-    margin: 10px 0 10px 20px;
-    line-height: 20px;
-    font-family: 'Work Sans', sans-serif;
-    color: #32373c;
-}
-
-form h1 {
-    font-size: 52pt;
-    position: relative;
-    margin-left: 30px;
-    font-family: 'Crimson Text', serif;
-    color: #32373c;
-} */
-
 .main-picture {
     width: 40%;
     float: right;
