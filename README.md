@@ -31,6 +31,7 @@ Requires:
 - flask-wtf
 - email_validator
 - requests
+- selenium (for testing)
 
 ## Installing
 
@@ -49,6 +50,7 @@ Install [python3](https://www.python.org/downloads/)
 - use pip to install flask-wtf package `$ pip install flask-wtf`
 - use pip to install email_validator package `$ pip install email_validator`
 - use pip to install requests package `$ pip install requests`
+- use pip to install selenium package (if you want to run selenium tests) `$ pip install selenium`
 
 
 3. `flask run`
@@ -62,6 +64,12 @@ via local host
 ## Built With
 
 Vscode and git
+
+## Testing
+
+- To run unit tests, within your virtual environment `$ python tests.py`
+- For selenium testing, chrome webdriver must be installed and configured https://sites.google.com/a/chromium.org/chromedriver/home
+- You can then run with `$ python testing-sele.py`
 
 ## Authors
 
