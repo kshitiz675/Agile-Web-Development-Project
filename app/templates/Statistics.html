@@ -1,19 +1,20 @@
 {%extends "layout.html"%}
 
 {%block content%}
-
 <div>
-    <h1 style="font-size: 35pt; border-bottom-style:solid; margin:20px; font-family: 'Crimson Text', serif; color: #32373c;">
+    <h1
+        style="font-size: 35pt; border-bottom-style:solid; margin:20px; font-family: 'Crimson Text', serif; color: #32373c;">
         World Leaderboard</h1>
     <div class="stats-tabs-container">
         <nav class="stats-tabs flex" aria-label="tabs">
             {% for quiz in quizzes%}
-              <button id="quiz-select-{{quiz.id}}" onclick="selectQuiz(event)" class="quiz-select">{{quiz.quizname}}</button>
+            <button id="quiz-select-{{quiz.id}}" onclick="selectQuiz(event)"
+                class="quiz-select">{{quiz.quizname}}</button>
             {% endfor %}
         </nav>
     </div>
 
-    {% for quiz in results %} 
+    {% for quiz in results %}
     <div id="quiz-result-{{quiz[0]}}" class="quiz-results-container table-hidden">
         <table id="statistics-table-{{quiz[0]}}" class="statistics-table" style="margin-top: 5px;">
             <tr>
@@ -26,55 +27,40 @@
                 <td>{{result[2]}}</td>
                 <td>{{result[0]}}</td>
                 <td>{{result[1]}}</td>
-
             </tr>
             {% endfor %}
-            <tr>
-
-            </tr>
         </table>
         <div class="num-users-container">Showing {{quiz[1]|length}} user(s)</div>
-        
-        
     </div>
-      
     {% endfor %}
-    
-
 </div>
-  {%block scripts%}
-  <script>
+{%block scripts%}
+<script>
     const tables = document.getElementsByClassName('quiz-results-container');
     const buttons = document.getElementsByClassName('quiz-select');
 
-
-
-
     function selectQuiz(event) {
 
-        for(let button of buttons) {
-            if(button.classList.contains('selected')) button.classList.remove('selected');
+        for (let button of buttons) {
+            if (button.classList.contains('selected')) button.classList.remove('selected');
         }
         event.target.classList.add('selected');
 
         let quizName = event.target.id.split('-')[2];
-        for(let item of tables) {
+        for (let item of tables) {
             let tableQuizName = item.id.split('-')[2];
-            if(quizName != tableQuizName) {
-                if(!item.classList.contains('table-hidden')){
+            if (quizName != tableQuizName) {
+                if (!item.classList.contains('table-hidden')) {
                     item.classList.add('table-hidden');
                     continue;
-                }      
+                }
             }
-            else{
-                if(item.classList.contains('table-hidden')) item.classList.remove('table-hidden');
+            else {
+                if (item.classList.contains('table-hidden')) item.classList.remove('table-hidden');
             }
         }
-        
-
     }
-
-  </script>
-  {%endblock%}
+</script>
+{%endblock%}
 
 {%endblock%}

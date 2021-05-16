@@ -1,6 +1,4 @@
 {% extends "layout.html" %} {% block content %}
-
-
 <div>
   <div id="price-list" class="flex">
     {% for coin in priceData %} 
@@ -12,8 +10,6 @@
         <div class="flex flex-column price-list-inner-lower">
           <div>${{coin[3]}}</div>
           <div class="{{'green-text' if coin[4]>=0 }} {{'red-text' if coin[4]<0 }}">{{coin[4]}}%</div>
-
-
         </div>
         <div>
 
@@ -21,11 +17,9 @@
       </div>
     {% endfor %}
   </div>
-
 </div>
 
 <div class="container">
-
   <div class="heading">
     <div class="content">
       <h1>
@@ -43,7 +37,6 @@
         to head over to the learn page and select a topic. Watch a short video,
         read some notes and proceed to take a quiz at the end.
       </p>
-
     </div>
   </div>
   <div class="main-picture">
