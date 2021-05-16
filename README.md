@@ -50,7 +50,7 @@ Install [python3](https://www.python.org/downloads/)
 - use pip to install flask-wtf package `$ pip install flask-wtf`
 - use pip to install email_validator package `$ pip install email_validator`
 - use pip to install requests package `$ pip install requests`
-- use pip to install selenium package (if you want to run selenium tests) `$ pip install requests`
+- use pip to install selenium package (if you want to run selenium tests) `$ pip install selenium`
 
 
 3. `flask run`
