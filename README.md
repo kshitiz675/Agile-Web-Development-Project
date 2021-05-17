@@ -8,6 +8,9 @@ This web application was created as part of a project for the CITS3403 unit at T
 
 ## Getting Started
 
+Setup a python virtual environment:
+`python3 -m venv virtual-environment`
+
 Activate the python virtual environment:
 `$source virtual-environment/bin/activate`
 
