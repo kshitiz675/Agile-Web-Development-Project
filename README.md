@@ -16,6 +16,8 @@ Activate the python virtual environment:
 
 To run the app:
 `$flask run`
+- The app.py file should be in the same folder as your virtual environment folder
+- Project files are provided but can also be cloned from here
 
 To stop the app:
 `$^C`
@@ -23,13 +25,15 @@ To stop the app:
 To exit the environment:
 `$deactivate`
 
-## Prequisites
+## Prerequisites
 
 Requires:
 
 - python3
 - flask
 - venv
+- flask_sqlalchemy
+- flask_migrate
 - flask-login
 - flask-wtf
 - email_validator
@@ -46,9 +50,11 @@ Install [python3](https://www.python.org/downloads/)
 - create the environment `$ python3 -m venv venv`
 - activate the environment `$ . venv/bin/activate`
 
-2. Install prequisetes
+2. Install prerequisites
 
 - use pip to install flask package `$ pip install flask`
+- use pip to install flask_sqlalchemy package `$ pip install flask_sqlalchemy`
+- use pip to install flask_migrate package `$ pip install flask_migrate`
 - use pip to install flask-login package `$ pip install flask-login`
 - use pip to install flask-wtf package `$ pip install flask-wtf`
 - use pip to install email_validator package `$ pip install email_validator`
